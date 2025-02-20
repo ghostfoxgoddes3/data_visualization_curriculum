@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. Introdução ao Altair &#8212; My sample book</title>
+    <title>Introdução ao Altair &#8212; My sample book</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/1_intro';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="2. Tipos de dados, marcas gráficas e canais de codificação visual" href="2_types.html" />
-    <link rel="prev" title="Introdução" href="introduction.html" />
+    <link rel="next" title="Tipos de dados, marcas gráficas e canais de codificação visual" href="2_types.html" />
+    <link rel="prev" title="Introdução" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -135,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="introduction.html">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -163,19 +163,19 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="introduction.html">
+                <a class="reference internal" href="intro.html">
                     Introdução
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><font color="gray">1.</font> Introdução ao Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_types.html"><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_transform.html"><font color="gray">3.</font> Transformação de dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_scales.html"><font color="gray">4.</font> Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_composition.html"><font color="gray">5</font> Composição de Múltiplas Visualizações</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_interaction.html"><font color="gray">6.</font> Interação</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_cartographics.html"><font color="gray">7.</font> Visualização Cartográfica</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introdução ao Altair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_types.html">Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_trans.html">Transformação de dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_scales.html">Escalas, Eixos e Legendas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_compo.html">Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_inter.html">Interação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_geo.html">Visualização Cartográfica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Guia de Depuração para Altair</a></li>
 </ul>
 
@@ -390,7 +390,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><font color="gray">1.</font> Introdução ao Altair</h1>
+    <h1>Introdução ao Altair</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -401,21 +401,21 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importacoes"><font color="gray">1.1</font> Importações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renderizacoes"><font color="gray">1.2</font> Renderizações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados"><font color="gray">1.3</font> Dados</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos"><font color="gray">1.3.1 </font> Dados Meteorológicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renderizacoes">Renderizações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados">Dados</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos">Dados Meteorológicos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-objeto-grafico"><font color="gray">1.4 </font> O objeto gráfico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-e-codificacoes"><font color="gray">1.5 </font> Marcas e Codificações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformacao-de-dados-agrupamento"><font color="gray">1.6</font> Transformação de Dados: Agrupamento</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mudando-o-tipo-de-marca"><font color="gray">1.7</font> Mudando o Tipo de Marca</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customizando-uma-visualizacao"><font color="grey">1.8</font> Customizando uma Visualização</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-visualizacoes"><font color="grey">1.9</font> Múltiplas Visualizações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interatividade"><font color="grey">1.10</font> Interatividade</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alem-dos-graficos-examinando-o-output-json"><font color="grey">1.11</font> Além dos gráficos: Examinando o output JSON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publicando-uma-visualizacao"><font color="grey">1.12</font> - Publicando uma visualização</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proximos-passos"><font color="grey">1.13</font> Próximos passos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-objeto-grafico">O objeto gráfico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-e-codificacoes">Marcas e Codificações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformacao-de-dados-agrupamento">Transformação de Dados: Agrupamento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mudando-o-tipo-de-marca">Mudando o Tipo de Marca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customizando-uma-visualizacao">Customizando uma Visualização</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-visualizacoes">Múltiplas Visualizações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interatividade">Interatividade</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alem-dos-graficos-examinando-o-output-json">Além dos gráficos: Examinando o output JSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publicando-uma-visualizacao">Publicando uma visualização</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proximos-passos">Próximos passos</a></li>
 </ul>
             </nav>
         </div>
@@ -428,7 +428,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="introducao-ao-altair">
-<h1><font color="gray">1.</font> Introdução ao Altair<a class="headerlink" href="#introducao-ao-altair" title="Link to this heading">#</a></h1>
+<h1>Introdução ao Altair<a class="headerlink" href="#introducao-ao-altair" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <p><a class="reference external" href="https://altair-viz.github.io/">Altair</a> é um módulo no Python de visualização estatística declarativa. Essa biblioteca oferece uma gramática de visualização concisa e poderosa para uma rápida construção dos códigos. Possui também  uma grande variedade de gráficos estatísticos.</p>
 <p>O termo <em>“declarativa”</em> quer dizer que você pode ter uma especificação de alto nível sobre <em>quais</em> características serão incluídas na visualização em termos de <em>dados, marcas gráficas ( ou marcações gráficas),</em> e <em>canais de codificação</em>, ao invés de ter de especificar <em>como</em> implementar a visualização em termos de for-loops, comandos de desenho em linguagem de baixo nível e outros. A ideia central é você poder fazer conexões entre os campos de dados e canais de codificação visuais, como os eixos cartesianos ou as cores da sua visualização. O resto dos detalhes da plotagem são computados automaticamente. Se baseando nessa ideia de plotagem declarativa, uma surpreendente gama de visualizações, das simples às mais sofisticadas, podem ser criadas usando uma gramática concisa.</p>
@@ -449,12 +449,12 @@
 </div>
 </section>
 <section id="renderizacoes">
-<h2><font color="gray">1.2</font> Renderizações<a class="headerlink" href="#renderizacoes" title="Link to this heading">#</a></h2>
+<h2>Renderizações<a class="headerlink" href="#renderizacoes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Dependendo do seu ambiente, você talvez precisará especificar um <a class="reference external" href="https://altair-viz.github.io/user_guide/display_frontends.html">renderizador</a> para o Altair. Se você estiver utilizando o <strong>Jupyter Lab, Jupyter Notebook</strong> ou o <strong>Google Colab</strong> conectado a internet, você não precisa fazer nada nessa parte. Se não for o caso, por favor leia a documentação para <a class="reference external" href="https://altair-viz.github.io/user_guide/display_frontends.html">a exibição de gráficos no Altair.</a></p>
 </section>
 <section id="dados">
-<h2><font color="gray">1.3</font> Dados<a class="headerlink" href="#dados" title="Link to this heading">#</a></h2>
+<h2>Dados<a class="headerlink" href="#dados" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Dados no Altair são construídos em torno do data frame do Pandas, que consiste em um conjunto de colunas de dados nomeadas. Também iremos nos referir a colunas de dados como campos de dados.</p>
 <p>Usando o Altair, conjuntos de dados são comumente providenciados como data frames. De forma alternativa, a biblioteca também aceita um URL para carregar um conjunto de dados acessível por network. Como veremos, as colunas de um data frame são parte essencial da plotagem no Altair.</p>
@@ -680,7 +680,7 @@
 </div>
 <p>Para mais informações sobre data frames - e algumas transformações úteis para preparar data frames do Pandas para plotagem com o Altair! - veja a documentação de <a class="reference external" href="https://altair-viz.github.io/user_guide/data.html">especificação de dados com Altair.</a></p>
 <section id="dados-meteorologicos">
-<h3><font color="gray">1.3.1 </font> Dados Meteorológicos<a class="headerlink" href="#dados-meteorologicos" title="Link to this heading">#</a></h3>
+<h3>Dados Meteorológicos<a class="headerlink" href="#dados-meteorologicos" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Visualização estatística com o Altair começa com <a class="reference external" href="https://vita.had.co.nz/papers/tidy-data.html">“pequenos”</a> data frames. Aqui, começaremos criando um data frame simples (chamaremos de <code class="docutils literal notranslate"><span class="pre">df</span></code>) contendo a precipitação média (<code class="docutils literal notranslate"><span class="pre">precip</span></code>) de uma dada cidade(<code class="docutils literal notranslate"><span class="pre">city</span></code>) em um determinado mês(<code class="docutils literal notranslate"><span class="pre">month</span></code>):</p>
 <div class="cell docutils container">
@@ -781,7 +781,7 @@
 </section>
 </section>
 <section id="o-objeto-grafico">
-<h2><font color="gray">1.4 </font> O objeto gráfico<a class="headerlink" href="#o-objeto-grafico" title="Link to this heading">#</a></h2>
+<h2>O objeto gráfico<a class="headerlink" href="#o-objeto-grafico" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>O objeto fundamental utilizado no Altair é o gráfico (em inglês, <code class="docutils literal notranslate"><span class="pre">chart</span></code>), que recebe um data frame como um argumento:</p>
 <div class="cell docutils container">
@@ -794,7 +794,7 @@
 <p>Até agora, nós definimos o objeto ‘gráfico’ (<code class="docutils literal notranslate"><span class="pre">chart</span></code>) e passamos o data frame que geramos acima. Ainda não demos nenhum comando para o gráfico seguir com essas informações.</p>
 </section>
 <section id="marcas-e-codificacoes">
-<h2><font color="gray">1.5 </font> Marcas e Codificações<a class="headerlink" href="#marcas-e-codificacoes" title="Link to this heading">#</a></h2>
+<h2>Marcas e Codificações<a class="headerlink" href="#marcas-e-codificacoes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Com  o gráfico em mãos, podemos agora especificar como queremos visualizar os dados. Primeiro indicaremos que tipo de marca gráfica (forma geométrica) gostaríamos de representar os dados. Selecionaremos o atributo marca (<code class="docutils literal notranslate"><span class="pre">mark</span></code>) no objeto do gráfico usando o método <code class="docutils literal notranslate"><span class="pre">Chart.mark_*</span></code>.</p>
 <p>Por exemplo, podemos mostrar os dados usando o comando <code class="docutils literal notranslate"><span class="pre">Chart.mark_point</span></code>:</p>
@@ -807,23 +807,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-378bfc624e6447e5ab06ec6466cd21b2.vega-embed {
+  #altair-viz-1d0b6c856a4b4374b43135df3d4b9c30.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-378bfc624e6447e5ab06ec6466cd21b2.vega-embed details,
-  #altair-viz-378bfc624e6447e5ab06ec6466cd21b2.vega-embed details summary {
+  #altair-viz-1d0b6c856a4b4374b43135df3d4b9c30.vega-embed details,
+  #altair-viz-1d0b6c856a4b4374b43135df3d4b9c30.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-378bfc624e6447e5ab06ec6466cd21b2"></div>
+<div id="altair-viz-1d0b6c856a4b4374b43135df3d4b9c30"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-378bfc624e6447e5ab06ec6466cd21b2") {
-      outputDiv = document.getElementById("altair-viz-378bfc624e6447e5ab06ec6466cd21b2");
+    if (outputDiv.id !== "altair-viz-1d0b6c856a4b4374b43135df3d4b9c30") {
+      outputDiv = document.getElementById("altair-viz-1d0b6c856a4b4374b43135df3d4b9c30");
     }
 
     const paths = {
@@ -887,23 +887,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-13fc0a1a40034b8980f5f15adec8ea01.vega-embed {
+  #altair-viz-c4e12d137a3b4bc7b7171130320844f8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-13fc0a1a40034b8980f5f15adec8ea01.vega-embed details,
-  #altair-viz-13fc0a1a40034b8980f5f15adec8ea01.vega-embed details summary {
+  #altair-viz-c4e12d137a3b4bc7b7171130320844f8.vega-embed details,
+  #altair-viz-c4e12d137a3b4bc7b7171130320844f8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-13fc0a1a40034b8980f5f15adec8ea01"></div>
+<div id="altair-viz-c4e12d137a3b4bc7b7171130320844f8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-13fc0a1a40034b8980f5f15adec8ea01") {
-      outputDiv = document.getElementById("altair-viz-13fc0a1a40034b8980f5f15adec8ea01");
+    if (outputDiv.id !== "altair-viz-c4e12d137a3b4bc7b7171130320844f8") {
+      outputDiv = document.getElementById("altair-viz-c4e12d137a3b4bc7b7171130320844f8");
     }
 
     const paths = {
@@ -968,23 +968,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-33647355f8aa44b39c8054b327f12b22.vega-embed {
+  #altair-viz-3ce890d41d9c466581f2f9aca1c23db5.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-33647355f8aa44b39c8054b327f12b22.vega-embed details,
-  #altair-viz-33647355f8aa44b39c8054b327f12b22.vega-embed details summary {
+  #altair-viz-3ce890d41d9c466581f2f9aca1c23db5.vega-embed details,
+  #altair-viz-3ce890d41d9c466581f2f9aca1c23db5.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-33647355f8aa44b39c8054b327f12b22"></div>
+<div id="altair-viz-3ce890d41d9c466581f2f9aca1c23db5"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-33647355f8aa44b39c8054b327f12b22") {
-      outputDiv = document.getElementById("altair-viz-33647355f8aa44b39c8054b327f12b22");
+    if (outputDiv.id !== "altair-viz-3ce890d41d9c466581f2f9aca1c23db5") {
+      outputDiv = document.getElementById("altair-viz-3ce890d41d9c466581f2f9aca1c23db5");
     }
 
     const paths = {
@@ -1050,23 +1050,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7e915ba952374669a1a2fe1867dab034.vega-embed {
+  #altair-viz-7c6abfac6ce7404d9810aba04d872b3e.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7e915ba952374669a1a2fe1867dab034.vega-embed details,
-  #altair-viz-7e915ba952374669a1a2fe1867dab034.vega-embed details summary {
+  #altair-viz-7c6abfac6ce7404d9810aba04d872b3e.vega-embed details,
+  #altair-viz-7c6abfac6ce7404d9810aba04d872b3e.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7e915ba952374669a1a2fe1867dab034"></div>
+<div id="altair-viz-7c6abfac6ce7404d9810aba04d872b3e"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7e915ba952374669a1a2fe1867dab034") {
-      outputDiv = document.getElementById("altair-viz-7e915ba952374669a1a2fe1867dab034");
+    if (outputDiv.id !== "altair-viz-7c6abfac6ce7404d9810aba04d872b3e") {
+      outputDiv = document.getElementById("altair-viz-7c6abfac6ce7404d9810aba04d872b3e");
     }
 
     const paths = {
@@ -1131,7 +1131,7 @@
 <p>Daremos uma olhada melhor nos tipos de dados e canais de codificação no próximo capítulo do <a class="reference external" href="https://github.com/uwdata/visualization-curriculum#data-visualization-curriculum">currículo de visualização de dados</a>.</p>
 </section>
 <section id="transformacao-de-dados-agrupamento">
-<h2><font color="gray">1.6</font> Transformação de Dados: Agrupamento<a class="headerlink" href="#transformacao-de-dados-agrupamento" title="Link to this heading">#</a></h2>
+<h2>Transformação de Dados: Agrupamento<a class="headerlink" href="#transformacao-de-dados-agrupamento" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Para poder ter mais flexibilidade em como os dados são visualizados, Altair tem embutido uma sintaxe para o <em>agrupamento</em> de dados. Por exemplo, podemos computar a média de todos os valores especificando a função de agrupamento junto com o nome do campo.</p>
 <div class="cell docutils container">
@@ -1146,23 +1146,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-2f0370b9138f4921bcc2c73ff382746e.vega-embed {
+  #altair-viz-e5eb919fc65b485d9ef1fdfd78b3b2c0.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2f0370b9138f4921bcc2c73ff382746e.vega-embed details,
-  #altair-viz-2f0370b9138f4921bcc2c73ff382746e.vega-embed details summary {
+  #altair-viz-e5eb919fc65b485d9ef1fdfd78b3b2c0.vega-embed details,
+  #altair-viz-e5eb919fc65b485d9ef1fdfd78b3b2c0.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2f0370b9138f4921bcc2c73ff382746e"></div>
+<div id="altair-viz-e5eb919fc65b485d9ef1fdfd78b3b2c0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2f0370b9138f4921bcc2c73ff382746e") {
-      outputDiv = document.getElementById("altair-viz-2f0370b9138f4921bcc2c73ff382746e");
+    if (outputDiv.id !== "altair-viz-e5eb919fc65b485d9ef1fdfd78b3b2c0") {
+      outputDiv = document.getElementById("altair-viz-e5eb919fc65b485d9ef1fdfd78b3b2c0");
     }
 
     const paths = {
@@ -1218,7 +1218,7 @@
 <p>Altair suporta uma variedade de funções de agrupamento, incluindo <code class="docutils literal notranslate"><span class="pre">count</span></code>(contador), <code class="docutils literal notranslate"><span class="pre">min</span></code>(mínimo), <code class="docutils literal notranslate"><span class="pre">max</span></code>(máximo), <code class="docutils literal notranslate"><span class="pre">average</span></code>(média), <code class="docutils literal notranslate"><span class="pre">median</span></code>(mediana), e  <code class="docutils literal notranslate"><span class="pre">stdev</span></code>(desvio padrão). Em um próximo capítulo, teremos um tour sobre transformações de dados, incluindo agrupamento, ordenação, filtração e criação de novos campos derivados usando fórmulas.</p>
 </section>
 <section id="mudando-o-tipo-de-marca">
-<h2><font color="gray">1.7</font> Mudando o Tipo de Marca<a class="headerlink" href="#mudando-o-tipo-de-marca" title="Link to this heading">#</a></h2>
+<h2>Mudando o Tipo de Marca<a class="headerlink" href="#mudando-o-tipo-de-marca" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Considere que queremos representar nossos valores agrupados usando barras retangulares em vez de pontos circulares. Podemos fazer isso trocando o método <code class="docutils literal notranslate"><span class="pre">Chart.mark_point</span></code> por <code class="docutils literal notranslate"><span class="pre">Chart.mark_bar</span></code></p>
 <div class="cell docutils container">
@@ -1233,23 +1233,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6daa48fc60034b378d2f8a50193f75d9.vega-embed {
+  #altair-viz-54fd5eb6f5984a3799c06cd6a8c66fa4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6daa48fc60034b378d2f8a50193f75d9.vega-embed details,
-  #altair-viz-6daa48fc60034b378d2f8a50193f75d9.vega-embed details summary {
+  #altair-viz-54fd5eb6f5984a3799c06cd6a8c66fa4.vega-embed details,
+  #altair-viz-54fd5eb6f5984a3799c06cd6a8c66fa4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6daa48fc60034b378d2f8a50193f75d9"></div>
+<div id="altair-viz-54fd5eb6f5984a3799c06cd6a8c66fa4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6daa48fc60034b378d2f8a50193f75d9") {
-      outputDiv = document.getElementById("altair-viz-6daa48fc60034b378d2f8a50193f75d9");
+    if (outputDiv.id !== "altair-viz-54fd5eb6f5984a3799c06cd6a8c66fa4") {
+      outputDiv = document.getElementById("altair-viz-54fd5eb6f5984a3799c06cd6a8c66fa4");
     }
 
     const paths = {
@@ -1313,23 +1313,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-58b5a20484c14bda8cd2be57bcdf0e24.vega-embed {
+  #altair-viz-7c420c29cb82435ebb71fb64141385c7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-58b5a20484c14bda8cd2be57bcdf0e24.vega-embed details,
-  #altair-viz-58b5a20484c14bda8cd2be57bcdf0e24.vega-embed details summary {
+  #altair-viz-7c420c29cb82435ebb71fb64141385c7.vega-embed details,
+  #altair-viz-7c420c29cb82435ebb71fb64141385c7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-58b5a20484c14bda8cd2be57bcdf0e24"></div>
+<div id="altair-viz-7c420c29cb82435ebb71fb64141385c7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-58b5a20484c14bda8cd2be57bcdf0e24") {
-      outputDiv = document.getElementById("altair-viz-58b5a20484c14bda8cd2be57bcdf0e24");
+    if (outputDiv.id !== "altair-viz-7c420c29cb82435ebb71fb64141385c7") {
+      outputDiv = document.getElementById("altair-viz-7c420c29cb82435ebb71fb64141385c7");
     }
 
     const paths = {
@@ -1382,7 +1382,7 @@
 </div>
 </section>
 <section id="customizando-uma-visualizacao">
-<h2><font color="grey">1.8</font> Customizando uma Visualização<a class="headerlink" href="#customizando-uma-visualizacao" title="Link to this heading">#</a></h2>
+<h2>Customizando uma Visualização<a class="headerlink" href="#customizando-uma-visualizacao" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Por padrão, o Pandas e o Vega-Lite fazem algumas escolhas sobre  de propriedades da visualização, mas isso pode ser mudado usando métodos de customização da aparência da visualização. Por exemplo, podemos especificar os títulos dos eixos usando o atributo <code class="docutils literal notranslate"><span class="pre">axis</span></code> (eixo) do canal de classes, podemos modificar as propriedades de escalas usando o atributo  <code class="docutils literal notranslate"><span class="pre">scale</span></code>(escala), e também podemos especificar a cor das marcas pelo atributo <code class="docutils literal notranslate"><span class="pre">color</span></code>(cor) dos métodos do <code class="docutils literal notranslate"><span class="pre">Chart.Mark_*</span></code> de qualquer <a class="reference external" href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">CSS color string</a>:</p>
 <div class="cell docutils container">
@@ -1397,23 +1397,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c8d931445b1c4d66a6ca52d9d7ac6a75.vega-embed {
+  #altair-viz-17137497e662403c90501c0e4c5c3ad3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c8d931445b1c4d66a6ca52d9d7ac6a75.vega-embed details,
-  #altair-viz-c8d931445b1c4d66a6ca52d9d7ac6a75.vega-embed details summary {
+  #altair-viz-17137497e662403c90501c0e4c5c3ad3.vega-embed details,
+  #altair-viz-17137497e662403c90501c0e4c5c3ad3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c8d931445b1c4d66a6ca52d9d7ac6a75"></div>
+<div id="altair-viz-17137497e662403c90501c0e4c5c3ad3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c8d931445b1c4d66a6ca52d9d7ac6a75") {
-      outputDiv = document.getElementById("altair-viz-c8d931445b1c4d66a6ca52d9d7ac6a75");
+    if (outputDiv.id !== "altair-viz-17137497e662403c90501c0e4c5c3ad3") {
+      outputDiv = document.getElementById("altair-viz-17137497e662403c90501c0e4c5c3ad3");
     }
 
     const paths = {
@@ -1467,7 +1467,7 @@
 <p>Um módulo subsequente vai explorar as várias opções disponíveis para as escalas, os eixos e as legendas para criar gráficos customizados.</p>
 </section>
 <section id="multiplas-visualizacoes">
-<h2><font color="grey">1.9</font> Múltiplas Visualizações<a class="headerlink" href="#multiplas-visualizacoes" title="Link to this heading">#</a></h2>
+<h2>Múltiplas Visualizações<a class="headerlink" href="#multiplas-visualizacoes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Como vimos acima, o objeto <code class="docutils literal notranslate"><span class="pre">Chart</span></code>(gráfico) no Altair representa uma plotagem com um único tipo de marca. Mas e para diagramas mais complicados, envolvendo múltiplas camadas ou gráficos? Usando um conjunto de <em>composição de visualização</em>, o Altair pode receber múltiplas definições de gráficos e combinar todas para criar visualizações mais complexas.</p>
 <p>Inicialmente, vamos plotar o conjunto de dados de carros em um gráfico de linha mostrando a média de milhas por litro no ano de fabricação:</p>
@@ -1483,23 +1483,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-f122a25702e3486097e4dbc98d790b03.vega-embed {
+  #altair-viz-576b2552ca07431c82d08d57637e4adc.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f122a25702e3486097e4dbc98d790b03.vega-embed details,
-  #altair-viz-f122a25702e3486097e4dbc98d790b03.vega-embed details summary {
+  #altair-viz-576b2552ca07431c82d08d57637e4adc.vega-embed details,
+  #altair-viz-576b2552ca07431c82d08d57637e4adc.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f122a25702e3486097e4dbc98d790b03"></div>
+<div id="altair-viz-576b2552ca07431c82d08d57637e4adc"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f122a25702e3486097e4dbc98d790b03") {
-      outputDiv = document.getElementById("altair-viz-f122a25702e3486097e4dbc98d790b03");
+    if (outputDiv.id !== "altair-viz-576b2552ca07431c82d08d57637e4adc") {
+      outputDiv = document.getElementById("altair-viz-576b2552ca07431c82d08d57637e4adc");
     }
 
     const paths = {
@@ -1571,23 +1571,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-31250de4af624fb2addf7fc95da560f8.vega-embed {
+  #altair-viz-14f98698fcef430f95ce5af8029b04e4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-31250de4af624fb2addf7fc95da560f8.vega-embed details,
-  #altair-viz-31250de4af624fb2addf7fc95da560f8.vega-embed details summary {
+  #altair-viz-14f98698fcef430f95ce5af8029b04e4.vega-embed details,
+  #altair-viz-14f98698fcef430f95ce5af8029b04e4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-31250de4af624fb2addf7fc95da560f8"></div>
+<div id="altair-viz-14f98698fcef430f95ce5af8029b04e4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-31250de4af624fb2addf7fc95da560f8") {
-      outputDiv = document.getElementById("altair-viz-31250de4af624fb2addf7fc95da560f8");
+    if (outputDiv.id !== "altair-viz-14f98698fcef430f95ce5af8029b04e4") {
+      outputDiv = document.getElementById("altair-viz-14f98698fcef430f95ce5af8029b04e4");
     }
 
     const paths = {
@@ -1653,23 +1653,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6c1b3c590868452fba9ad5f117183403.vega-embed {
+  #altair-viz-cfd44233239d4182878bf354d0d6f5e8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6c1b3c590868452fba9ad5f117183403.vega-embed details,
-  #altair-viz-6c1b3c590868452fba9ad5f117183403.vega-embed details summary {
+  #altair-viz-cfd44233239d4182878bf354d0d6f5e8.vega-embed details,
+  #altair-viz-cfd44233239d4182878bf354d0d6f5e8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6c1b3c590868452fba9ad5f117183403"></div>
+<div id="altair-viz-cfd44233239d4182878bf354d0d6f5e8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6c1b3c590868452fba9ad5f117183403") {
-      outputDiv = document.getElementById("altair-viz-6c1b3c590868452fba9ad5f117183403");
+    if (outputDiv.id !== "altair-viz-cfd44233239d4182878bf354d0d6f5e8") {
+      outputDiv = document.getElementById("altair-viz-cfd44233239d4182878bf354d0d6f5e8");
     }
 
     const paths = {
@@ -1737,23 +1737,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1a6301b29ad140acbb987601d83f0b39.vega-embed {
+  #altair-viz-99800954002c4e7488da50b4e4a5ddc8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1a6301b29ad140acbb987601d83f0b39.vega-embed details,
-  #altair-viz-1a6301b29ad140acbb987601d83f0b39.vega-embed details summary {
+  #altair-viz-99800954002c4e7488da50b4e4a5ddc8.vega-embed details,
+  #altair-viz-99800954002c4e7488da50b4e4a5ddc8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1a6301b29ad140acbb987601d83f0b39"></div>
+<div id="altair-viz-99800954002c4e7488da50b4e4a5ddc8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1a6301b29ad140acbb987601d83f0b39") {
-      outputDiv = document.getElementById("altair-viz-1a6301b29ad140acbb987601d83f0b39");
+    if (outputDiv.id !== "altair-viz-99800954002c4e7488da50b4e4a5ddc8") {
+      outputDiv = document.getElementById("altair-viz-99800954002c4e7488da50b4e4a5ddc8");
     }
 
     const paths = {
@@ -1808,7 +1808,7 @@
 <p>Um próximo capítulo focará na <em>composição de visualizações</em>, incluindo não apenas gerenciamento de camadas e concatenação, mas também o operador <code class="docutils literal notranslate"><span class="pre">facet</span></code> para dividir os dados em sub-plots e o operador <code class="docutils literal notranslate"><span class="pre">repeat</span></code> (repetir) para gerar de forma concisa gráficos concatenados de um template.</p>
 </section>
 <section id="interatividade">
-<h2><font color="grey">1.10</font> Interatividade<a class="headerlink" href="#interatividade" title="Link to this heading">#</a></h2>
+<h2>Interatividade<a class="headerlink" href="#interatividade" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Além da plotagem básica e composição de visualizações, uma das coisas mais legais do Altair e do Vega-Lite é o suporte para as interações.</p>
 <p>Para criar um simples plot interativo que possui funções de movimentação e ampliação, podemos chamar o método <code class="docutils literal notranslate"><span class="pre">interactive()</span></code> do objeto <code class="docutils literal notranslate"><span class="pre">Chart</span></code>. No gráfico abaixo, clique e arraste para <em>movimentar-se</em> e use o scroll do mouse para dar <em>zoom</em>:</p>
@@ -1825,23 +1825,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-d5b2772e7d9442038b255f4da07bd95c.vega-embed {
+  #altair-viz-42d800a6bd894ec596cff83414ccd02c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d5b2772e7d9442038b255f4da07bd95c.vega-embed details,
-  #altair-viz-d5b2772e7d9442038b255f4da07bd95c.vega-embed details summary {
+  #altair-viz-42d800a6bd894ec596cff83414ccd02c.vega-embed details,
+  #altair-viz-42d800a6bd894ec596cff83414ccd02c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d5b2772e7d9442038b255f4da07bd95c"></div>
+<div id="altair-viz-42d800a6bd894ec596cff83414ccd02c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d5b2772e7d9442038b255f4da07bd95c") {
-      outputDiv = document.getElementById("altair-viz-d5b2772e7d9442038b255f4da07bd95c");
+    if (outputDiv.id !== "altair-viz-42d800a6bd894ec596cff83414ccd02c") {
+      outputDiv = document.getElementById("altair-viz-42d800a6bd894ec596cff83414ccd02c");
     }
 
     const paths = {
@@ -1907,23 +1907,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1b952f3e70154a0abd6d8831c0a27cd3.vega-embed {
+  #altair-viz-96e934c1922e4047bc9d8414be96a66d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1b952f3e70154a0abd6d8831c0a27cd3.vega-embed details,
-  #altair-viz-1b952f3e70154a0abd6d8831c0a27cd3.vega-embed details summary {
+  #altair-viz-96e934c1922e4047bc9d8414be96a66d.vega-embed details,
+  #altair-viz-96e934c1922e4047bc9d8414be96a66d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1b952f3e70154a0abd6d8831c0a27cd3"></div>
+<div id="altair-viz-96e934c1922e4047bc9d8414be96a66d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1b952f3e70154a0abd6d8831c0a27cd3") {
-      outputDiv = document.getElementById("altair-viz-1b952f3e70154a0abd6d8831c0a27cd3");
+    if (outputDiv.id !== "altair-viz-96e934c1922e4047bc9d8414be96a66d") {
+      outputDiv = document.getElementById("altair-viz-96e934c1922e4047bc9d8414be96a66d");
     }
 
     const paths = {
@@ -2015,30 +2015,30 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_17920\1543764258.py:15: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_6152\1543764258.py:15: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   ).add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-5f1d0fdb325e4c10a317f9899107d146.vega-embed {
+  #altair-viz-08b0bc11b09543e6ba1b5e5b839dc992.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5f1d0fdb325e4c10a317f9899107d146.vega-embed details,
-  #altair-viz-5f1d0fdb325e4c10a317f9899107d146.vega-embed details summary {
+  #altair-viz-08b0bc11b09543e6ba1b5e5b839dc992.vega-embed details,
+  #altair-viz-08b0bc11b09543e6ba1b5e5b839dc992.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5f1d0fdb325e4c10a317f9899107d146"></div>
+<div id="altair-viz-08b0bc11b09543e6ba1b5e5b839dc992"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5f1d0fdb325e4c10a317f9899107d146") {
-      outputDiv = document.getElementById("altair-viz-5f1d0fdb325e4c10a317f9899107d146");
+    if (outputDiv.id !== "altair-viz-08b0bc11b09543e6ba1b5e5b839dc992") {
+      outputDiv = document.getElementById("altair-viz-08b0bc11b09543e6ba1b5e5b839dc992");
     }
 
     const paths = {
@@ -2091,7 +2091,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </section>
 <section id="alem-dos-graficos-examinando-o-output-json">
-<h2><font color="grey">1.11</font> Além dos gráficos: Examinando o output JSON<a class="headerlink" href="#alem-dos-graficos-examinando-o-output-json" title="Link to this heading">#</a></h2>
+<h2>Além dos gráficos: Examinando o output JSON<a class="headerlink" href="#alem-dos-graficos-examinando-o-output-json" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Como uma API do Python para o Vega-Lite, o propósito principal do Altair é de converter especificações de plotagem em uma string em JSON que funciona nos esquemas do Vega-Lite. Usando o método <code class="docutils literal notranslate"><span class="pre">Chart.to_json</span></code>, podemos inspecionar as especificações do JSON que o Altair está exportando e enviando ao Vega-Lite:</p>
 <div class="cell docutils container">
@@ -2223,7 +2223,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </section>
 <section id="publicando-uma-visualizacao">
-<h2><font color="grey">1.12</font> - Publicando uma visualização<a class="headerlink" href="#publicando-uma-visualizacao" title="Link to this heading">#</a></h2>
+<h2>Publicando uma visualização<a class="headerlink" href="#publicando-uma-visualizacao" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Após visualizar seus dados, talvez você queira publicar eles em algum lugar na internet. Isso pode ser feito de forma rápida usando o <a class="reference external" href="https://github.com/vega/vega-embed">pacote embutido de Javascript dentro do vega</a>.
 Um exemplo simples apenas usando um documento HTML pode ser gerado para qualquer gráfico usando o método <code class="docutils literal notranslate"><span class="pre">Chart.save</span></code>:</p>
@@ -2269,7 +2269,7 @@ Um exemplo simples apenas usando um documento HTML pode ser gerado para qualquer
 <p>O método <code class="docutils literal notranslate"><span class="pre">Chart.save</span></code> nos dá um jeito conveniente de salvar o HTML em um arquivo. Para mais informações sobre incorporar o Altair e/ou o Vega-Lite, veja a <a class="reference external" href="https://github.com/vega/vega-embed">documentação para projetos incorporados no Vega</a>.</p>
 </section>
 <section id="proximos-passos">
-<h2><font color="grey">1.13</font> Próximos passos<a class="headerlink" href="#proximos-passos" title="Link to this heading">#</a></h2>
+<h2>Próximos passos<a class="headerlink" href="#proximos-passos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>🎉 Parabéns, você completou o capítulo de introdução ao Altair! No próximo capítulo, nós vamos explorar a criação de visualizações usando modelos de tipos de dados do Altair, marcas gráficas, e canais gráficos de codificação.</p>
 </section>
@@ -2306,7 +2306,7 @@ Um exemplo simples apenas usando um documento HTML pode ser gerado para qualquer
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="introduction.html"
+       href="intro.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
@@ -2319,7 +2319,7 @@ Um exemplo simples apenas usando um documento HTML pode ser gerado para qualquer
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</p>
+        <p class="prev-next-title">Tipos de dados, marcas gráficas e canais de codificação visual</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2341,21 +2341,21 @@ Um exemplo simples apenas usando um documento HTML pode ser gerado para qualquer
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#importacoes"><font color="gray">1.1</font> Importações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renderizacoes"><font color="gray">1.2</font> Renderizações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados"><font color="gray">1.3</font> Dados</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos"><font color="gray">1.3.1 </font> Dados Meteorológicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renderizacoes">Renderizações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados">Dados</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos">Dados Meteorológicos</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-objeto-grafico"><font color="gray">1.4 </font> O objeto gráfico</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-e-codificacoes"><font color="gray">1.5 </font> Marcas e Codificações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformacao-de-dados-agrupamento"><font color="gray">1.6</font> Transformação de Dados: Agrupamento</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mudando-o-tipo-de-marca"><font color="gray">1.7</font> Mudando o Tipo de Marca</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customizando-uma-visualizacao"><font color="grey">1.8</font> Customizando uma Visualização</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-visualizacoes"><font color="grey">1.9</font> Múltiplas Visualizações</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interatividade"><font color="grey">1.10</font> Interatividade</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alem-dos-graficos-examinando-o-output-json"><font color="grey">1.11</font> Além dos gráficos: Examinando o output JSON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publicando-uma-visualizacao"><font color="grey">1.12</font> - Publicando uma visualização</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proximos-passos"><font color="grey">1.13</font> Próximos passos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#o-objeto-grafico">O objeto gráfico</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-e-codificacoes">Marcas e Codificações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#transformacao-de-dados-agrupamento">Transformação de Dados: Agrupamento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mudando-o-tipo-de-marca">Mudando o Tipo de Marca</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#customizando-uma-visualizacao">Customizando uma Visualização</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#multiplas-visualizacoes">Múltiplas Visualizações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#interatividade">Interatividade</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#alem-dos-graficos-examinando-o-output-json">Além dos gráficos: Examinando o output JSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#publicando-uma-visualizacao">Publicando uma visualização</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#proximos-passos">Próximos passos</a></li>
 </ul>
   </nav></div>
 

@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>4. Escalas, Eixos e Legendas &#8212; My sample book</title>
+    <title>Escalas, Eixos e Legendas &#8212; My sample book</title>
   
   
   
@@ -63,8 +63,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/4_scales';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="5 Composição de Múltiplas Visualizações" href="5_composition.html" />
-    <link rel="prev" title="3. Transformação de dados" href="3_transform.html" />
+    <link rel="next" title="Composição de Múltiplas Visualizações" href="5_compo.html" />
+    <link rel="prev" title="Transformação de dados" href="3_trans.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -135,7 +135,7 @@
     
   
 
-<a class="navbar-brand logo" href="introduction.html">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -163,19 +163,19 @@
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
-                <a class="reference internal" href="introduction.html">
+                <a class="reference internal" href="intro.html">
                     Introdução
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro.html"><font color="gray">1.</font> Introdução ao Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_types.html"><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_transform.html"><font color="gray">3.</font> Transformação de dados</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#"><font color="gray">4.</font> Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_composition.html"><font color="gray">5</font> Composição de Múltiplas Visualizações</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_interaction.html"><font color="gray">6.</font> Interação</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_cartographics.html"><font color="gray">7.</font> Visualização Cartográfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro.html">Introdução ao Altair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_types.html">Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_trans.html">Transformação de dados</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Escalas, Eixos e Legendas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_compo.html">Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_inter.html">Interação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_geo.html">Visualização Cartográfica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Guia de Depuração para Altair</a></li>
 </ul>
 
@@ -390,7 +390,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1><font color="gray">4.</font> Escalas, Eixos e Legendas</h1>
+    <h1>Escalas, Eixos e Legendas</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -400,21 +400,21 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-de-antibioticos"><font color="gray">4.1</font> Dados de antibióticos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-escalas-e-eixos"><font color="gray">4.2</font> Configurando escalas e eixos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala"><font color="gray">4.2.1</font> Plotando resistência anibiótica: ajustagem do tipo de escala</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estilizando-um-eixo"><font color="gray">4.2.2</font> Estilizando um Eixo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento"><font color="gray">4.2.3</font> Comparando antibióticos: Ajustando Linhas de Grade, Contagens de Marcações e Dimensionamento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-de-antibioticos">Dados de antibióticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-escalas-e-eixos">Configurando escalas e eixos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala">Plotando resistência anibiótica: ajustagem do tipo de escala</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estilizando-um-eixo">Estilizando um Eixo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento">Comparando antibióticos: Ajustando Linhas de Grade, Contagens de Marcações e Dimensionamento</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-as-cores-da-legendas"><font color="gray">4.3</font> Configurando as Cores da Legendas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definindo-as-cores-pela-coloracao-de-gram"><font color="gray">4.3.1</font> Definindo as Cores pela Coloração de Gram</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-especie"><font color="gray">4.3.2</font> Cor por Espécie</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-genero"><font color="gray">4.3.3</font> Cor por Gênero</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resistencia-antibiotica-em-cores"><font color="gray">4.3.4</font> Resistência antibiótica em cores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-as-cores-da-legendas">Configurando as Cores da Legendas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definindo-as-cores-pela-coloracao-de-gram">Definindo as Cores pela Coloração de Gram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-especie">Cor por Espécie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-genero">Cor por Gênero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resistencia-antibiotica-em-cores">Resistência antibiótica em cores</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">4.4</font> Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
 </ul>
             </nav>
         </div>
@@ -427,7 +427,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="escalas-eixos-e-legendas">
-<h1><font color="gray">4.</font> Escalas, Eixos e Legendas<a class="headerlink" href="#escalas-eixos-e-legendas" title="Link to this heading">#</a></h1>
+<h1>Escalas, Eixos e Legendas<a class="headerlink" href="#escalas-eixos-e-legendas" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <p>Codificação visual – mapear os dados em variáveis visuais como posição, tamanho, formato ou cor – é o coração pulsante da visualização de dados. O cavalo-potência que de fato protagoniza esse mapeamento é a <em>escala</em>: uma função que toma um valor de dados como <em>input</em> (o <em>domínio</em> da escala) e retorna um valor visual, como a posição de um pixel ou cor RGB, como <em>output</em> (a <em>extensão</em> ou <em>escopo</em> da escala). É claro que uma visualização é inútil se ninguém a entende. Adicionalmemte às marcas gráficas, um gráfico carece de elementos de referência, ou <em>guias</em>, que permite que seus leitores o decodifiquem. Guias como <em>eixos</em> (que expressam escalas de maneira espacial) e <em>legendas</em> (que complementam a informação com cor, tamanho ou formato) são os heróis esquecidos da visualização de dados!</p>
 <p>Nesse capítulo, vamos explorar as opções oferecidas pelo Altair para possibilitar designs customizados de mapeamento de escala, eixo e legendas, através do exemplo da eficácia de antibióticos.</p>
@@ -441,7 +441,7 @@
 </div>
 </div>
 <section id="dados-de-antibioticos">
-<h2><font color="gray">4.1</font> Dados de antibióticos<a class="headerlink" href="#dados-de-antibioticos" title="Link to this heading">#</a></h2>
+<h2>Dados de antibióticos<a class="headerlink" href="#dados-de-antibioticos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Após a segunda guerra mundial, antibióticos foram considerados “drogas milagrosas”, à medida que remediavam com facilidade males antes incuráveis. Para compreender qual droga seria mais eficaz contra cada infecção bacteriana, acumulamos dada acerca da performance dos três antibióticos mais populares em relação a dezesseis bactérias.</p>
 <p>Usaremos um dataset de antibióticos do <a class="reference external" href="https://github.com/vega/vega-datasets">vega-datasets collection</a>. Nos exemplos abaixo, há referência direta do URL para Altair:</p>
@@ -639,10 +639,10 @@
 <p>Enquanto examinamos as diferentes visualizações desse dataset, se pergunte: o que podemos aprender sobre a eficácia relativa dos antibióticos? E sobre as espécies bacterianas com base na sua “resposta imunológica”?</p>
 </section>
 <section id="configurando-escalas-e-eixos">
-<h2><font color="gray">4.2</font> Configurando escalas e eixos<a class="headerlink" href="#configurando-escalas-e-eixos" title="Link to this heading">#</a></h2>
+<h2>Configurando escalas e eixos<a class="headerlink" href="#configurando-escalas-e-eixos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <section id="plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala">
-<h3><font color="gray">4.2.1</font> Plotando resistência anibiótica: ajustagem do tipo de escala<a class="headerlink" href="#plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala" title="Link to this heading">#</a></h3>
+<h3>Plotando resistência anibiótica: ajustagem do tipo de escala<a class="headerlink" href="#plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Comecemos olhando um diagrama de pontos simples para o MIC da Neomicina.</p>
 <div class="cell docutils container">
@@ -656,23 +656,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9ac39dea3fa4458190323899a9bc6305.vega-embed {
+  #altair-viz-72e92879c69f4b198970f8c54e2d4ded.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9ac39dea3fa4458190323899a9bc6305.vega-embed details,
-  #altair-viz-9ac39dea3fa4458190323899a9bc6305.vega-embed details summary {
+  #altair-viz-72e92879c69f4b198970f8c54e2d4ded.vega-embed details,
+  #altair-viz-72e92879c69f4b198970f8c54e2d4ded.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9ac39dea3fa4458190323899a9bc6305"></div>
+<div id="altair-viz-72e92879c69f4b198970f8c54e2d4ded"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9ac39dea3fa4458190323899a9bc6305") {
-      outputDiv = document.getElementById("altair-viz-9ac39dea3fa4458190323899a9bc6305");
+    if (outputDiv.id !== "altair-viz-72e92879c69f4b198970f8c54e2d4ded") {
+      outputDiv = document.getElementById("altair-viz-72e92879c69f4b198970f8c54e2d4ded");
     }
 
     const paths = {
@@ -739,23 +739,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-78f43a9d37be449989c24814a64095f5.vega-embed {
+  #altair-viz-2c938752599045e4b58902b83d9a2e30.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-78f43a9d37be449989c24814a64095f5.vega-embed details,
-  #altair-viz-78f43a9d37be449989c24814a64095f5.vega-embed details summary {
+  #altair-viz-2c938752599045e4b58902b83d9a2e30.vega-embed details,
+  #altair-viz-2c938752599045e4b58902b83d9a2e30.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-78f43a9d37be449989c24814a64095f5"></div>
+<div id="altair-viz-2c938752599045e4b58902b83d9a2e30"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-78f43a9d37be449989c24814a64095f5") {
-      outputDiv = document.getElementById("altair-viz-78f43a9d37be449989c24814a64095f5");
+    if (outputDiv.id !== "altair-viz-2c938752599045e4b58902b83d9a2e30") {
+      outputDiv = document.getElementById("altair-viz-2c938752599045e4b58902b83d9a2e30");
     }
 
     const paths = {
@@ -820,23 +820,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-e4517d5c07f5411bb2e47ac4ffa671d5.vega-embed {
+  #altair-viz-e49b474609784b20bd4e0d011481656d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e4517d5c07f5411bb2e47ac4ffa671d5.vega-embed details,
-  #altair-viz-e4517d5c07f5411bb2e47ac4ffa671d5.vega-embed details summary {
+  #altair-viz-e49b474609784b20bd4e0d011481656d.vega-embed details,
+  #altair-viz-e49b474609784b20bd4e0d011481656d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e4517d5c07f5411bb2e47ac4ffa671d5"></div>
+<div id="altair-viz-e49b474609784b20bd4e0d011481656d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e4517d5c07f5411bb2e47ac4ffa671d5") {
-      outputDiv = document.getElementById("altair-viz-e4517d5c07f5411bb2e47ac4ffa671d5");
+    if (outputDiv.id !== "altair-viz-e49b474609784b20bd4e0d011481656d") {
+      outputDiv = document.getElementById("altair-viz-e49b474609784b20bd4e0d011481656d");
     }
 
     const paths = {
@@ -891,7 +891,7 @@
 <p>Em uma escala linear padrão, uma distância visual (pixel) de 10 unidades pode corresponder a uma <em>adição</em> de 10 unidades no domínio de dados. Uma transformação logarítmica mapeia entre multiplicação e adição, tal que <code class="docutils literal notranslate"><span class="pre">log(u)</span> <span class="pre">+</span> <span class="pre">log(v)</span> <span class="pre">=</span> <span class="pre">log(u*v)</span></code>. Como resultado, em uma escala logarítmica, uma distância visual de 10 unidades corresponde à <em>multiplicação</em> por 10 unidades no domínio de dados, assumindo um logaritmo de base 10. A escala <code class="docutils literal notranslate"><span class="pre">log</span></code> acima usa como padrão o logaritmo de base 10, mas podemos ajustar isso fornecendo um parâmetro <code class="docutils literal notranslate"><span class="pre">base</span></code> para a escala.</p>
 </section>
 <section id="estilizando-um-eixo">
-<h3><font color="gray">4.2.2</font> Estilizando um Eixo<a class="headerlink" href="#estilizando-um-eixo" title="Link to this heading">#</a></h3>
+<h3>Estilizando um Eixo<a class="headerlink" href="#estilizando-um-eixo" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Dosagens mais baixas indicam maior eficácia. No entanto, algumas pessoas podem esperar que valores “melhores” estejam “para cima e para a direita” em um gráfico. Se quisermos atender a esta convenção, podemos inverter o eixo para codificar “eficácia” como uma escala MIC invertida.</p>
 <p>Para fazer isso, podemos definir a propriedade de codificação <code class="docutils literal notranslate"><span class="pre">sort</span></code> como <code class="docutils literal notranslate"><span class="pre">'descending'</span></code>:</p>
@@ -908,23 +908,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4926dd13cbc84d21b5eadc464e93e465.vega-embed {
+  #altair-viz-d4e3b9c4388f4e7090160c1f9421f667.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4926dd13cbc84d21b5eadc464e93e465.vega-embed details,
-  #altair-viz-4926dd13cbc84d21b5eadc464e93e465.vega-embed details summary {
+  #altair-viz-d4e3b9c4388f4e7090160c1f9421f667.vega-embed details,
+  #altair-viz-d4e3b9c4388f4e7090160c1f9421f667.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4926dd13cbc84d21b5eadc464e93e465"></div>
+<div id="altair-viz-d4e3b9c4388f4e7090160c1f9421f667"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4926dd13cbc84d21b5eadc464e93e465") {
-      outputDiv = document.getElementById("altair-viz-4926dd13cbc84d21b5eadc464e93e465");
+    if (outputDiv.id !== "altair-viz-d4e3b9c4388f4e7090160c1f9421f667") {
+      outputDiv = document.getElementById("altair-viz-d4e3b9c4388f4e7090160c1f9421f667");
     }
 
     const paths = {
@@ -991,23 +991,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a2636bf9de354320ba58df4b1ff703cd.vega-embed {
+  #altair-viz-3c693b706c6a4392a70cb2c355c017e1.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a2636bf9de354320ba58df4b1ff703cd.vega-embed details,
-  #altair-viz-a2636bf9de354320ba58df4b1ff703cd.vega-embed details summary {
+  #altair-viz-3c693b706c6a4392a70cb2c355c017e1.vega-embed details,
+  #altair-viz-3c693b706c6a4392a70cb2c355c017e1.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a2636bf9de354320ba58df4b1ff703cd"></div>
+<div id="altair-viz-3c693b706c6a4392a70cb2c355c017e1"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a2636bf9de354320ba58df4b1ff703cd") {
-      outputDiv = document.getElementById("altair-viz-a2636bf9de354320ba58df4b1ff703cd");
+    if (outputDiv.id !== "altair-viz-3c693b706c6a4392a70cb2c355c017e1") {
+      outputDiv = document.getElementById("altair-viz-3c693b706c6a4392a70cb2c355c017e1");
     }
 
     const paths = {
@@ -1075,23 +1075,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-bcee2280385d4190bf8ad07da94453e7.vega-embed {
+  #altair-viz-ba7166e82d5a455ca5996ddf10834a55.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bcee2280385d4190bf8ad07da94453e7.vega-embed details,
-  #altair-viz-bcee2280385d4190bf8ad07da94453e7.vega-embed details summary {
+  #altair-viz-ba7166e82d5a455ca5996ddf10834a55.vega-embed details,
+  #altair-viz-ba7166e82d5a455ca5996ddf10834a55.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bcee2280385d4190bf8ad07da94453e7"></div>
+<div id="altair-viz-ba7166e82d5a455ca5996ddf10834a55"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bcee2280385d4190bf8ad07da94453e7") {
-      outputDiv = document.getElementById("altair-viz-bcee2280385d4190bf8ad07da94453e7");
+    if (outputDiv.id !== "altair-viz-ba7166e82d5a455ca5996ddf10834a55") {
+      outputDiv = document.getElementById("altair-viz-ba7166e82d5a455ca5996ddf10834a55");
     }
 
     const paths = {
@@ -1145,7 +1145,7 @@
 <p>Da mesma forma, o eixo y tem como padrão uma orientação <code class="docutils literal notranslate"><span class="pre">'esquerda'</span></code>, mas pode ser definido como <code class="docutils literal notranslate"><span class="pre">'direita'</span></code>.</p>
 </section>
 <section id="comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento">
-<h3><font color="gray">4.2.3</font> Comparando antibióticos: Ajustando Linhas de Grade, Contagens de Marcações e Dimensionamento<a class="headerlink" href="#comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento" title="Link to this heading">#</a></h3>
+<h3>Comparando antibióticos: Ajustando Linhas de Grade, Contagens de Marcações e Dimensionamento<a class="headerlink" href="#comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p><em>Como a neomicina se compara a outros antibióticos, como estreptomicina e penicilina?</em></p>
 <p>Para começar a responder a essa pergunta, podemos criar gráficos de dispersão (<em>scatter plots</em>) , adicionando uma codificação do eixo y para outro antibiótico que espelhe o design do nosso eixo x para a neomicina.</p>
@@ -1167,23 +1167,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-e08e30afc1e3496b986cf180047ee6a5.vega-embed {
+  #altair-viz-52f780e603e145438f7c9246848d713f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-e08e30afc1e3496b986cf180047ee6a5.vega-embed details,
-  #altair-viz-e08e30afc1e3496b986cf180047ee6a5.vega-embed details summary {
+  #altair-viz-52f780e603e145438f7c9246848d713f.vega-embed details,
+  #altair-viz-52f780e603e145438f7c9246848d713f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-e08e30afc1e3496b986cf180047ee6a5"></div>
+<div id="altair-viz-52f780e603e145438f7c9246848d713f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e08e30afc1e3496b986cf180047ee6a5") {
-      outputDiv = document.getElementById("altair-viz-e08e30afc1e3496b986cf180047ee6a5");
+    if (outputDiv.id !== "altair-viz-52f780e603e145438f7c9246848d713f") {
+      outputDiv = document.getElementById("altair-viz-52f780e603e145438f7c9246848d713f");
     }
 
     const paths = {
@@ -1254,23 +1254,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-2ccad6cb8d5e4723a3cba0a442983813.vega-embed {
+  #altair-viz-15497f9531504f9bbcac9e6bcd34596b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2ccad6cb8d5e4723a3cba0a442983813.vega-embed details,
-  #altair-viz-2ccad6cb8d5e4723a3cba0a442983813.vega-embed details summary {
+  #altair-viz-15497f9531504f9bbcac9e6bcd34596b.vega-embed details,
+  #altair-viz-15497f9531504f9bbcac9e6bcd34596b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2ccad6cb8d5e4723a3cba0a442983813"></div>
+<div id="altair-viz-15497f9531504f9bbcac9e6bcd34596b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2ccad6cb8d5e4723a3cba0a442983813") {
-      outputDiv = document.getElementById("altair-viz-2ccad6cb8d5e4723a3cba0a442983813");
+    if (outputDiv.id !== "altair-viz-15497f9531504f9bbcac9e6bcd34596b") {
+      outputDiv = document.getElementById("altair-viz-15497f9531504f9bbcac9e6bcd34596b");
     }
 
     const paths = {
@@ -1342,23 +1342,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-808d9675727a4c618920ffe1cf0d0282.vega-embed {
+  #altair-viz-2b5da5069e4445bc96222fad4a6b8045.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-808d9675727a4c618920ffe1cf0d0282.vega-embed details,
-  #altair-viz-808d9675727a4c618920ffe1cf0d0282.vega-embed details summary {
+  #altair-viz-2b5da5069e4445bc96222fad4a6b8045.vega-embed details,
+  #altair-viz-2b5da5069e4445bc96222fad4a6b8045.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-808d9675727a4c618920ffe1cf0d0282"></div>
+<div id="altair-viz-2b5da5069e4445bc96222fad4a6b8045"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-808d9675727a4c618920ffe1cf0d0282") {
-      outputDiv = document.getElementById("altair-viz-808d9675727a4c618920ffe1cf0d0282");
+    if (outputDiv.id !== "altair-viz-2b5da5069e4445bc96222fad4a6b8045") {
+      outputDiv = document.getElementById("altair-viz-2b5da5069e4445bc96222fad4a6b8045");
     }
 
     const paths = {
@@ -1432,23 +1432,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-5c0c388e950448229996da84fffcc4d4.vega-embed {
+  #altair-viz-7109636b0fb34211be36e5787f0380c3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-5c0c388e950448229996da84fffcc4d4.vega-embed details,
-  #altair-viz-5c0c388e950448229996da84fffcc4d4.vega-embed details summary {
+  #altair-viz-7109636b0fb34211be36e5787f0380c3.vega-embed details,
+  #altair-viz-7109636b0fb34211be36e5787f0380c3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-5c0c388e950448229996da84fffcc4d4"></div>
+<div id="altair-viz-7109636b0fb34211be36e5787f0380c3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5c0c388e950448229996da84fffcc4d4") {
-      outputDiv = document.getElementById("altair-viz-5c0c388e950448229996da84fffcc4d4");
+    if (outputDiv.id !== "altair-viz-7109636b0fb34211be36e5787f0380c3") {
+      outputDiv = document.getElementById("altair-viz-7109636b0fb34211be36e5787f0380c3");
     }
 
     const paths = {
@@ -1521,23 +1521,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c9499efe9fad4bfda3a157c602cc627a.vega-embed {
+  #altair-viz-9914d42114c448e5943f8285253d0514.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c9499efe9fad4bfda3a157c602cc627a.vega-embed details,
-  #altair-viz-c9499efe9fad4bfda3a157c602cc627a.vega-embed details summary {
+  #altair-viz-9914d42114c448e5943f8285253d0514.vega-embed details,
+  #altair-viz-9914d42114c448e5943f8285253d0514.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c9499efe9fad4bfda3a157c602cc627a"></div>
+<div id="altair-viz-9914d42114c448e5943f8285253d0514"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c9499efe9fad4bfda3a157c602cc627a") {
-      outputDiv = document.getElementById("altair-viz-c9499efe9fad4bfda3a157c602cc627a");
+    if (outputDiv.id !== "altair-viz-9914d42114c448e5943f8285253d0514") {
+      outputDiv = document.getElementById("altair-viz-9914d42114c448e5943f8285253d0514");
     }
 
     const paths = {
@@ -1592,10 +1592,10 @@
 </section>
 </section>
 <section id="configurando-as-cores-da-legendas">
-<h2><font color="gray">4.3</font> Configurando as Cores da Legendas<a class="headerlink" href="#configurando-as-cores-da-legendas" title="Link to this heading">#</a></h2>
+<h2>Configurando as Cores da Legendas<a class="headerlink" href="#configurando-as-cores-da-legendas" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <section id="definindo-as-cores-pela-coloracao-de-gram">
-<h3><font color="gray">4.3.1</font> Definindo as Cores pela Coloração de Gram<a class="headerlink" href="#definindo-as-cores-pela-coloracao-de-gram" title="Link to this heading">#</a></h3>
+<h3>Definindo as Cores pela Coloração de Gram<a class="headerlink" href="#definindo-as-cores-pela-coloracao-de-gram" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p><em>Acima vimos que a neomicina é mais eficaz para algumas bactérias, enquanto a penicilina é mais eficaz para outras. Mas como podemos dizer qual antibiótico usar se não conhecemos as espécies específicas de bactérias? A coloração de Gram serve como um diagnóstico para discriminar classes de bactérias!</em></p>
 <p>Vamos codificar <code class="docutils literal notranslate"><span class="pre">Gram_Staining</span></code> no canal <code class="docutils literal notranslate"><span class="pre">color</span></code> como um tipo de dado nominal:</p>
@@ -1620,23 +1620,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9609d6dc1e814a0ea16f32436cfd423e.vega-embed {
+  #altair-viz-caa21b9eb9b844619373fc9330b79054.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9609d6dc1e814a0ea16f32436cfd423e.vega-embed details,
-  #altair-viz-9609d6dc1e814a0ea16f32436cfd423e.vega-embed details summary {
+  #altair-viz-caa21b9eb9b844619373fc9330b79054.vega-embed details,
+  #altair-viz-caa21b9eb9b844619373fc9330b79054.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9609d6dc1e814a0ea16f32436cfd423e"></div>
+<div id="altair-viz-caa21b9eb9b844619373fc9330b79054"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9609d6dc1e814a0ea16f32436cfd423e") {
-      outputDiv = document.getElementById("altair-viz-9609d6dc1e814a0ea16f32436cfd423e");
+    if (outputDiv.id !== "altair-viz-caa21b9eb9b844619373fc9330b79054") {
+      outputDiv = document.getElementById("altair-viz-caa21b9eb9b844619373fc9330b79054");
     }
 
     const paths = {
@@ -1713,23 +1713,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-03693ffdaad64d76a8eb452c50a5b886.vega-embed {
+  #altair-viz-6ee70122299f4fb8a5773e34895c3371.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-03693ffdaad64d76a8eb452c50a5b886.vega-embed details,
-  #altair-viz-03693ffdaad64d76a8eb452c50a5b886.vega-embed details summary {
+  #altair-viz-6ee70122299f4fb8a5773e34895c3371.vega-embed details,
+  #altair-viz-6ee70122299f4fb8a5773e34895c3371.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-03693ffdaad64d76a8eb452c50a5b886"></div>
+<div id="altair-viz-6ee70122299f4fb8a5773e34895c3371"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-03693ffdaad64d76a8eb452c50a5b886") {
-      outputDiv = document.getElementById("altair-viz-03693ffdaad64d76a8eb452c50a5b886");
+    if (outputDiv.id !== "altair-viz-6ee70122299f4fb8a5773e34895c3371") {
+      outputDiv = document.getElementById("altair-viz-6ee70122299f4fb8a5773e34895c3371");
     }
 
     const paths = {
@@ -1805,23 +1805,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-32d3ff6e8d5743e0adcee8d38b991a73.vega-embed {
+  #altair-viz-57028ca262f04e999a7f9908b418ace7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-32d3ff6e8d5743e0adcee8d38b991a73.vega-embed details,
-  #altair-viz-32d3ff6e8d5743e0adcee8d38b991a73.vega-embed details summary {
+  #altair-viz-57028ca262f04e999a7f9908b418ace7.vega-embed details,
+  #altair-viz-57028ca262f04e999a7f9908b418ace7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-32d3ff6e8d5743e0adcee8d38b991a73"></div>
+<div id="altair-viz-57028ca262f04e999a7f9908b418ace7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-32d3ff6e8d5743e0adcee8d38b991a73") {
-      outputDiv = document.getElementById("altair-viz-32d3ff6e8d5743e0adcee8d38b991a73");
+    if (outputDiv.id !== "altair-viz-57028ca262f04e999a7f9908b418ace7") {
+      outputDiv = document.getElementById("altair-viz-57028ca262f04e999a7f9908b418ace7");
     }
 
     const paths = {
@@ -1897,23 +1897,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-28bd9d09843d4911be29cf242c963e3a.vega-embed {
+  #altair-viz-3bdac8963353432c83e5ba5cb3fbf4ea.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-28bd9d09843d4911be29cf242c963e3a.vega-embed details,
-  #altair-viz-28bd9d09843d4911be29cf242c963e3a.vega-embed details summary {
+  #altair-viz-3bdac8963353432c83e5ba5cb3fbf4ea.vega-embed details,
+  #altair-viz-3bdac8963353432c83e5ba5cb3fbf4ea.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-28bd9d09843d4911be29cf242c963e3a"></div>
+<div id="altair-viz-3bdac8963353432c83e5ba5cb3fbf4ea"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-28bd9d09843d4911be29cf242c963e3a") {
-      outputDiv = document.getElementById("altair-viz-28bd9d09843d4911be29cf242c963e3a");
+    if (outputDiv.id !== "altair-viz-3bdac8963353432c83e5ba5cb3fbf4ea") {
+      outputDiv = document.getElementById("altair-viz-3bdac8963353432c83e5ba5cb3fbf4ea");
     }
 
     const paths = {
@@ -1966,7 +1966,7 @@
 </div>
 </section>
 <section id="cor-por-especie">
-<h3><font color="gray">4.3.2</font> Cor por Espécie<a class="headerlink" href="#cor-por-especie" title="Link to this heading">#</a></h3>
+<h3>Cor por Espécie<a class="headerlink" href="#cor-por-especie" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Até aqui nós consideramos a efetividade dos antibióticos. Vamos mudar de direção e fazer uma pergunta diferente: o que a resposta do antibiótico nos ensina sobre as diferentes espécies de bactéria?</p>
 <p>Para começar, vamos codificar <code class="docutils literal notranslate"><span class="pre">Bacteria</span></code> (um campo de dados nominal) usando o canal <code class="docutils literal notranslate"><span class="pre">color</span></code> (cor):</p>
@@ -1991,23 +1991,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-cdf4bd5dbc4a426889d29ef12bc511d2.vega-embed {
+  #altair-viz-bed1c7a444b94f8cac2e48f4e82b0e14.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-cdf4bd5dbc4a426889d29ef12bc511d2.vega-embed details,
-  #altair-viz-cdf4bd5dbc4a426889d29ef12bc511d2.vega-embed details summary {
+  #altair-viz-bed1c7a444b94f8cac2e48f4e82b0e14.vega-embed details,
+  #altair-viz-bed1c7a444b94f8cac2e48f4e82b0e14.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-cdf4bd5dbc4a426889d29ef12bc511d2"></div>
+<div id="altair-viz-bed1c7a444b94f8cac2e48f4e82b0e14"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-cdf4bd5dbc4a426889d29ef12bc511d2") {
-      outputDiv = document.getElementById("altair-viz-cdf4bd5dbc4a426889d29ef12bc511d2");
+    if (outputDiv.id !== "altair-viz-bed1c7a444b94f8cac2e48f4e82b0e14") {
+      outputDiv = document.getElementById("altair-viz-bed1c7a444b94f8cac2e48f4e82b0e14");
     }
 
     const paths = {
@@ -2083,23 +2083,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-96da45f7faa3405db40c5c3a5e943a3b.vega-embed {
+  #altair-viz-a7205beef53c4f81a565dae3bccee516.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-96da45f7faa3405db40c5c3a5e943a3b.vega-embed details,
-  #altair-viz-96da45f7faa3405db40c5c3a5e943a3b.vega-embed details summary {
+  #altair-viz-a7205beef53c4f81a565dae3bccee516.vega-embed details,
+  #altair-viz-a7205beef53c4f81a565dae3bccee516.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-96da45f7faa3405db40c5c3a5e943a3b"></div>
+<div id="altair-viz-a7205beef53c4f81a565dae3bccee516"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-96da45f7faa3405db40c5c3a5e943a3b") {
-      outputDiv = document.getElementById("altair-viz-96da45f7faa3405db40c5c3a5e943a3b");
+    if (outputDiv.id !== "altair-viz-a7205beef53c4f81a565dae3bccee516") {
+      outputDiv = document.getElementById("altair-viz-a7205beef53c4f81a565dae3bccee516");
     }
 
     const paths = {
@@ -2173,23 +2173,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-3096b956753f461bb43a1278b4b24823.vega-embed {
+  #altair-viz-7d76c4bed124461580dae01413d68552.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3096b956753f461bb43a1278b4b24823.vega-embed details,
-  #altair-viz-3096b956753f461bb43a1278b4b24823.vega-embed details summary {
+  #altair-viz-7d76c4bed124461580dae01413d68552.vega-embed details,
+  #altair-viz-7d76c4bed124461580dae01413d68552.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3096b956753f461bb43a1278b4b24823"></div>
+<div id="altair-viz-7d76c4bed124461580dae01413d68552"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3096b956753f461bb43a1278b4b24823") {
-      outputDiv = document.getElementById("altair-viz-3096b956753f461bb43a1278b4b24823");
+    if (outputDiv.id !== "altair-viz-7d76c4bed124461580dae01413d68552") {
+      outputDiv = document.getElementById("altair-viz-7d76c4bed124461580dae01413d68552");
     }
 
     const paths = {
@@ -2264,23 +2264,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a449210ff0774928a25ee056368d90d0.vega-embed {
+  #altair-viz-f5c7a887bcac4fe0adefb1f92ba0ffc4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a449210ff0774928a25ee056368d90d0.vega-embed details,
-  #altair-viz-a449210ff0774928a25ee056368d90d0.vega-embed details summary {
+  #altair-viz-f5c7a887bcac4fe0adefb1f92ba0ffc4.vega-embed details,
+  #altair-viz-f5c7a887bcac4fe0adefb1f92ba0ffc4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a449210ff0774928a25ee056368d90d0"></div>
+<div id="altair-viz-f5c7a887bcac4fe0adefb1f92ba0ffc4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a449210ff0774928a25ee056368d90d0") {
-      outputDiv = document.getElementById("altair-viz-a449210ff0774928a25ee056368d90d0");
+    if (outputDiv.id !== "altair-viz-f5c7a887bcac4fe0adefb1f92ba0ffc4") {
+      outputDiv = document.getElementById("altair-viz-f5c7a887bcac4fe0adefb1f92ba0ffc4");
     }
 
     const paths = {
@@ -2334,7 +2334,7 @@
 <p><em>Bacterias do mesmo gênero agora têm cores mais similares que antes, mas o gráfico segue confuso. Há muitas cores, são difíceis de procurar com precisão na legenda, e duas bactérias podem ter cores similares mas gêneros diferentes.</em></p>
 </section>
 <section id="cor-por-genero">
-<h3><font color="gray">4.3.3</font> Cor por Gênero<a class="headerlink" href="#cor-por-genero" title="Link to this heading">#</a></h3>
+<h3>Cor por Gênero<a class="headerlink" href="#cor-por-genero" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Vamos tentar colorir por gênero em vez de bactéria. Para isso, nós vamos adicionar uma transformação <code class="docutils literal notranslate"><span class="pre">calculate</span></code> que separa o nome da bactéria através dos caracteres de espaço e toma a primeira palavra do vetor resultante. Nós podemos então codificar o campo <code class="docutils literal notranslate"><span class="pre">Genus</span></code> resultante usando o esquema de cor <code class="docutils literal notranslate"><span class="pre">tableau20</span></code>.</p>
 <p>(Note que a base de dados dos antibióticos inclui um campo <code class="docutils literal notranslate"><span class="pre">Genus</span></code> pré-calculado, mas nós vamos ignorar isto aqui em favor de explorar as transformações de dados do Altair.)</p>
@@ -2362,23 +2362,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9b63161eba78478dac80d2d9ec3a527f.vega-embed {
+  #altair-viz-b9fe61107ccf4feab5298ea0ba6d9433.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9b63161eba78478dac80d2d9ec3a527f.vega-embed details,
-  #altair-viz-9b63161eba78478dac80d2d9ec3a527f.vega-embed details summary {
+  #altair-viz-b9fe61107ccf4feab5298ea0ba6d9433.vega-embed details,
+  #altair-viz-b9fe61107ccf4feab5298ea0ba6d9433.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9b63161eba78478dac80d2d9ec3a527f"></div>
+<div id="altair-viz-b9fe61107ccf4feab5298ea0ba6d9433"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9b63161eba78478dac80d2d9ec3a527f") {
-      outputDiv = document.getElementById("altair-viz-9b63161eba78478dac80d2d9ec3a527f");
+    if (outputDiv.id !== "altair-viz-b9fe61107ccf4feab5298ea0ba6d9433") {
+      outputDiv = document.getElementById("altair-viz-b9fe61107ccf4feab5298ea0ba6d9433");
     }
 
     const paths = {
@@ -2462,23 +2462,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4a0ce90025d14eec9552e173dc789970.vega-embed {
+  #altair-viz-778b158c39e04513ae477fa590af7b26.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4a0ce90025d14eec9552e173dc789970.vega-embed details,
-  #altair-viz-4a0ce90025d14eec9552e173dc789970.vega-embed details summary {
+  #altair-viz-778b158c39e04513ae477fa590af7b26.vega-embed details,
+  #altair-viz-778b158c39e04513ae477fa590af7b26.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4a0ce90025d14eec9552e173dc789970"></div>
+<div id="altair-viz-778b158c39e04513ae477fa590af7b26"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4a0ce90025d14eec9552e173dc789970") {
-      outputDiv = document.getElementById("altair-viz-4a0ce90025d14eec9552e173dc789970");
+    if (outputDiv.id !== "altair-viz-778b158c39e04513ae477fa590af7b26") {
+      outputDiv = document.getElementById("altair-viz-778b158c39e04513ae477fa590af7b26");
     }
 
     const paths = {
@@ -2536,7 +2536,7 @@
 <p>Este exemplo também reforça uma lição importante: <em><strong>seja sempre cético em relação aos seus dados!</strong></em></p>
 </section>
 <section id="resistencia-antibiotica-em-cores">
-<h3><font color="gray">4.3.4</font> Resistência antibiótica em cores<a class="headerlink" href="#resistencia-antibiotica-em-cores" title="Link to this heading">#</a></h3>
+<h3>Resistência antibiótica em cores<a class="headerlink" href="#resistencia-antibiotica-em-cores" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Podemos também usar o canal <code class="docutils literal notranslate"><span class="pre">color</span></code> (cor) para codificar valores quantitativos. No entanto, tenha em mente que a cor normalmente não mostra quantidades de forma tão eficaz quanto codificações de posição ou tamanho!</p>
 <p>Abaixo está um mapa de calor básico dos valores de CIM de penicilina para cada bactéria. Vamos utilizar a marca <code class="docutils literal notranslate"><span class="pre">rect</span></code>(retângulo) e ordenar as bactérias em ordem decrescente de valores em CIM (da mais resistente para a menos resistente).</p>
@@ -2554,23 +2554,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-3c8535d37b9545b094837f3a94b08a4a.vega-embed {
+  #altair-viz-78769c8c26bf4197aa1f8edcac7dddb1.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-3c8535d37b9545b094837f3a94b08a4a.vega-embed details,
-  #altair-viz-3c8535d37b9545b094837f3a94b08a4a.vega-embed details summary {
+  #altair-viz-78769c8c26bf4197aa1f8edcac7dddb1.vega-embed details,
+  #altair-viz-78769c8c26bf4197aa1f8edcac7dddb1.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-3c8535d37b9545b094837f3a94b08a4a"></div>
+<div id="altair-viz-78769c8c26bf4197aa1f8edcac7dddb1"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-3c8535d37b9545b094837f3a94b08a4a") {
-      outputDiv = document.getElementById("altair-viz-3c8535d37b9545b094837f3a94b08a4a");
+    if (outputDiv.id !== "altair-viz-78769c8c26bf4197aa1f8edcac7dddb1") {
+      outputDiv = document.getElementById("altair-viz-78769c8c26bf4197aa1f8edcac7dddb1");
     }
 
     const paths = {
@@ -2647,23 +2647,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7c614853f112495ba3ba82885c8094f7.vega-embed {
+  #altair-viz-2d2100b230ef48b195defd52942dba48.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7c614853f112495ba3ba82885c8094f7.vega-embed details,
-  #altair-viz-7c614853f112495ba3ba82885c8094f7.vega-embed details summary {
+  #altair-viz-2d2100b230ef48b195defd52942dba48.vega-embed details,
+  #altair-viz-2d2100b230ef48b195defd52942dba48.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7c614853f112495ba3ba82885c8094f7"></div>
+<div id="altair-viz-2d2100b230ef48b195defd52942dba48"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7c614853f112495ba3ba82885c8094f7") {
-      outputDiv = document.getElementById("altair-viz-7c614853f112495ba3ba82885c8094f7");
+    if (outputDiv.id !== "altair-viz-2d2100b230ef48b195defd52942dba48") {
+      outputDiv = document.getElementById("altair-viz-2d2100b230ef48b195defd52942dba48");
     }
 
     const paths = {
@@ -2745,7 +2745,7 @@
 </section>
 </section>
 <section id="resumo">
-<h2><font color="gray">4.4</font> Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
+<h2>Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Juntando tudo o que aprendemos nesses capítulos sobre codificações, transformação de dados e customização, você está apto a realizar uma grande variedade de gráficos estatísticos. Agora você pode usar o Altair no dia a dia para explorar e comunicar dados!</p>
 <p>Interessado em aprender mais sobre este assunto?</p>
@@ -2789,20 +2789,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="3_transform.html"
+       href="3_trans.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title"><font color="gray">3.</font> Transformação de dados</p>
+        <p class="prev-next-title">Transformação de dados</p>
       </div>
     </a>
     <a class="right-next"
-       href="5_composition.html"
+       href="5_compo.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title"><font color="gray">5</font> Composição de Múltiplas Visualizações</p>
+        <p class="prev-next-title">Composição de Múltiplas Visualizações</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2823,21 +2823,21 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-de-antibioticos"><font color="gray">4.1</font> Dados de antibióticos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-escalas-e-eixos"><font color="gray">4.2</font> Configurando escalas e eixos</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala"><font color="gray">4.2.1</font> Plotando resistência anibiótica: ajustagem do tipo de escala</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estilizando-um-eixo"><font color="gray">4.2.2</font> Estilizando um Eixo</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento"><font color="gray">4.2.3</font> Comparando antibióticos: Ajustando Linhas de Grade, Contagens de Marcações e Dimensionamento</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-de-antibioticos">Dados de antibióticos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-escalas-e-eixos">Configurando escalas e eixos</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#plotando-resistencia-anibiotica-ajustagem-do-tipo-de-escala">Plotando resistência anibiótica: ajustagem do tipo de escala</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#estilizando-um-eixo">Estilizando um Eixo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#comparando-antibioticos-ajustando-linhas-de-grade-contagens-de-marcacoes-e-dimensionamento">Comparando antibióticos: Ajustando Linhas de Grade, Contagens de Marcações e Dimensionamento</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-as-cores-da-legendas"><font color="gray">4.3</font> Configurando as Cores da Legendas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definindo-as-cores-pela-coloracao-de-gram"><font color="gray">4.3.1</font> Definindo as Cores pela Coloração de Gram</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-especie"><font color="gray">4.3.2</font> Cor por Espécie</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-genero"><font color="gray">4.3.3</font> Cor por Gênero</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resistencia-antibiotica-em-cores"><font color="gray">4.3.4</font> Resistência antibiótica em cores</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configurando-as-cores-da-legendas">Configurando as Cores da Legendas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definindo-as-cores-pela-coloracao-de-gram">Definindo as Cores pela Coloração de Gram</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-especie">Cor por Espécie</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cor-por-genero">Cor por Gênero</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resistencia-antibiotica-em-cores">Resistência antibiótica em cores</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">4.4</font> Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
 </ul>
   </nav></div>
 
