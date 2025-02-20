@@ -400,17 +400,17 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson"><font color="gray">7.1</font> Dados Geográficos: GeoJSON e TopoJSON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-geoforma"><font color="gray">7.2</font> Marcas de Geoforma</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos"><font color="gray">7.3</font> Mapas de Pontos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-simbolos"><font color="gray">7.4</font> Mapas de Símbolos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-coropletico"><font color="gray">7.5</font> Mapa Coroplético</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecoes-cartograficas"><font color="gray">7.6</font> Projeções Cartográficas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#um-tour-pelos-tipos-especificos-de-projecoes"><font color="gray">7.6.1 </font> Um Tour pelos Tipos Específicos de Projeções</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson">Dados Geográficos: GeoJSON e TopoJSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-geoforma">Marcas de Geoforma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos">Mapas de Pontos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-simbolos">Mapas de Símbolos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-coropletico">Mapa Coroplético</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecoes-cartograficas">Projeções Cartográficas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#um-tour-pelos-tipos-especificos-de-projecoes">Um Tour pelos Tipos Específicos de Projeções</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamento-de-dados-geograficos"><font color="gray">7.7</font> Tratamento de Dados Geográficos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">7.8</font> Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamento-de-dados-geograficos">Tratamento de Dados Geográficos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
 </ul>
             </nav>
         </div>
@@ -447,7 +447,7 @@
 </div>
 </div>
 <section id="dados-geograficos-geojson-e-topojson">
-<h2><font color="gray">7.1</font> Dados Geográficos: GeoJSON e TopoJSON<a class="headerlink" href="#dados-geograficos-geojson-e-topojson" title="Link to this heading">#</a></h2>
+<h2>Dados Geográficos: GeoJSON e TopoJSON<a class="headerlink" href="#dados-geograficos-geojson-e-topojson" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Até esse ponto, trabalhamos com datasets formatados em JSON e CSV, que correspondem a tabelas de dados feitas de linhas (registros) e colunas (campos). Com o objetivo de representar regiões geográficas (países, estados, <em>etc.</em>) e trajetórias (rotas de voo, linhas de metrô, <em>etc.</em>), precisamos  expandir nosso repertório com formatos adicionais projetados para suportar geometrias ricas.</p>
 <p>O <a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON</a> modela recursos geográficos com umformato JSON especializado. Um <code class="docutils literal notranslate"><span class="pre">feature</span></code> GeoJSON pode incluir dados geométricos – tal como coordenadas de <code class="docutils literal notranslate"><span class="pre">longitude</span></code> e <code class="docutils literal notranslate"><span class="pre">latitude</span></code>, que constituem a fronteira de um país – assim como atributos de dados adicionais.</p>
@@ -566,7 +566,7 @@
 <p>Agora que podemos carregar dados geográficos, estamos prontos para começar a fazer mapas!</p>
 </section>
 <section id="marcas-de-geoforma">
-<h2><font color="gray">7.2</font> Marcas de Geoforma<a class="headerlink" href="#marcas-de-geoforma" title="Link to this heading">#</a></h2>
+<h2>Marcas de Geoforma<a class="headerlink" href="#marcas-de-geoforma" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Para visualizar dados geográficos, o Altair fornece o tipo de marca <code class="docutils literal notranslate"><span class="pre">geoshape</span></code>. Para criar um mapa básico, podemos criar uma marca <code class="docutils literal notranslate"><span class="pre">geoshape</span></code> e passar nossos dados TopoJSON, que são então desembrulhados em recursos GeoJSON, um para cada país do mundo:</p>
 <div class="cell docutils container">
@@ -578,23 +578,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-71d29cc9d4f34b718c0194c3a4b12cac.vega-embed {
+  #altair-viz-645c65eb7aa241e58d99c14eba31713d.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-71d29cc9d4f34b718c0194c3a4b12cac.vega-embed details,
-  #altair-viz-71d29cc9d4f34b718c0194c3a4b12cac.vega-embed details summary {
+  #altair-viz-645c65eb7aa241e58d99c14eba31713d.vega-embed details,
+  #altair-viz-645c65eb7aa241e58d99c14eba31713d.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-71d29cc9d4f34b718c0194c3a4b12cac"></div>
+<div id="altair-viz-645c65eb7aa241e58d99c14eba31713d"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-71d29cc9d4f34b718c0194c3a4b12cac") {
-      outputDiv = document.getElementById("altair-viz-71d29cc9d4f34b718c0194c3a4b12cac");
+    if (outputDiv.id !== "altair-viz-645c65eb7aa241e58d99c14eba31713d") {
+      outputDiv = document.getElementById("altair-viz-645c65eb7aa241e58d99c14eba31713d");
     }
 
     const paths = {
@@ -659,23 +659,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4a608e0f13ec48a4b3ed3d0cfe4d5a34.vega-embed {
+  #altair-viz-31b9ead411e34392ba50d2e21a77dcd7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4a608e0f13ec48a4b3ed3d0cfe4d5a34.vega-embed details,
-  #altair-viz-4a608e0f13ec48a4b3ed3d0cfe4d5a34.vega-embed details summary {
+  #altair-viz-31b9ead411e34392ba50d2e21a77dcd7.vega-embed details,
+  #altair-viz-31b9ead411e34392ba50d2e21a77dcd7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4a608e0f13ec48a4b3ed3d0cfe4d5a34"></div>
+<div id="altair-viz-31b9ead411e34392ba50d2e21a77dcd7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4a608e0f13ec48a4b3ed3d0cfe4d5a34") {
-      outputDiv = document.getElementById("altair-viz-4a608e0f13ec48a4b3ed3d0cfe4d5a34");
+    if (outputDiv.id !== "altair-viz-31b9ead411e34392ba50d2e21a77dcd7") {
+      outputDiv = document.getElementById("altair-viz-31b9ead411e34392ba50d2e21a77dcd7");
     }
 
     const paths = {
@@ -740,23 +740,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-77aaac82442148059a8c7b9c646ca863.vega-embed {
+  #altair-viz-33646b99cb564c929fd5452231121826.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-77aaac82442148059a8c7b9c646ca863.vega-embed details,
-  #altair-viz-77aaac82442148059a8c7b9c646ca863.vega-embed details summary {
+  #altair-viz-33646b99cb564c929fd5452231121826.vega-embed details,
+  #altair-viz-33646b99cb564c929fd5452231121826.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-77aaac82442148059a8c7b9c646ca863"></div>
+<div id="altair-viz-33646b99cb564c929fd5452231121826"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-77aaac82442148059a8c7b9c646ca863") {
-      outputDiv = document.getElementById("altair-viz-77aaac82442148059a8c7b9c646ca863");
+    if (outputDiv.id !== "altair-viz-33646b99cb564c929fd5452231121826") {
+      outputDiv = document.getElementById("altair-viz-33646b99cb564c929fd5452231121826");
     }
 
     const paths = {
@@ -849,23 +849,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-25d1f3784c2b44619398670f1facbe83.vega-embed {
+  #altair-viz-b5f1678147224304b57cadd2d81621af.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-25d1f3784c2b44619398670f1facbe83.vega-embed details,
-  #altair-viz-25d1f3784c2b44619398670f1facbe83.vega-embed details summary {
+  #altair-viz-b5f1678147224304b57cadd2d81621af.vega-embed details,
+  #altair-viz-b5f1678147224304b57cadd2d81621af.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-25d1f3784c2b44619398670f1facbe83"></div>
+<div id="altair-viz-b5f1678147224304b57cadd2d81621af"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-25d1f3784c2b44619398670f1facbe83") {
-      outputDiv = document.getElementById("altair-viz-25d1f3784c2b44619398670f1facbe83");
+    if (outputDiv.id !== "altair-viz-b5f1678147224304b57cadd2d81621af") {
+      outputDiv = document.getElementById("altair-viz-b5f1678147224304b57cadd2d81621af");
     }
 
     const paths = {
@@ -918,7 +918,7 @@
 </div>
 </section>
 <section id="mapas-de-pontos">
-<h2><font color="gray">7.3</font> Mapas de Pontos<a class="headerlink" href="#mapas-de-pontos" title="Link to this heading">#</a></h2>
+<h2>Mapas de Pontos<a class="headerlink" href="#mapas-de-pontos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Em adição aos dados <em>geometric</em> fornecidos pelo GeoJSON ou TopoJSON, muitos datasets tabulares incluem informação geográfica na forma das coordenadas nos campos <code class="docutils literal notranslate"><span class="pre">longitude</span></code> e <code class="docutils literal notranslate"><span class="pre">latitude</span></code>, ou referencia regiões geográficas como nomes de países, estados, códigos postais, <em>etc</em>, que podem ser mapeados para coordenadas usando <a class="reference external" href="https://en.wikipedia.org/wiki/Address_geocoding">Address geocoding</a>. Em alguns casos, os dados de localização são ricos o suficientes para ver padrões significativos ao projetar os pontos sozinhos - Nenhum mapa base é necessário!</p>
 <p>Vamos dar uma olhada no dataset de códigos postais de 5 dígitos dos EUA, incluindo as coordenadas <code class="docutils literal notranslate"><span class="pre">longitude</span></code>, <code class="docutils literal notranslate"><span class="pre">latitude</span></code> para cada agência de correios em adição ao campo <code class="docutils literal notranslate"><span class="pre">.longitudelatitudezip_code</span></code></p>
@@ -1021,7 +1021,7 @@
 <p><em>Remova o filtro acima para ver o que acontece!</em></p>
 </section>
 <section id="mapas-de-simbolos">
-<h2><font color="gray">7.4</font> Mapas de Símbolos<a class="headerlink" href="#mapas-de-simbolos" title="Link to this heading">#</a></h2>
+<h2>Mapas de Símbolos<a class="headerlink" href="#mapas-de-simbolos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Agora, vamos combinar um mapa base com os dados visualizados como camadas diferentes. Examinaremos o networking dos voôs comerciais nos Estados Unidos, considerando tanto os aeroportos como as rotas dos voôs. Para fazermos isso, precisaremos de três conjuntos de dados diferentes. Para nosso mapa base, usaremos um arquivo do tipo TopoJSON para os Estados Unidos numa resolução de 10m, contendo dados para estados (<code class="docutils literal notranslate"><span class="pre">states</span></code>) e municípios (<code class="docutils literal notranslate"><span class="pre">counties</span></code>):</p>
 <div class="cell docutils container">
@@ -1186,7 +1186,7 @@
 <p>Passe o mouse sobre o mapa para explorar a rede de voos!</p>
 </section>
 <section id="mapa-coropletico">
-<h2><font color="gray">7.5</font> Mapa Coroplético<a class="headerlink" href="#mapa-coropletico" title="Link to this heading">#</a></h2>
+<h2>Mapa Coroplético<a class="headerlink" href="#mapa-coropletico" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Um <a class="reference external" href="https://pt.wikipedia.org/wiki/Mapa_coropl%C3%A9tico">mapa coroplético</a> usa regiões sombreadas ou texturizadas para visualizar valores de dados. Mapas com símbolos dimensionados costumam ser mais precisos para leitura, pois as pessoas tendem a estimar melhor as diferenças proporcionais entre as áreas de círculos do que entre tonalidades de cores. No entanto, os mapas coropléticos são populares na prática e particularmente úteis quando muitos símbolos tornam-se perceptivamente excessivos.</p>
 <p>Por exemplo, embora os Estados Unidos tem apenas 50 estados, há milhares de condados dentro desses estados. Vamos construir um mapa coroplético da taxa de desemprego por condado, no ano da recessão de 2008. Em alguns casos, os arquivos de entrada GeoJSON ou TopoJSON podem incluir dados estatísticos que podemos visualizar diretamente. Neste caso, no entanto, temos dois arquivos: nosso arquivo TopoJSON, que inclui os limites dos condados (<code class="docutils literal notranslate"><span class="pre">usa</span></code>), e um arquivo de texto separado que contém as estatísticas de desemprego.</p>
@@ -1249,7 +1249,7 @@
 <p><em>Quais esquemas de cores você considera mais eficaz? Por que isso pode acontecer? Modifique os mapas acima para usar outros esquemas disponíveis, conforme descrito na <a class="reference external" href="https://vega.github.io/vega/docs/schemes/">documentação dos Esquemas de Cores do Vega</a>.</em></p>
 </section>
 <section id="projecoes-cartograficas">
-<h2><font color="gray">7.6</font> Projeções Cartográficas<a class="headerlink" href="#projecoes-cartograficas" title="Link to this heading">#</a></h2>
+<h2>Projeções Cartográficas<a class="headerlink" href="#projecoes-cartograficas" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Agora que temos alguma experiência na criação de mapas, vamos analisar mais de perto as projeções cartográficas. Conforme explicado pela <a class="reference external" href="https://pt.wikipedia.org/wiki/Proje%C3%A7%C3%A3o_cartogr%C3%A1fica">Wikipédia</a>.</p>
 <blockquote>
@@ -1266,7 +1266,7 @@
 <p>Também podemos caracterizar as projeções com base na <em>superfície de projeção</em>. As projeções cilíndricas, por exemplo, projetam os pontos da superfície da esfera em um cilindro circundante; ao “desenrolar” o cilindro obtemos o nosso mapa. Como descreveremos a seguir, podemos alternativamente projetar sobre a superfície de um cone (projeções cônicas) ou diretamente em um plano plano (projeções azimutais).</p>
 <p><em>Vamos primeiro desenvolver nossa intuição interagindo com uma variedade de projeções! <a class="reference external" href="https://observablehq.com/&#64;vega/vega-lite-cartographic-projections">Abra o notebook online de Projeções Cartográficas do Vega-Lite</a>. Use os controles nessa página para selecionar uma projeção e explorar seus parâmetros, como <code class="docutils literal notranslate"><span class="pre">scale</span></code> (escala ou zoom) e translação x/y (panorâmica). Os controles de rotação (<a class="reference external" href="https://pt.wikipedia.org/wiki/Eixos_do_avi%C3%A3o">eixo lateral, longitudinal e vertical</a>) determinam a orientação do globo em relação à superfície sobre a qual está sendo projetado.</em></p>
 <section id="um-tour-pelos-tipos-especificos-de-projecoes">
-<h3><font color="gray">7.6.1 </font> Um Tour pelos Tipos Específicos de Projeções<a class="headerlink" href="#um-tour-pelos-tipos-especificos-de-projecoes" title="Link to this heading">#</a></h3>
+<h3>Um Tour pelos Tipos Específicos de Projeções<a class="headerlink" href="#um-tour-pelos-tipos-especificos-de-projecoes" title="Link to this heading">#</a></h3>
 <p>As <a class="reference external" href="https://jjallaire.github.io/visualization-curriculum/altair_cartographic.html">projeções cilíndricas</a> mapeiam a esfera para um cilindro circundante e, em seguida, “desenrolam” o cilindro. Se o eixo principal do cilindro estiver orientado no sentido norte-sul, os meridianos são mapeados como linhas retas. As projeções <a class="reference external" href="https://en.wikipedia.org/wiki/Map_projection#Pseudocylindrical">pseudo-cilíndricas</a> representam um meridiano central como uma linha reta, com outros meridianos “curvando-se” para longe do centro.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1334,7 +1334,7 @@
 </section>
 </section>
 <section id="tratamento-de-dados-geograficos">
-<h2><font color="gray">7.7</font> Tratamento de Dados Geográficos<a class="headerlink" href="#tratamento-de-dados-geograficos" title="Link to this heading">#</a></h2>
+<h2>Tratamento de Dados Geográficos<a class="headerlink" href="#tratamento-de-dados-geograficos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Os exemplos acima são todos retirados da coleção vega-datasets, incluindo dados geométricos (TopoJSON) e tabulares (aeroportos, taxas de desemprego). Um desafio comum para começar com visualização geográfica é coletar os dados necessários para sua tarefa. Existem vários provedores de dados, incluindo serviços como o <a class="reference external" href="https://www.usgs.gov/products/data-and-tools/data-and-tools-topics">United States Geological Survey</a> e o <a class="reference external" href="https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html">U.S. Census Bureau</a>.</p>
 <p>Em muitos casos, você pode já ter dados existentes com um componente geográfico, mas precisar de medidas ou geometria adicionais. Para ajudar você a começar, aqui está um fluxo de trabalho:</p>
@@ -1346,7 +1346,7 @@
 <p>Claro, muitas outras ferramentas – tanto de código aberto quanto proprietárias – existem para trabalhar com dados geográficos. Para mais informações sobre tratamento de dados geográficos e criação de mapas, veja a série de tutoriais de Mike Bostock sobre <a class="reference external" href="https://medium.com/&#64;mbostock/command-line-cartography-part-1-897aa8f8ca2c">Command-Line Cartography</a>.</p>
 </section>
 <section id="resumo">
-<h2><font color="gray">7.8</font> Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
+<h2>Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Neste ponto, nós apenas começamos a explorar o universo da criação de mapas.(Você não esperava que um único capítulo transmitisse séculos de aprendizado, né?) Por exemplo, deixamos de lado tópicos como <a class="reference external" href="https://en.wikipedia.org/wiki/Cartogram"><em>cartogramas</em></a> e a representação de <a class="reference external" href="https://en.wikipedia.org/wiki/Topography"><em>topografia</em></a> — como no livro esclarecedor de Imhof, <a class="reference external" href="https://books.google.com/books?id=cVy1Ms43fFYC"><em>Cartographic Relief Presentation</em></a>. No entanto, agora você deve estar bem equipado para criar uma rica variedade de geo-visualizações. Para mais informações, o livro de MacEachren <a class="reference external" href="https://books.google.com/books?id=xhAvN3B0CkUC"><em>How Maps Work: Representation, Visualization, and Design</em></a> oferece uma visão valiosa sobre a criação de mapas sob a perspectiva da visualização de dados.</p>
 </section>
@@ -1417,17 +1417,17 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson"><font color="gray">7.1</font> Dados Geográficos: GeoJSON e TopoJSON</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-geoforma"><font color="gray">7.2</font> Marcas de Geoforma</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos"><font color="gray">7.3</font> Mapas de Pontos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-simbolos"><font color="gray">7.4</font> Mapas de Símbolos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-coropletico"><font color="gray">7.5</font> Mapa Coroplético</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecoes-cartograficas"><font color="gray">7.6</font> Projeções Cartográficas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#um-tour-pelos-tipos-especificos-de-projecoes"><font color="gray">7.6.1 </font> Um Tour pelos Tipos Específicos de Projeções</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson">Dados Geográficos: GeoJSON e TopoJSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-geoforma">Marcas de Geoforma</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos">Mapas de Pontos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-simbolos">Mapas de Símbolos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-coropletico">Mapa Coroplético</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecoes-cartograficas">Projeções Cartográficas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#um-tour-pelos-tipos-especificos-de-projecoes">Um Tour pelos Tipos Específicos de Projeções</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamento-de-dados-geograficos"><font color="gray">7.7</font> Tratamento de Dados Geográficos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">7.8</font> Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamento-de-dados-geograficos">Tratamento de Dados Geográficos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
 </ul>
   </nav></div>
 

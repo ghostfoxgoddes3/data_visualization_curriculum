@@ -400,18 +400,18 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets"><font color="gray">6.1</font> Datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes"><font color="gray">6.2</font> Introduzindo seleções</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas"><font color="gray">6.3</font> Consultas dinâmicas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas"><font color="gray">6.3.1</font> Vinculando seleções a múltiplas entradas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas"><font color="gray">6.3.2</font> Usando visualizações como consultas dinâmicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes">Introduzindo seleções</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas">Consultas dinâmicas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas">Vinculando seleções a múltiplas entradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas">Usando visualizações como consultas dinâmicas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando"><font color="gray">6.4</font> Movimentando e Ampliando</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes"><font color="gray">6.5</font> Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">6.8</font> Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">Movimentando e Ampliando</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">Navegação: Visão geral + Detalhes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda">Detalhes sob Demanda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking">Revisitando o “Brushing &amp; Linking”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
 </ul>
             </nav>
         </div>
@@ -451,7 +451,7 @@
 </div>
 </div>
 <section id="datasets">
-<h2><font color="gray">6.1</font> Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h2>
+<h2>Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Nós vamos visuzalisar uma variedade de datasets da coleção <a class="reference external" href="https://github.com/vega/vega-datasets">vega-datasets</a>:</p>
 <ul class="simple">
@@ -474,7 +474,7 @@
 </div>
 </section>
 <section id="introduzindo-selecoes">
-<h2><font color="gray">6.2</font> Introduzindo seleções<a class="headerlink" href="#introduzindo-selecoes" title="Link to this heading">#</a></h2>
+<h2>Introduzindo seleções<a class="headerlink" href="#introduzindo-selecoes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Vamos começar com uma seleção básica: simplesmente clicar em um ponto para destacá-lo. Usando o <em>dataset</em> <code class="docutils literal notranslate"><span class="pre">cars</span></code>, criaremos um gráfico de dispersão (<em>scatter plot</em>) relacionando potência (<em>horsepower</em>) e milhas por galão (<em>miles per gallon</em>), com uma codificação de cor baseada no número de cilindros do motor do carro.</p>
 <p>Além disso, criaremos uma instância de seleção chamando <code class="docutils literal notranslate"><span class="pre">alt.selection_single()</span></code>, indicando que queremos que a seleção seja definida sobre um <em>único valor</em>. Por padrão, a seleção usa um clique do mouse para determinar o valor selecionado. Para registrar uma seleção em um gráfico, devemos adicioná-la usando o método <code class="docutils literal notranslate"><span class="pre">.add_selection()</span></code>.</p>
@@ -500,33 +500,33 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\2101507836.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\2101507836.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selection = alt.selection_single();
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\2101507836.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\2101507836.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(cars).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-14133aa6b1324008bc51adfba46931e2.vega-embed {
+  #altair-viz-a51f578e26f144af8604a9e46068a188.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-14133aa6b1324008bc51adfba46931e2.vega-embed details,
-  #altair-viz-14133aa6b1324008bc51adfba46931e2.vega-embed details summary {
+  #altair-viz-a51f578e26f144af8604a9e46068a188.vega-embed details,
+  #altair-viz-a51f578e26f144af8604a9e46068a188.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-14133aa6b1324008bc51adfba46931e2"></div>
+<div id="altair-viz-a51f578e26f144af8604a9e46068a188"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-14133aa6b1324008bc51adfba46931e2") {
-      outputDiv = document.getElementById("altair-viz-14133aa6b1324008bc51adfba46931e2");
+    if (outputDiv.id !== "altair-viz-a51f578e26f144af8604a9e46068a188") {
+      outputDiv = document.getElementById("altair-viz-a51f578e26f144af8604a9e46068a188");
     }
 
     const paths = {
@@ -616,36 +616,36 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\2299552586.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\2299552586.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single()).properties(title=&#39;Single (Click)&#39;),
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\1277325702.py:2: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\2299552586.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\2299552586.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi()).properties(title=&#39;Multi (Shift-Click)&#39;),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-0491689a03f54bf38af5037dcac5139c.vega-embed {
+  #altair-viz-364fb66f6ef04f97a2cbb0a6416b5fab.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0491689a03f54bf38af5037dcac5139c.vega-embed details,
-  #altair-viz-0491689a03f54bf38af5037dcac5139c.vega-embed details summary {
+  #altair-viz-364fb66f6ef04f97a2cbb0a6416b5fab.vega-embed details,
+  #altair-viz-364fb66f6ef04f97a2cbb0a6416b5fab.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0491689a03f54bf38af5037dcac5139c"></div>
+<div id="altair-viz-364fb66f6ef04f97a2cbb0a6416b5fab"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0491689a03f54bf38af5037dcac5139c") {
-      outputDiv = document.getElementById("altair-viz-0491689a03f54bf38af5037dcac5139c");
+    if (outputDiv.id !== "altair-viz-364fb66f6ef04f97a2cbb0a6416b5fab") {
+      outputDiv = document.getElementById("altair-viz-364fb66f6ef04f97a2cbb0a6416b5fab");
     }
 
     const paths = {
@@ -708,36 +708,36 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\861132474.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\861132474.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single(on=&#39;mouseover&#39;)).properties(title=&#39;Single (Mouseover)&#39;),
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\1277325702.py:2: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\861132474.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\861132474.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi(on=&#39;mouseover&#39;)).properties(title=&#39;Multi (Shift-Mouseover)&#39;)
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-dc1e854310c54b1c95360fd933596e90.vega-embed {
+  #altair-viz-f83d3746bba54d609ae2ac145abbb4ee.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-dc1e854310c54b1c95360fd933596e90.vega-embed details,
-  #altair-viz-dc1e854310c54b1c95360fd933596e90.vega-embed details summary {
+  #altair-viz-f83d3746bba54d609ae2ac145abbb4ee.vega-embed details,
+  #altair-viz-f83d3746bba54d609ae2ac145abbb4ee.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-dc1e854310c54b1c95360fd933596e90"></div>
+<div id="altair-viz-f83d3746bba54d609ae2ac145abbb4ee"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-dc1e854310c54b1c95360fd933596e90") {
-      outputDiv = document.getElementById("altair-viz-dc1e854310c54b1c95360fd933596e90");
+    if (outputDiv.id !== "altair-viz-f83d3746bba54d609ae2ac145abbb4ee") {
+      outputDiv = document.getElementById("altair-viz-f83d3746bba54d609ae2ac145abbb4ee");
     }
 
     const paths = {
@@ -791,7 +791,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p>Agora que cobrimos as bases das seleções em Altair, vamos por um tour através das várias técnicas de interação que encerram!</p>
 </section>
 <section id="consultas-dinamicas">
-<h2><font color="gray">6.3</font> Consultas dinâmicas<a class="headerlink" href="#consultas-dinamicas" title="Link to this heading">#</a></h2>
+<h2>Consultas dinâmicas<a class="headerlink" href="#consultas-dinamicas" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Introduzindo seleções</p>
 <p><em>Consultas dinâmicas</em> permitem a exploração rápida e reversível de dados para isolar padrões de interesse. Conforme definido por <a class="reference external" href="https://www.cs.umd.edu/~ben/papers/Ahlberg1992Dynamic.pdf">Ahlberg, Williamson e Shneiderman</a>, uma consulta dinâmica:</p>
@@ -846,7 +846,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_7988\2770894913.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_21744\2770894913.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selectGenre = alt.selection_single(
 </pre></div>
@@ -907,7 +907,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <li><p>Como antes, usamos uma codificação condicional para controlar o canal de opacidade.</p></li>
 </ul>
 <section id="vinculando-selecoes-a-multiplas-entradas">
-<h3><font color="gray">6.3.1</font> Vinculando seleções a múltiplas entradas<a class="headerlink" href="#vinculando-selecoes-a-multiplas-entradas" title="Link to this heading">#</a></h3>
+<h3>Vinculando seleções a múltiplas entradas<a class="headerlink" href="#vinculando-selecoes-a-multiplas-entradas" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Uma instância de seleção pode ser vinculada a <em>múltiplas</em> ferramentas (<em>widgets</em>) de consulta dinâmica. Vamos modificar o exemplo acima para fornecer filtros para <em>ambos</em> <code class="docutils literal notranslate"><span class="pre">Major_Genre</span></code> e <code class="docutils literal notranslate"><span class="pre">MPAA_Rating</span></code>, usando botões de opção em vez de um menu. Nossa seleção <code class="docutils literal notranslate"><span class="pre">single</span></code> agora é definida sobre um único <em>par</em> de valores de gênero e classificação MPAA</p>
 <p><em>Procure por conjunções surpreendentes de gênero e classificação. Há algum filme de terror com classificação G ou PG?</em></p>
@@ -937,7 +937,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="usando-visualizacoes-como-consultas-dinamicas">
-<h3><font color="gray">6.3.2</font> Usando visualizações como consultas dinâmicas<a class="headerlink" href="#usando-visualizacoes-como-consultas-dinamicas" title="Link to this heading">#</a></h3>
+<h3>Usando visualizações como consultas dinâmicas<a class="headerlink" href="#usando-visualizacoes-como-consultas-dinamicas" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>Embora os widgets de interface padrão mostrem os valores de parâmetros de consulta <em>possíveis</em>, eles não visualizam a <em>distribuição</em> desses valores. Também podemos desejar usar interações mais ricas, como seleções de vários valores ou intervalos, em vez de widgets de entrada que selecionam um único valor por vez.</p>
 <p>Para resolver esses problemas, podemos criar gráficos adicionais para visualizar dados e dar suporte a consultas dinâmicas. Vamos adicionar um histograma da contagem de filmes por ano e usar uma seleção de intervalo para destacar dinamicamente os filmes em períodos de tempo selecionados.</p>
@@ -986,7 +986,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </section>
 </section>
 <section id="movimentando-e-ampliando">
-<h2><font color="gray">6.4</font> Movimentando e Ampliando<a class="headerlink" href="#movimentando-e-ampliando" title="Link to this heading">#</a></h2>
+<h2>Movimentando e Ampliando<a class="headerlink" href="#movimentando-e-ampliando" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>O gráfico de dispersão (<em>scatter plot</em>) da pontuação dos filmes está um pouco confuso em alguns lugares, tornando difícil examinar pontos em regiões com mais densas. Usando as técnicas de interação de <em>movimentação</em> e <em>ampliação</em>, podemos inspecionar regiões com maior densidade de pontos de mais perto.</p>
 <p>Vamos começar pensando sobre como podemos expressar a movimentação e a ampliação usando as seleções do Altair. O que define a “janela de visualização” do gráfico? <em>Os domínios das escalas dos eixos!</em></p>
@@ -1045,7 +1045,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p><em>Ao ampliar somente ao longo do eixo x, o formato dos dados visualizados pode mudar, potencialmente afetando nossa percepção das relações nos dados. <a class="reference external" href="http://vis.stanford.edu/papers/arclength-banking">Escolher uma proporção adequada</a> é uma preocupação importante no design de visualizações!</em></p>
 </section>
 <section id="navegacao-visao-geral-detalhes">
-<h2><font color="gray">6.5</font> Navegação: Visão geral + Detalhes<a class="headerlink" href="#navegacao-visao-geral-detalhes" title="Link to this heading">#</a></h2>
+<h2>Navegação: Visão geral + Detalhes<a class="headerlink" href="#navegacao-visao-geral-detalhes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Ao optar por uma visão panorâmica ou um zoom, ajustamos diretamente When panning and zooming, we directly adjust the “janela de visualização” de um gráfico. A estratégia de navegação de <em>visão geral + detalhes</em>, pelo contrário usa uma tela de janela de visualização para mostrar <em>todos</em> os dados enquando permite seleções com zoom in e out em uma tela de foco separado.</p>
 <p>Abaixo temos dois gráficos de área (<em>area charts</em>) mostrando uma década de flutuações de preço para o índice de ações da S&amp;P 500. Inicialmente ambos os gráficos mostram o mesmo intervalo de dados. <em>Clique e arraste no gráfico de visão geral inferior para atualizar o foco da tela e examinar períodos de tempo específicos.</em></p>
@@ -1072,7 +1072,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p>Ao contrário do nosso caso anterior de zoom in &amp; out, aqui não queremos vincular uma seleção diretamente às escalas de um único gráfico interativo. Ao invés disso, queremos vincular a seleção a um domínio de escala em <em>outro</em> gráfico. Para fazer isso, atualizamos o canal de codificação <code class="docutils literal notranslate"><span class="pre">x</span></code> para o nosso gráfico de foco, configurando o <code class="docutils literal notranslate"><span class="pre">domínio</span></code> de escala pare referenciar nossa seleção <code class="docutils literal notranslate"><span class="pre">brush</span></code>. Se nenhum intervalo está definido (seleção vazia), o Altair ignora o pincel e usa os dados subjacentes para determinar o domínio. Quando um intervalo de pincel é criado, o Altair o usa em substituição ao <code class="docutils literal notranslate"><span class="pre">domínio</span></code> da escala para o gráfico de interesse.</p>
 </section>
 <section id="detalhes-sob-demanda">
-<h2><font color="gray">6.6</font> Detalhes sob Demanda<a class="headerlink" href="#detalhes-sob-demanda" title="Link to this heading">#</a></h2>
+<h2>Detalhes sob Demanda<a class="headerlink" href="#detalhes-sob-demanda" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Uma vez que identificamos pontos de interesse em uma visualização, frequentemente queremos saber mais sobre eles. <em>Detalhes sob demanda</em> refere-se à consulta interativa para obter mais informações sobre valores selecionados. <em>Tooltips</em> são uma forma útil de fornecer detalhes sob demanda. No entanto, os tooltips normalmente mostram informações para um único ponto de dados de cada vez. Como podemos mostrar mais?</p>
 <p>O gráfico de dispersão (<em>scatter plot</em>) das avaliações de filmes inclui vários outliers potencialmente interessantes, onde as classificações do Rotten Tomatoes e do IMDB discordam. Vamos criar um gráfico que permita selecionar pontos interativamente e mostrar seus rótulos. Para acionar a consulta de filtro em qualquer interação de “hover” ou “click”, utilizaremos o operador de composição <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html#composing-multiple-selections">Altair</a> <code class="docutils literal notranslate"><span class="pre">|</span></code> (“or”).</p>
@@ -1174,7 +1174,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p><em>Pondo na prática o que aprendemos até agora: você pode modificar o gráfico de dispersão de filmes acima (aquele com a consulta dinâmica ao longo dos anos) para incluir uma marca <code class="docutils literal notranslate"><span class="pre">rule</span></code> que mostre a média da avaliação do IMDB (ou Rotten Tomatoes) para os dados contidos na seleção do intervalo de <code class="docutils literal notranslate"><span class="pre">ano</span></code>?</em></p>
 </section>
 <section id="revisitando-o-brushing-linking">
-<h2><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”<a class="headerlink" href="#revisitando-o-brushing-linking" title="Link to this heading">#</a></h2>
+<h2>Revisitando o “Brushing &amp; Linking”<a class="headerlink" href="#revisitando-o-brushing-linking" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Mais cedo nesse capítulo vimos um exemplo de “<em>brushing and linking</em>” (algo como <em>podar e conectar</em>, em português): usando um histograma de query dinâmico para realçar pontos num scatter plot das notas de filmes. Aqui, vamos visitar alguns exemplos adicionais envolvendo seleções linkadas.</p>
 <p>Retornando a base de dados do <code class="docutils literal notranslate"><span class="pre">cars</span></code>, podemos usar o operador <code class="docutils literal notranslate"><span class="pre">repeat</span></code> para criar uma <a class="reference external" href="https://pt.wikipedia.org/wiki/Gr%C3%A1fico_de_dispers%C3%A3o">matriz de gráfico de dispersão (ou SPLOM)</a> que mostra as associações entre a aceleração, potência e a quilometragem. Podemos definir uma seleção do intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) e incluir isso dentro das especificações repetidas do gráfico de dispersão para conseguirmos ter seleções conectadas em todas as visualizações.</p>
@@ -1207,7 +1207,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p><em>Tente mudar o parâmetro <code class="docutils literal notranslate"><span class="pre">resolve</span></code> para <code class="docutils literal notranslate"><span class="pre">'union'</span></code> ou <code class="docutils literal notranslate"><span class="pre">'intersect'</span></code> para ver como ele muda a lógica de seleção resultante.</em></p>
 </section>
 <section id="resumo">
-<h2><font color="gray">6.8</font> Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
+<h2>Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Para mais detalhes sobre as opções de interação disponíveis em Altair, por facor consulte a <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html">Documentação de seleção interativa para Altair</a>. Para detalhes sobre como customizar manipuladores de eventes, por exemplo para compor técnicas de múltiplas intereções ou aceitar inputs de toque para dispositivos touch-screen, veja a <a class="reference external" href="https://vega.github.io/vega-lite/docs/selection.html">documentação de seleção Vega-Lite</a>.</p>
 <p>Interessado em aprender mais?</p>
@@ -1286,18 +1286,18 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets"><font color="gray">6.1</font> Datasets</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes"><font color="gray">6.2</font> Introduzindo seleções</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas"><font color="gray">6.3</font> Consultas dinâmicas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas"><font color="gray">6.3.1</font> Vinculando seleções a múltiplas entradas</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas"><font color="gray">6.3.2</font> Usando visualizações como consultas dinâmicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes">Introduzindo seleções</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas">Consultas dinâmicas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas">Vinculando seleções a múltiplas entradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas">Usando visualizações como consultas dinâmicas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando"><font color="gray">6.4</font> Movimentando e Ampliando</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes"><font color="gray">6.5</font> Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">6.8</font> Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">Movimentando e Ampliando</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">Navegação: Visão geral + Detalhes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda">Detalhes sob Demanda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking">Revisitando o “Brushing &amp; Linking”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
 </ul>
   </nav></div>
 
