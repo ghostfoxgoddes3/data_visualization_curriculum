@@ -37,9 +37,9 @@ nbclient.exceptions.CellTimeoutError: A cell timed out while it was being execut
 The message was: Cell execution timed out.
 Here is a preview of the cell contents:
 -------------------
-df = pd.read_json(movies) # load movies data
-genres = df['Major_Genre'].unique() # get unique field values
-genres = list(filter(lambda d: d is not None, genres)) # filter out None values
-genres.sort() # sort alphabetically
+#adicionado só para rodar o código
+from vega_datasets import data
+movies_url = data.movies()
+movies_url
 -------------------
 
