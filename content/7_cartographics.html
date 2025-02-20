@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -169,28 +169,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro.html">1. Introdução ao Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_types.html">2. Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="3_transform.html">3. Transformação de dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_composition.html">5 Composição de Múltiplas Visualizações</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_interaction.html">6. Interação</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">7. Visualização Cartográfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro.html"><font color="gray">1.</font> Introdução ao Altair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_types.html"><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_transform.html"><font color="gray">3.</font> Transformação de dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_scales.html"><font color="gray">4.</font> Escalas, Eixos e Legendas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_composition.html"><font color="gray">5</font> Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_interaction.html"><font color="gray">6.</font> Interação</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><font color="gray">7.</font> Visualização Cartográfica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Guia de Depuração para Altair</a></li>
 </ul>
 
@@ -238,6 +223,37 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/content/7_cartographics.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -374,7 +390,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>7. Visualização Cartográfica</h1>
+    <h1><font color="gray">7.</font> Visualização Cartográfica</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,17 +400,17 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson">7.1 Dados Geográficos: GeoJSON e TopoJSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson"><font color="gray">7.1</font> Dados Geográficos: GeoJSON e TopoJSON</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-geoforma"><font color="gray">7.2</font> Marcas de Geoforma</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos">7.3. Mapas de Pontos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos"><font color="gray">7.3</font> Mapas de Pontos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-simbolos"><font color="gray">7.4</font> Mapas de Símbolos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-coropletico"><font color="gray">7.5</font> Mapa Coroplético</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecoes-cartograficas"><font color="gray">7.6</font> Projeções Cartográficas</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#um-tour-pelos-tipos-especificos-de-projecoes"><font color="gray">7.6.1 </font> Um Tour pelos Tipos Específicos de Projeções</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-tratamento-de-dados-geograficos">7.7 Coda: Tratamento de Dados Geográficos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">7.8 Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamento-de-dados-geograficos"><font color="gray">7.7</font> Tratamento de Dados Geográficos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">7.8</font> Resumo</a></li>
 </ul>
             </nav>
         </div>
@@ -407,7 +423,8 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="visualizacao-cartografica">
-<h1>7. Visualização Cartográfica<a class="headerlink" href="#visualizacao-cartografica" title="Link to this heading">#</a></h1>
+<h1><font color="gray">7.</font> Visualização Cartográfica<a class="headerlink" href="#visualizacao-cartografica" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
 <p><em>“A criação de mapas é um dos empreendimentos intelectuais mais antigos da humanidade e também um dos mais complexos, com teoria científica, representação gráfica, fatos geográficos e considerações práticas combinados de maneiras infinitas.”</em> — <a class="reference external" href="https://books.google.com/books?id=cVy1Ms43fFYC">H. J. Steward</a></p>
 <p>Cartografia – o estudo e a prática da criação de mapas – tem uma história rica que abrange séculos de descobertas e design. A visualização cartográfica aproveita técnicas de mapeamento para transmitir dados contendo informações espaciais, como localizações, rotas ou trajetórias na superfície da Terra.</p>
 <div style="float: right; margin-left: 1em; margin-top: 1em;"><img width="300px" src="https://gist.githubusercontent.com/jheer/c90d582ef5322582cf4960ec7689f6f6/raw/8dc92382a837ccc34c076f4ce7dd864e7893324a/latlon.png" /></div>
@@ -430,7 +447,8 @@
 </div>
 </div>
 <section id="dados-geograficos-geojson-e-topojson">
-<h2>7.1 Dados Geográficos: GeoJSON e TopoJSON<a class="headerlink" href="#dados-geograficos-geojson-e-topojson" title="Link to this heading">#</a></h2>
+<h2><font color="gray">7.1</font> Dados Geográficos: GeoJSON e TopoJSON<a class="headerlink" href="#dados-geograficos-geojson-e-topojson" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Até esse ponto, trabalhamos com datasets formatados em JSON e CSV, que correspondem a tabelas de dados feitas de linhas (registros) e colunas (campos). Com o objetivo de representar regiões geográficas (países, estados, <em>etc.</em>) e trajetórias (rotas de voo, linhas de metrô, <em>etc.</em>), precisamos  expandir nosso repertório com formatos adicionais projetados para suportar geometrias ricas.</p>
 <p>O <a class="reference external" href="https://en.wikipedia.org/wiki/GeoJSON">GeoJSON</a> modela recursos geográficos com umformato JSON especializado. Um <code class="docutils literal notranslate"><span class="pre">feature</span></code> GeoJSON pode incluir dados geométricos – tal como coordenadas de <code class="docutils literal notranslate"><span class="pre">longitude</span></code> e <code class="docutils literal notranslate"><span class="pre">latitude</span></code>, que constituem a fronteira de um país – assim como atributos de dados adicionais.</p>
 <p>Aqui está um objeto <code class="docutils literal notranslate"><span class="pre">feature</span></code> GeoJSON para o Colorado, um estado americano:</p>
@@ -467,6 +485,124 @@
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">world_topo</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">world_110m</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">gaierror</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:1344,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1343</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1344</span>     <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1345</span>               <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1346</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1336,</span> in <span class="ni">HTTPConnection.request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1335</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Send a complete request to the server.&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1336</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1382,</span> in <span class="ni">HTTPConnection._send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1381</span>     <span class="n">body</span> <span class="o">=</span> <span class="n">_encode</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1382</span> <span class="bp">self</span><span class="o">.</span><span class="n">endheaders</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1331,</span> in <span class="ni">HTTPConnection.endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1330</span>     <span class="k">raise</span> <span class="n">CannotSendHeader</span><span class="p">()</span>
+<span class="ne">-&gt; </span><span class="mi">1331</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_output</span><span class="p">(</span><span class="n">message_body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1091,</span> in <span class="ni">HTTPConnection._send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1090</span> <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buffer</span><span class="p">[:]</span>
+<span class="ne">-&gt; </span><span class="mi">1091</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1093</span> <span class="k">if</span> <span class="n">message_body</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1094</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1095</span>     <span class="c1"># create a consistent interface to message_body</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1035,</span> in <span class="ni">HTTPConnection.send</span><span class="nt">(self, data)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1034</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_open</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1035</span>     <span class="bp">self</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1036</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1470,</span> in <span class="ni">HTTPSConnection.connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1468</span> <span class="s2">&quot;Connect to a host on a given (SSL) port.&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1470</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1472</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tunnel_host</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1001,</span> in <span class="ni">HTTPConnection.connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1000</span> <span class="n">sys</span><span class="o">.</span><span class="n">audit</span><span class="p">(</span><span class="s2">&quot;http.client.connect&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1001</span> <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_connection</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1002</span>     <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">source_address</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1003</span> <span class="c1"># Might fail in OSs that don&#39;t implement TCP_NODELAY</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\socket.py:828,</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address, all_errors)</span>
+<span class="g g-Whitespace">    </span><span class="mi">827</span> <span class="n">exceptions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ne">--&gt; </span><span class="mi">828</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">getaddrinfo</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">829</span>     <span class="n">af</span><span class="p">,</span> <span class="n">socktype</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">canonname</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">res</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\socket.py:963,</span> in <span class="ni">getaddrinfo</span><span class="nt">(host, port, family, type, proto, flags)</span>
+<span class="g g-Whitespace">    </span><span class="mi">962</span> <span class="n">addrlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ne">--&gt; </span><span class="mi">963</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">_socket</span><span class="o">.</span><span class="n">getaddrinfo</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">family</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">964</span>     <span class="n">af</span><span class="p">,</span> <span class="n">socktype</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">canonname</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">res</span>
+
+<span class="ne">gaierror</span>: [Errno 11001] getaddrinfo failed
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">URLError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">3</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">world_topo</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">world_110m</span><span class="p">()</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\vega_datasets\core.py:405,</span> in <span class="ni">World_110M.__call__</span><span class="nt">(self, use_local, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">403</span> <span class="k">def</span><span class="w"> </span><span class="fm">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">use_local</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">404</span>     <span class="vm">__doc__</span> <span class="o">=</span> <span class="nb">super</span><span class="p">(</span><span class="n">World_110M</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__call__</span><span class="o">.</span><span class="vm">__doc__</span>  <span class="c1"># noqa:F841</span>
+<span class="ne">--&gt; </span><span class="mi">405</span>     <span class="k">return</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">raw</span><span class="p">(</span><span class="n">use_local</span><span class="o">=</span><span class="n">use_local</span><span class="p">)</span><span class="o">.</span><span class="n">decode</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\vega_datasets\core.py:212,</span> in <span class="ni">Dataset.raw</span><span class="nt">(self, use_local)</span>
+<span class="g g-Whitespace">    </span><span class="mi">208</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">209</span>         <span class="s2">&quot;Cannot locate package path vega_datasets:</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">pkg_filename</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">210</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">211</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">212</span>     <span class="k">return</span> <span class="n">urlopen</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">url</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:215,</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span>     <span class="n">opener</span> <span class="o">=</span> <span class="n">_opener</span>
+<span class="ne">--&gt; </span><span class="mi">215</span> <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:515,</span> in <span class="ni">OpenerDirector.open</span><span class="nt">(self, fullurl, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">512</span>     <span class="n">req</span> <span class="o">=</span> <span class="n">meth</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">514</span> <span class="n">sys</span><span class="o">.</span><span class="n">audit</span><span class="p">(</span><span class="s1">&#39;urllib.Request&#39;</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">full_url</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">())</span>
+<span class="ne">--&gt; </span><span class="mi">515</span> <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">517</span> <span class="c1"># post-process response</span>
+<span class="g g-Whitespace">    </span><span class="mi">518</span> <span class="n">meth_name</span> <span class="o">=</span> <span class="n">protocol</span><span class="o">+</span><span class="s2">&quot;_response&quot;</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:532,</span> in <span class="ni">OpenerDirector._open</span><span class="nt">(self, req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">529</span>     <span class="k">return</span> <span class="n">result</span>
+<span class="g g-Whitespace">    </span><span class="mi">531</span> <span class="n">protocol</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">type</span>
+<span class="ne">--&gt; </span><span class="mi">532</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_chain</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handle_open</span><span class="p">,</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">protocol</span> <span class="o">+</span>
+<span class="g g-Whitespace">    </span><span class="mi">533</span>                           <span class="s1">&#39;_open&#39;</span><span class="p">,</span> <span class="n">req</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">534</span> <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">535</span>     <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:492,</span> in <span class="ni">OpenerDirector._call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">490</span> <span class="k">for</span> <span class="n">handler</span> <span class="ow">in</span> <span class="n">handlers</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">491</span>     <span class="n">func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="n">meth_name</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">492</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">493</span>     <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">494</span>         <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:1392,</span> in <span class="ni">HTTPSHandler.https_open</span><span class="nt">(self, req)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1391</span> <span class="k">def</span><span class="w"> </span><span class="nf">https_open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1392</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">do_open</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">HTTPSConnection</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1393</span>                         <span class="n">context</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:1347,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1344</span>         <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1345</span>                   <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1346</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
+<span class="ne">-&gt; </span><span class="mi">1347</span>         <span class="k">raise</span> <span class="n">URLError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1348</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1349</span> <span class="k">except</span><span class="p">:</span>
+
+<span class="ne">URLError</span>: &lt;urlopen error [Errno 11001] getaddrinfo failed&gt;
 </pre></div>
 </div>
 </div>
@@ -516,17 +652,6 @@
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>UrlData({
-  format: TopoDataFormat({
-    feature: &#39;countries&#39;,
-    type: &#39;topojson&#39;
-  }),
-  url: &#39;https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json&#39;
-})
-</pre></div>
-</div>
-</div>
 </div>
 <p>Essa chamada de método <code class="docutils literal notranslate"><span class="pre">alt.topo_feature</span></code> se expande para o seguinte JSON do Vega-Lite:</p>
 <div class="cell docutils container">
@@ -535,12 +660,6 @@
   <span class="s2">&quot;values&quot;</span><span class="p">:</span> <span class="n">world</span><span class="p">,</span>
   <span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;topojson&quot;</span><span class="p">,</span> <span class="s2">&quot;feature&quot;</span><span class="p">:</span> <span class="s2">&quot;countries&quot;</span><span class="p">}</span>
 <span class="p">}</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;values&#39;: &#39;https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json&#39;,
- &#39;format&#39;: {&#39;type&#39;: &#39;topojson&#39;, &#39;feature&#39;: &#39;countries&#39;}}
 </pre></div>
 </div>
 </div>
@@ -559,48 +678,29 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-<style>
-  #altair-viz-e43d1dc1a28b4734a925d4b63755d62d.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-e43d1dc1a28b4734a925d4b63755d62d.vega-embed details,
-  #altair-viz-e43d1dc1a28b4734a925d4b63755d62d.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-e43d1dc1a28b4734a925d4b63755d62d"></div>
+<div id="altair-viz-ded4d19b935a4b7187f34bfa41e0981a"></div>
 <script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e43d1dc1a28b4734a925d4b63755d62d") {
-      outputDiv = document.getElementById("altair-viz-e43d1dc1a28b4734a925d4b63755d62d");
+    if (outputDiv.id !== "altair-viz-ded4d19b935a4b7187f34bfa41e0981a") {
+      outputDiv = document.getElementById("altair-viz-ded4d19b935a4b7187f34bfa41e0981a");
     }
-
     const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
     };
 
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
     }
 
     function showError(err) {
@@ -615,16 +715,17 @@
 
     if(typeof define === "function" && define.amd) {
       requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
     } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://vega.github.io/vega-datasets/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": "geoshape", "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script></div></div>
 </div>
 <p>No exemplo acima, o Altair aplica uma cor azul padrão e usa uma projeção de mapa padrão (<code class="docutils literal notranslate"><span class="pre">mercator</span></code>). Podemos personalizar as cores e as larguras das bordas usando propriedades padrão de marca. Usando o método <code class="docutils literal notranslate"><span class="pre">project</span></code>, também podemos adicionar nossa própria projeção de mapa:</p>
@@ -640,48 +741,29 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-<style>
-  #altair-viz-32c088927e6d46a9b21b7f6b3587b3da.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-32c088927e6d46a9b21b7f6b3587b3da.vega-embed details,
-  #altair-viz-32c088927e6d46a9b21b7f6b3587b3da.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-32c088927e6d46a9b21b7f6b3587b3da"></div>
+<div id="altair-viz-7f5ee9d649f146379b5c5fb0140fedc5"></div>
 <script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-32c088927e6d46a9b21b7f6b3587b3da") {
-      outputDiv = document.getElementById("altair-viz-32c088927e6d46a9b21b7f6b3587b3da");
+    if (outputDiv.id !== "altair-viz-7f5ee9d649f146379b5c5fb0140fedc5") {
+      outputDiv = document.getElementById("altair-viz-7f5ee9d649f146379b5c5fb0140fedc5");
     }
-
     const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
     };
 
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
     }
 
     function showError(err) {
@@ -696,16 +778,17 @@
 
     if(typeof define === "function" && define.amd) {
       requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
     } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "#2a1d0c", "stroke": "#706545", "strokeWidth": 0.5}, "projection": {"type": "mercator"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://vega.github.io/vega-datasets/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "#2a1d0c", "stroke": "#706545", "strokeWidth": 0.5}, "projection": {"type": "mercator"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script></div></div>
 </div>
 <p>Por padrão, o Altair ajusta automaticamente a projeção para que todos os dados caibam dentro da largura e altura do gráfico. Também podemos especificar parâmetros de projeção, como <code class="docutils literal notranslate"><span class="pre">scale</span></code> (nível de zoom) e <code class="docutils literal notranslate"><span class="pre">translate</span></code> (panorama), para personalizar as configurações da projeção. Aqui, ajustamos os parâmetros <code class="docutils literal notranslate"><span class="pre">scale</span></code> e <code class="docutils literal notranslate"><span class="pre">translate</span></code> para focar na Europa:</p>
@@ -721,48 +804,29 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-<style>
-  #altair-viz-5307240dd6b14b2d8987847e348216e0.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-5307240dd6b14b2d8987847e348216e0.vega-embed details,
-  #altair-viz-5307240dd6b14b2d8987847e348216e0.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-5307240dd6b14b2d8987847e348216e0"></div>
+<div id="altair-viz-91718abd2285427c868a1d36c8906462"></div>
 <script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-5307240dd6b14b2d8987847e348216e0") {
-      outputDiv = document.getElementById("altair-viz-5307240dd6b14b2d8987847e348216e0");
+    if (outputDiv.id !== "altair-viz-91718abd2285427c868a1d36c8906462") {
+      outputDiv = document.getElementById("altair-viz-91718abd2285427c868a1d36c8906462");
     }
-
     const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
     };
 
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
     }
 
     function showError(err) {
@@ -777,16 +841,17 @@
 
     if(typeof define === "function" && define.amd) {
       requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
     } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "#2a1d0c", "stroke": "#706545", "strokeWidth": 0.5}, "projection": {"scale": 400, "translate": [100, 550], "type": "mercator"}, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "data": {"url": "https://vega.github.io/vega-datasets/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "#2a1d0c", "stroke": "#706545", "strokeWidth": 0.5}, "projection": {"scale": 400, "translate": [100, 550], "type": "mercator"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script></div></div>
 </div>
 <p><em>Observe como a resolução de 110m dos dados se torna aparente neste nível de escala. Para ver linhas de costa e fronteiras mais detalhadas, precisamos de um arquivo de entrada com geometrias mais detalhadas. Ajuste os parâmetros <code class="docutils literal notranslate"><span class="pre">scale</span></code> e <code class="docutils literal notranslate"><span class="pre">translate</span></code> para focar o mapa em outras regiões!</em></p>
@@ -830,48 +895,29 @@
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-<style>
-  #altair-viz-866ce153f89a4c14ab3610fa7d429cc4.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-866ce153f89a4c14ab3610fa7d429cc4.vega-embed details,
-  #altair-viz-866ce153f89a4c14ab3610fa7d429cc4.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-866ce153f89a4c14ab3610fa7d429cc4"></div>
+<div id="altair-viz-a1af16eb42d9496f991ca8d2b7926e27"></div>
 <script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-866ce153f89a4c14ab3610fa7d429cc4") {
-      outputDiv = document.getElementById("altair-viz-866ce153f89a4c14ab3610fa7d429cc4");
+    if (outputDiv.id !== "altair-viz-a1af16eb42d9496f991ca8d2b7926e27") {
+      outputDiv = document.getElementById("altair-viz-a1af16eb42d9496f991ca8d2b7926e27");
     }
-
     const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
     };
 
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
+    function loadScript(lib) {
+      return new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = paths[lib];
+        s.async = true;
+        s.onload = () => resolve(paths[lib]);
+        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+        document.getElementsByTagName("head")[0].appendChild(s);
+      });
     }
 
     function showError(err) {
@@ -886,32 +932,29 @@
 
     if(typeof define === "function" && define.amd) {
       requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else if (typeof vegaEmbed === "function") {
+      displayChart(vegaEmbed);
     } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
+      loadScript("vega")
+        .then(() => loadScript("vega-lite"))
+        .then(() => loadScript("vega-embed"))
         .catch(showError)
         .then(() => displayChart(vegaEmbed));
     }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}}, "layer": [{"data": {"sphere": true}, "mark": {"type": "geoshape", "fill": "#e6f3ff"}}, {"data": {"graticule": true}, "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 1}}, {"data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "#2a1d0c", "stroke": "#706545", "strokeWidth": 0.5}}], "height": 400, "projection": {"scale": 110, "translate": [300, 200], "type": "naturalEarth1"}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
+  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300, "stroke": null}}, "layer": [{"data": {"sphere": true}, "mark": {"type": "geoshape", "fill": "#e6f3ff"}}, {"data": {"graticule": true}, "mark": {"type": "geoshape", "stroke": "#ffffff", "strokeWidth": 1}}, {"data": {"url": "https://vega.github.io/vega-datasets/data/world-110m.json", "format": {"feature": "countries", "type": "topojson"}}, "mark": {"type": "geoshape", "fill": "#2a1d0c", "stroke": "#706545", "strokeWidth": 0.5}}], "height": 400, "projection": {"scale": 110, "translate": [300, 200], "type": "naturalEarth1"}, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
 </script></div></div>
 </div>
 </section>
 <section id="mapas-de-pontos">
-<h2>7.3. Mapas de Pontos<a class="headerlink" href="#mapas-de-pontos" title="Link to this heading">#</a></h2>
+<h2><font color="gray">7.3</font> Mapas de Pontos<a class="headerlink" href="#mapas-de-pontos" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Em adição aos dados <em>geometric</em> fornecidos pelo GeoJSON ou TopoJSON, muitos datasets tabulares incluem informação geográfica na forma das coordenadas nos campos <code class="docutils literal notranslate"><span class="pre">longitude</span></code> e <code class="docutils literal notranslate"><span class="pre">latitude</span></code>, ou referencia regiões geográficas como nomes de países, estados, códigos postais, <em>etc</em>, que podem ser mapeados para coordenadas usando <a class="reference external" href="https://en.wikipedia.org/wiki/Address_geocoding">Address geocoding</a>. Em alguns casos, os dados de localização são ricos o suficientes para ver padrões significativos ao projetar os pontos sozinhos - Nenhum mapa base é necessário!</p>
 <p>Vamos dar uma olhada no dataset de códigos postais de 5 dígitos dos EUA, incluindo as coordenadas <code class="docutils literal notranslate"><span class="pre">longitude</span></code>, <code class="docutils literal notranslate"><span class="pre">latitude</span></code> para cada agência de correios em adição ao campo <code class="docutils literal notranslate"><span class="pre">.longitudelatitudezip_code</span></code></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">zipcodes</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">zipcodes</span><span class="o">.</span><span class="n">url</span>
 <span class="n">zipcodes</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;https://cdn.jsdelivr.net/npm/vega-datasets@v1.29.0/data/zipcodes.csv&#39;
 </pre></div>
 </div>
 </div>
@@ -930,14 +973,6 @@
 <span class="p">)</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span>
     <span class="n">stroke</span><span class="o">=</span><span class="kc">None</span>
 <span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span>  <span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">15</span><span class="p">],</span> <span class="n">line</span> <span class="mi">5</span>
-    <span class="n">latitude</span><span class="o">=</span><span class="s1">&#39;latitude:Q&#39;</span>    <span class="c1"># aplica o campo chamado &#39;latitude&#39; para o canal &quot;latitude&quot;.</span>
-             <span class="o">^</span>
-<span class="ne">SyntaxError</span>: invalid syntax. Perhaps you forgot a comma?
 </pre></div>
 </div>
 </div>
@@ -1003,6 +1038,7 @@
 </section>
 <section id="mapas-de-simbolos">
 <h2><font color="gray">7.4</font> Mapas de Símbolos<a class="headerlink" href="#mapas-de-simbolos" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Agora, vamos combinar um mapa base com os dados visualizados como camadas diferentes. Examinaremos o networking dos voôs comerciais nos Estados Unidos, considerando tanto os aeroportos como as rotas dos voôs. Para fazermos isso, precisaremos de três conjuntos de dados diferentes. Para nosso mapa base, usaremos um arquivo do tipo TopoJSON para os Estados Unidos numa resolução de 10m, contendo dados para estados (<code class="docutils literal notranslate"><span class="pre">states</span></code>) e municípios (<code class="docutils literal notranslate"><span class="pre">counties</span></code>):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1098,29 +1134,29 @@
 <p><em>Começando do mapa estático acima, você poderia implementar uma versão interativa? Seja livre para pular o código abaixo para se engajar com o mapa interativo primeiro, e pense sobre como você mesmo faria!</em></p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># interactive selection for origin airport</span>
-<span class="c1"># select nearest airport to mouse cursor</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Seleção interativa do aeroporto mais próximo</span>
+<span class="c1"># Seleciona o aeroporto mais próximo do cursor</span>
 <span class="n">origin</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
     <span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span> <span class="n">nearest</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
     <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;origin&#39;</span><span class="p">],</span> <span class="n">empty</span><span class="o">=</span><span class="s1">&#39;none&#39;</span>
 <span class="p">)</span>
 
-<span class="c1"># shared data reference for lookup transforms</span>
+<span class="c1"># referência de dados compartilhados para transformações de pesquisa</span>
 <span class="n">foreign</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">LookupData</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">airports</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s1">&#39;iata&#39;</span><span class="p">,</span>
                          <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="s1">&#39;longitude&#39;</span><span class="p">])</span>
 
 <span class="n">alt</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span>
-    <span class="c1"># base map of the United States</span>
+    <span class="c1"># Mapa base dos Estados Unidos</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">topo_feature</span><span class="p">(</span><span class="n">usa</span><span class="p">,</span> <span class="s1">&#39;states&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">mark_geoshape</span><span class="p">(</span>
         <span class="n">fill</span><span class="o">=</span><span class="s1">&#39;#ddd&#39;</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;#fff&#39;</span><span class="p">,</span> <span class="n">strokeWidth</span><span class="o">=</span><span class="mi">1</span>
     <span class="p">),</span>
-    <span class="c1"># route lines from selected origin airport to destination airports</span>
+    <span class="c1"># linhas de rota do aeroporto de origem selecionado para os aeroportos de destino</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">flights</span><span class="p">)</span><span class="o">.</span><span class="n">mark_rule</span><span class="p">(</span>
         <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#000&#39;</span><span class="p">,</span> <span class="n">opacity</span><span class="o">=</span><span class="mf">0.35</span>
     <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span>
-        <span class="n">origin</span> <span class="c1"># filter to selected origin only</span>
+        <span class="n">origin</span> <span class="c1"># filtrar apenas para a origem selecionada</span>
     <span class="p">)</span><span class="o">.</span><span class="n">transform_lookup</span><span class="p">(</span>
-        <span class="n">lookup</span><span class="o">=</span><span class="s1">&#39;origin&#39;</span><span class="p">,</span> <span class="n">from_</span><span class="o">=</span><span class="n">foreign</span> <span class="c1"># origin lat/lon</span>
+        <span class="n">lookup</span><span class="o">=</span><span class="s1">&#39;origin&#39;</span><span class="p">,</span> <span class="n">from_</span><span class="o">=</span><span class="n">foreign</span> <span class="c1"># latitude e longitude da origem</span>
     <span class="p">)</span><span class="o">.</span><span class="n">transform_lookup</span><span class="p">(</span>
         <span class="n">lookup</span><span class="o">=</span><span class="s1">&#39;destination&#39;</span><span class="p">,</span> <span class="n">from_</span><span class="o">=</span><span class="n">foreign</span><span class="p">,</span> <span class="n">as_</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;lat2&#39;</span><span class="p">,</span> <span class="s1">&#39;lon2&#39;</span><span class="p">]</span> <span class="c1"># dest lat/lon</span>
     <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
@@ -1129,10 +1165,10 @@
         <span class="n">latitude2</span><span class="o">=</span><span class="s1">&#39;lat2&#39;</span><span class="p">,</span>
         <span class="n">longitude2</span><span class="o">=</span><span class="s1">&#39;lon2&#39;</span><span class="p">,</span>
     <span class="p">),</span>
-    <span class="c1"># size airports by number of outgoing routes</span>
-    <span class="c1"># 1. aggregate flights-airport data set</span>
-    <span class="c1"># 2. lookup location data from airports data set</span>
-    <span class="c1"># 3. remove Puerto Rico (PR) and Virgin Islands (VI)</span>
+    <span class="c1"># tamanho aeroportos por número de rotas de saída</span>
+    <span class="c1"># 1. conjunto de dados de voos-aeroportos agregados</span>
+    <span class="c1"># 2. pesquisa de dados de localização do conjunto de dados de aeroportos</span>
+    <span class="c1"># 3. remove Porto Rico (PR) e Ilhas Virgens (VI)</span>
     <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">flights</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">transform_aggregate</span><span class="p">(</span>
         <span class="n">groupby</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;origin&#39;</span><span class="p">],</span>
         <span class="n">routes</span><span class="o">=</span><span class="s1">&#39;count()&#39;</span>
@@ -1149,7 +1185,7 @@
         <span class="n">longitude</span><span class="o">=</span><span class="s1">&#39;longitude:Q&#39;</span><span class="p">,</span>
         <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;origin:N&#39;</span><span class="p">,</span> <span class="s1">&#39;routes:Q&#39;</span><span class="p">],</span>
         <span class="n">size</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Size</span><span class="p">(</span><span class="s1">&#39;routes:Q&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="nb">range</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">]),</span> <span class="n">legend</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
-        <span class="n">order</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Order</span><span class="p">(</span><span class="s1">&#39;routes:Q&#39;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;descending&#39;</span><span class="p">)</span> <span class="c1"># place smaller circles on top</span>
+        <span class="n">order</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Order</span><span class="p">(</span><span class="s1">&#39;routes:Q&#39;</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="s1">&#39;descending&#39;</span><span class="p">)</span> <span class="c1"># Coloca os circulos menores acima</span>
     <span class="p">)</span>
 <span class="p">)</span><span class="o">.</span><span class="n">project</span><span class="p">(</span>
     <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;albersUsa&#39;</span>
@@ -1313,8 +1349,9 @@
 </ul>
 </section>
 </section>
-<section id="coda-tratamento-de-dados-geograficos">
-<h2>7.7 Coda: Tratamento de Dados Geográficos<a class="headerlink" href="#coda-tratamento-de-dados-geograficos" title="Link to this heading">#</a></h2>
+<section id="tratamento-de-dados-geograficos">
+<h2><font color="gray">7.7</font> Tratamento de Dados Geográficos<a class="headerlink" href="#tratamento-de-dados-geograficos" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Os exemplos acima são todos retirados da coleção vega-datasets, incluindo dados geométricos (TopoJSON) e tabulares (aeroportos, taxas de desemprego). Um desafio comum para começar com visualização geográfica é coletar os dados necessários para sua tarefa. Existem vários provedores de dados, incluindo serviços como o <a class="reference external" href="https://www.usgs.gov/products/data-and-tools/data-and-tools-topics">United States Geological Survey</a> e o <a class="reference external" href="https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html">U.S. Census Bureau</a>.</p>
 <p>Em muitos casos, você pode já ter dados existentes com um componente geográfico, mas precisar de medidas ou geometria adicionais. Para ajudar você a começar, aqui está um fluxo de trabalho:</p>
 <ol class="arabic simple">
@@ -1325,7 +1362,8 @@
 <p>Claro, muitas outras ferramentas – tanto de código aberto quanto proprietárias – existem para trabalhar com dados geográficos. Para mais informações sobre tratamento de dados geográficos e criação de mapas, veja a série de tutoriais de Mike Bostock sobre <a class="reference external" href="https://medium.com/&#64;mbostock/command-line-cartography-part-1-897aa8f8ca2c">Command-Line Cartography</a>.</p>
 </section>
 <section id="resumo">
-<h2>7.8 Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
+<h2><font color="gray">7.8</font> Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Neste ponto, nós apenas começamos a explorar o universo da criação de mapas.(Você não esperava que um único capítulo transmitisse séculos de aprendizado, né?) Por exemplo, deixamos de lado tópicos como <a class="reference external" href="https://en.wikipedia.org/wiki/Cartogram"><em>cartogramas</em></a> e a representação de <a class="reference external" href="https://en.wikipedia.org/wiki/Topography"><em>topografia</em></a> — como no livro esclarecedor de Imhof, <a class="reference external" href="https://books.google.com/books?id=cVy1Ms43fFYC"><em>Cartographic Relief Presentation</em></a>. No entanto, agora você deve estar bem equipado para criar uma rica variedade de geo-visualizações. Para mais informações, o livro de MacEachren <a class="reference external" href="https://books.google.com/books?id=xhAvN3B0CkUC"><em>How Maps Work: Representation, Visualization, and Design</em></a> oferece uma visão valiosa sobre a criação de mapas sob a perspectiva da visualização de dados.</p>
 </section>
 </section>
@@ -1366,7 +1404,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">6. Interação</p>
+        <p class="prev-next-title"><font color="gray">6.</font> Interação</p>
       </div>
     </a>
     <a class="right-next"
@@ -1395,17 +1433,17 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson">7.1 Dados Geográficos: GeoJSON e TopoJSON</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-geograficos-geojson-e-topojson"><font color="gray">7.1</font> Dados Geográficos: GeoJSON e TopoJSON</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-geoforma"><font color="gray">7.2</font> Marcas de Geoforma</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos">7.3. Mapas de Pontos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-pontos"><font color="gray">7.3</font> Mapas de Pontos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapas-de-simbolos"><font color="gray">7.4</font> Mapas de Símbolos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#mapa-coropletico"><font color="gray">7.5</font> Mapa Coroplético</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#projecoes-cartograficas"><font color="gray">7.6</font> Projeções Cartográficas</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#um-tour-pelos-tipos-especificos-de-projecoes"><font color="gray">7.6.1 </font> Um Tour pelos Tipos Específicos de Projeções</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coda-tratamento-de-dados-geograficos">7.7 Coda: Tratamento de Dados Geográficos</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">7.8 Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamento-de-dados-geograficos"><font color="gray">7.7</font> Tratamento de Dados Geográficos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">7.8</font> Resumo</a></li>
 </ul>
   </nav></div>
 

@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -169,28 +169,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro.html">1. Introdução ao Altair</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="3_transform.html">3. Transformação de dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_composition.html">5 Composição de Múltiplas Visualizações</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_interaction.html">6. Interação</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="7_cartographics.html">7. Visualização Cartográfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro.html"><font color="gray">1.</font> Introdução ao Altair</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_transform.html"><font color="gray">3.</font> Transformação de dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_scales.html"><font color="gray">4.</font> Escalas, Eixos e Legendas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_composition.html"><font color="gray">5</font> Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1"><a class="reference internal" href="6_interaction.html"><font color="gray">6.</font> Interação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_cartographics.html"><font color="gray">7.</font> Visualização Cartográfica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Guia de Depuração para Altair</a></li>
 </ul>
 
@@ -238,6 +223,37 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/content/2_types.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -374,7 +390,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>2. Tipos de dados, marcas gráficas e canais de codificação visual</h1>
+    <h1><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,37 +400,31 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Tipos de dados, marcas gráficas e canais de codificação visual</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desenvolvimento-global-de-dados">Desenvolvimento Global de Dados</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-dados">Tipos de dados</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n">Nominal (N)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o">Ordinal (O)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitativo-q">Quantitativo (Q)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t">Temporal (T)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desenvolvimento-global-de-dados"><font color="gray">2.1 </font> Desenvolvimento Global de Dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-dados"><font color="gray">2.2 </font> Tipos de dados</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n"><font color="gray">2.2.1 </font> Nominal (N)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o"><font color="gray">2.2.2 </font> Ordinal (O)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitativo-q"><font color="gray">2.2.3 </font> Quantitativo (Q)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t"><font color="gray">2.2.4 </font> Temporal (T)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">2.2.5 </font> Resumo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><font color="gray"> 2.2.5 </font> Resumo</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#canais-de-codificacao"><font color="gray"> 2.3 </font> Canais de Codificação</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x"><font color="gray"> 2.3.1 </font> X</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#y"><font color="gray"> 2.3.2 </font> Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-graficas"><font color="gray"> 2.4 </font> Marcas Gráficas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-ponto"><font color="gray"> 2.4.1 </font> Marcas de Ponto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-circulo"><font color="gray"> 2.4.2 </font> Marcas de Círculo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-quadrado"><font color="gray"> 2.4.3 </font> Marcas de Quadrado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-traco"><font color="gray"> 2.4.4 </font> Marcas de Traço</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-barra"><font color="gray"> 2.4.5 </font> Marcas de Barra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-linha"><font color="gray"> 2.4.6 </font> Marcas de Linha</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-area"><font color="gray"> 2.4.7 </font> Marcas de Área</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#canais-de-codificacao">Canais de Codificação</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x">X</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#y">Y</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-graficas">Marcas Gráficas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-ponto-point-marks">Marcas de Ponto (<em>point marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-circulo-circle-marks">Marcas de Círculo (<em>circle marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-quadrado-square-marks">Marcas de Quadrado (<em>square marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-traco-tick-marks">Marcas de Traço (<em>tick marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-barra-bar-marks">Marcas de Barra (<em>bar marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-linha-line-marks">Marcas de Linha (<em>line marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-area-area-marks">Marcas de Área (<em>area marks</em>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><font color="gray"> 2.5 </font> Resumo</a></li>
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumario">Sumário</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -426,7 +436,8 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="tipos-de-dados-marcas-graficas-e-canais-de-codificacao-visual">
-<h1>2. Tipos de dados, marcas gráficas e canais de codificação visual<a class="headerlink" href="#tipos-de-dados-marcas-graficas-e-canais-de-codificacao-visual" title="Link to this heading">#</a></h1>
+<h1><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual<a class="headerlink" href="#tipos-de-dados-marcas-graficas-e-canais-de-codificacao-visual" title="Link to this heading">#</a></h1>
+<hr class="docutils" />
 <p>Uma visualização representa dados a partir de uma variedade de marcas gráficas (barras, linhas, pontos, etc.). Os atributos de uma marca - como sua posição, forma, tamanho ou cor - servem como canal através do qual se pode expressar as entrelinhas subjacentes a informação.</p>
 <p>Com um framework (ou estrutura) básico de tipos de dados, marcas e canais de codificação é possível criar com concisão uma vasta gama de visualizações. Neste capítulo, exploramos cada um desses elementos e mostramos como usá-los para customizar gráficos estatísticos.</p>
 <p><em>Este capítulo faz parte do <a class="reference external" href="https://github.com/uwdata/visualization-curriculum">currículo de visualização de dados.</a></em></p>
@@ -439,7 +450,7 @@
 </div>
 </div>
 <section id="desenvolvimento-global-de-dados">
-<h2>Desenvolvimento Global de Dados<a class="headerlink" href="#desenvolvimento-global-de-dados" title="Link to this heading">#</a></h2>
+<h2><font color="gray">2.1 </font> Desenvolvimento Global de Dados<a class="headerlink" href="#desenvolvimento-global-de-dados" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Visualizaremos dados sobre saúde e população global pelo período de 1995 a 2005. Essas informações foram colhidas pela (Gapminder Foundation)[<a class="reference external" href="https://www.google.com/url?q=https%3A%2F%2Fwww.gapminder.org%2F">https://www.google.com/url?q=https%3A%2F%2Fwww.gapminder.org%2F</a>] e compartilhados no popular (TED Talk do Hans Rosling)[<a class="reference external" href="https://www.youtube.com/watch?v=hVimVzgtD6w">https://www.youtube.com/watch?v=hVimVzgtD6w</a>]. Se você não o conhece, recomendamos que assista primeiro!</p>
 <p>Começaremos baixando o conjunto de dados da coleção (vega_datasets)[<a class="github reference external" href="https://github.com/vega/vega-datasets">vega/vega-datasets</a>] como um dataframe da extensão Pandas.</p>
@@ -644,28 +655,31 @@ em termos de filhos por mulher (fertility), expectativa de vida em anos (life_ex
 </div>
 </section>
 <section id="tipos-de-dados">
-<h2>Tipos de dados<a class="headerlink" href="#tipos-de-dados" title="Link to this heading">#</a></h2>
+<h2><font color="gray">2.2 </font> Tipos de dados<a class="headerlink" href="#tipos-de-dados" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>O primeiro ingrediente para fazermos uma visualização efetiva são os dados de entrada. Os valores que recebemos podem representar diferentes formas de medida. Que tipo de comparações essas medições suportam? E que tipos de codificações suportam essas comparações?</p>
 <p>Vamos começar olhando pelos tipos de dados básicos que o Altair usa para informar as escolhas de codificações visuais. Esses tipos vão determinar quais comparações podemos fazer, e ser um guia nas nossas decisões a respeito do design das visualizações.</p>
 <p>O primeiro ingrediente na visualização eficaz são os dados de entrada. Os valores dos dados podem representar diferentes formas de medição. Que tipos de comparações essas medições suportam? E que tipos de codificações visuais suportam essas comparações?</p>
 <p>Começaremos observando os tipos básicos de dados que o Altair usa para informar as escolhas de codificação visual. Esses tipos de dados determinam os tipos de comparações que podemos fazer e, portanto, orientam nossas decisões de design de visualização.</p>
 <section id="nominal-n">
-<h3>Nominal (N)<a class="headerlink" href="#nominal-n" title="Link to this heading">#</a></h3>
+<h3><font color="gray">2.2.1 </font> Nominal (N)<a class="headerlink" href="#nominal-n" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Dados <em>nominais</em> (também chamados de dados <em>categóricos</em>) consistem em nomes de categorias.</p>
 <p>Com dados nominais, podemos comparar a igualdade de valores: <em>o valor A é igual ou diferente do valor B? (A = B)</em>, apoiando declarações como “A é igual a B” ou “A não é igual a B”.
 No conjunto de dados acima, o campo <code class="docutils literal notranslate"><span class="pre">country</span></code> (país) é nominal.</p>
 <p>Ao visualizar dados nominais, devemos ser capazes de ver prontamente se os valores são iguais ou diferentes: posição, matiz de cor (azul, vermelho, verde, <em>etc.</em>) e forma podem ajudar. No entanto, usar um canal de tamanho para codificar dados nominais pode nos enganar, sugerindo diferenças de ordem de classificação ou magnitude entre valores que não existem!</p>
 </section>
 <section id="ordinal-o">
-<h3>Ordinal (O)<a class="headerlink" href="#ordinal-o" title="Link to this heading">#</a></h3>
+<h3><font color="gray">2.2.2 </font> Ordinal (O)<a class="headerlink" href="#ordinal-o" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Dados <em>ordinais</em> consistem em valores que têm uma ordenação específica.</p>
 <p>Com dados ordinais, podemos comparar a ordenação de classificação de valores: <em>o valor A vem antes ou depois do valor B? (A &lt; B)</em>, apoiando afirmações como “A é menor que B” ou “A é maior que B”.
 No conjunto de dados acima, podemos tratar o campo <code class="docutils literal notranslate"><span class="pre">year</span></code>(ano) como ordinal.</p>
 <p>Ao visualizar dados ordinais, devemos perceber uma sensação de ordem de classificação. Posição, tamanho ou valor de cor (brilho) podem ser apropriados, enquanto matiz de cor (que não é ordenado perceptualmente) seria menos apropriado.</p>
 </section>
 <section id="quantitativo-q">
-<h3>Quantitativo (Q)<a class="headerlink" href="#quantitativo-q" title="Link to this heading">#</a></h3>
+<h3><font color="gray">2.2.3 </font> Quantitativo (Q)<a class="headerlink" href="#quantitativo-q" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Com dados <em>quantitativos</em>, podemos medir diferenças numéricas entre valores. Existem vários subtipos de dados quantitativos:</p>
 <p>Para dados de <em>intervalo</em>, podemos medir a distância (intervalo) entre pontos: <em>qual é a distância do valor A para o valor B? (A - B)</em>, apoiando afirmações como “A está a 12 unidades de distância de B”.</p>
 <p>Para dados de <em>razão</em>, o ponto zero é significativo e, portanto, também podemos medir proporções ou fatores de escala: <em>valor A é qual proporção do valor B? (A / B)</em>, apoiando afirmações como “A é 10% de B” ou “B é 7 vezes maior que A”.</p>
@@ -674,13 +688,15 @@ O Vega-Lite representa dados quantitativos, mas não faz distinção entre os ti
 <p>Os valores quantitativos podem ser visualizados usando posição, tamanho ou valor de cor, entre outros canais. Um eixo com uma linha de base zero é essencial para comparações proporcionais de valores de razão, mas pode ser omitido com segurança para comparações de intervalo.</p>
 </section>
 <section id="temporal-t">
-<h3>Temporal (T)<a class="headerlink" href="#temporal-t" title="Link to this heading">#</a></h3>
+<h3><font color="gray">2.2.4 </font> Temporal (T)<a class="headerlink" href="#temporal-t" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Valores <em>temporais</em> medem pontos de tempo ou intervalos. Este tipo é um caso especial de valores quantitativos (carimbos de tempo) com semântica e convenções ricas (por exemplo, o <a class="reference external" href="https://en.wikipedia.org/wiki/Gregorian_calendar">calendário gregoriano</a>). O tipo temporal no Vega-Lite suporta raciocínio sobre unidades de tempo (ano, mês, dia, hora, etc.) e fornece métodos para solicitar intervalos de tempo específicos.</p>
 <p>Exemplos de valores temporais incluem sequências de datas como <code class="docutils literal notranslate"><span class="pre">“2019-01-04”</span></code> e <code class="docutils literal notranslate"><span class="pre">“Jan</span> <span class="pre">04</span> <span class="pre">2019”</span></code>, bem como datas e horas padronizadas como o <a class="reference external" href="https://en.wikipedia.org/wiki/ISO_8601">formato de data e hora ISO</a>: <code class="docutils literal notranslate"><span class="pre">“2019-01-04T17:50:35.643Z”</span></code>.</p>
 <p>Não há valores temporais em nosso conjunto de dados de desenvolvimento global acima, pois o campo <code class="docutils literal notranslate"><span class="pre">year</span></code> é simplesmente codificado como um inteiro. Para mais detalhes sobre o uso de dados temporais no Altair, consulte a <a class="reference external" href="https://altair-viz.github.io/user_guide/times_and_dates.html">documentação de Horas e Datas</a>.</p>
 </section>
 <section id="resumo">
-<h3>Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h3>
+<h3><font color="gray">2.2.5 </font> Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Esses tipos de dados não são mutuamente exclusivos, mas formam uma hierarquia: dados ordinais suportam comparações nominais (igualdade), enquanto dados quantitativos suportam comparações ordinais (ordem de classificação).</p>
 <p>Além disso, esses tipos de dados <em>não</em> fornecem uma categorização fixa. Só porque um campo de dados é representado usando um número não significa que temos que tratá-lo como um tipo quantitativo! Por exemplo, podemos interpretar um conjunto de idades (10 anos, 20 anos, etc.) como nominal (menor ou maior), ordinal (agrupado por ano) ou quantitativo (calcular idade média).</p>
 <p>Agora vamos examinar como codificar visualmente esses tipos de dados!</p>
@@ -694,9 +710,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <p>Agora, vamos examinar como codificar esses tipos de dados visualmente!</p>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="canais-de-codificacao">
-<h1>Canais de Codificação<a class="headerlink" href="#canais-de-codificacao" title="Link to this heading">#</a></h1>
+<section id="canais-de-codificacao">
+<h2><font color="gray"> 2.3 </font> Canais de Codificação<a class="headerlink" href="#canais-de-codificacao" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>No cerne do Altair está o uso de <em>codificações</em> que vinculam campos de dados (com um determinado tipo de dado) a <em>canais</em> de codificação disponíveis, de um tipo de marca escolhido. Neste capítulo, examinaremos os seguintes canais de codificação:</p>
 <ul class="simple">
@@ -712,8 +727,9 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <li><p><code class="docutils literal notranslate"><span class="pre">row</span> <span class="pre">(linha)</span></code>: Classifica os dados em subparcelas alinhadas verticalmente.</p></li>
 </ul>
 <p>Para uma lista completa de canais disponíveis, consulte a <a class="reference external" href="https://altair-viz.github.io/user_guide/encoding.html">documentação de codificação do Altair.</a></p>
+</section>
 <section id="x">
-<h2>X<a class="headerlink" href="#x" title="Link to this heading">#</a></h2>
+<h2><font color="gray"> 2.3.1 </font> X<a class="headerlink" href="#x" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>O canal de codificação <code class="docutils literal notranslate"><span class="pre">x</span></code> define a posição horizontal de uma marca (coordenada x). Além disso, as escolhas padrões de eixos e títulos são feitas automaticamente. No gráfico abaixo, a escolha de um tipo de dado quantitativo resulta em uma escala de eixo linear contínuo:</p>
 <div class="cell docutils container">
@@ -727,23 +743,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-2ac3177a783f40088a9513de98cd1fa2.vega-embed {
+  #altair-viz-fb2ca07c595049c095c18f3e7a5f4b5c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2ac3177a783f40088a9513de98cd1fa2.vega-embed details,
-  #altair-viz-2ac3177a783f40088a9513de98cd1fa2.vega-embed details summary {
+  #altair-viz-fb2ca07c595049c095c18f3e7a5f4b5c.vega-embed details,
+  #altair-viz-fb2ca07c595049c095c18f3e7a5f4b5c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2ac3177a783f40088a9513de98cd1fa2"></div>
+<div id="altair-viz-fb2ca07c595049c095c18f3e7a5f4b5c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2ac3177a783f40088a9513de98cd1fa2") {
-      outputDiv = document.getElementById("altair-viz-2ac3177a783f40088a9513de98cd1fa2");
+    if (outputDiv.id !== "altair-viz-fb2ca07c595049c095c18f3e7a5f4b5c") {
+      outputDiv = document.getElementById("altair-viz-fb2ca07c595049c095c18f3e7a5f4b5c");
     }
 
     const paths = {
@@ -796,7 +812,7 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </div>
 </section>
 <section id="y">
-<h2>Y<a class="headerlink" href="#y" title="Link to this heading">#</a></h2>
+<h2><font color="gray"> 2.3.2 </font> Y<a class="headerlink" href="#y" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>O canal de codificação y define a posição vertical de uma marca (coordenada y). Aqui adicionamos o campo <code class="docutils literal notranslate"><span class="pre">cluster</span> <span class="pre">(agrupamento)</span></code> usando um tipo de dados ordinal (O). O resultado é um eixo discreto que inclui uma faixa dimensionada, com um tamanho de passo padrão, para cada valor exclusivo:</p>
 <div class="cell docutils container">
@@ -811,23 +827,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6c0a057fb8374b61a3186f90ef4daf4d.vega-embed {
+  #altair-viz-f262f42a31284155b5480912ae4768bb.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6c0a057fb8374b61a3186f90ef4daf4d.vega-embed details,
-  #altair-viz-6c0a057fb8374b61a3186f90ef4daf4d.vega-embed details summary {
+  #altair-viz-f262f42a31284155b5480912ae4768bb.vega-embed details,
+  #altair-viz-f262f42a31284155b5480912ae4768bb.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6c0a057fb8374b61a3186f90ef4daf4d"></div>
+<div id="altair-viz-f262f42a31284155b5480912ae4768bb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6c0a057fb8374b61a3186f90ef4daf4d") {
-      outputDiv = document.getElementById("altair-viz-6c0a057fb8374b61a3186f90ef4daf4d");
+    if (outputDiv.id !== "altair-viz-f262f42a31284155b5480912ae4768bb") {
+      outputDiv = document.getElementById("altair-viz-f262f42a31284155b5480912ae4768bb");
     }
 
     const paths = {
@@ -892,23 +908,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-f716580cf2f544838107d5b05c0875a2.vega-embed {
+  #altair-viz-7efdc5ceefb54a38af028c2a7cdbd981.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f716580cf2f544838107d5b05c0875a2.vega-embed details,
-  #altair-viz-f716580cf2f544838107d5b05c0875a2.vega-embed details summary {
+  #altair-viz-7efdc5ceefb54a38af028c2a7cdbd981.vega-embed details,
+  #altair-viz-7efdc5ceefb54a38af028c2a7cdbd981.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f716580cf2f544838107d5b05c0875a2"></div>
+<div id="altair-viz-7efdc5ceefb54a38af028c2a7cdbd981"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f716580cf2f544838107d5b05c0875a2") {
-      outputDiv = document.getElementById("altair-viz-f716580cf2f544838107d5b05c0875a2");
+    if (outputDiv.id !== "altair-viz-7efdc5ceefb54a38af028c2a7cdbd981") {
+      outputDiv = document.getElementById("altair-viz-7efdc5ceefb54a38af028c2a7cdbd981");
     }
 
     const paths = {
@@ -972,23 +988,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-2ea16c265fda4e85a190c4ed27aadc55.vega-embed {
+  #altair-viz-30b2adac17384133a871dd11341ef329.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-2ea16c265fda4e85a190c4ed27aadc55.vega-embed details,
-  #altair-viz-2ea16c265fda4e85a190c4ed27aadc55.vega-embed details summary {
+  #altair-viz-30b2adac17384133a871dd11341ef329.vega-embed details,
+  #altair-viz-30b2adac17384133a871dd11341ef329.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-2ea16c265fda4e85a190c4ed27aadc55"></div>
+<div id="altair-viz-30b2adac17384133a871dd11341ef329"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-2ea16c265fda4e85a190c4ed27aadc55") {
-      outputDiv = document.getElementById("altair-viz-2ea16c265fda4e85a190c4ed27aadc55");
+    if (outputDiv.id !== "altair-viz-30b2adac17384133a871dd11341ef329") {
+      outputDiv = document.getElementById("altair-viz-30b2adac17384133a871dd11341ef329");
     }
 
     const paths = {
@@ -1043,7 +1059,7 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <p><em>O que acontece se você também adicionar <code class="docutils literal notranslate"><span class="pre">nice=False</span></code> ao atributo de escala acima?</em></p>
 </section>
 <section id="marcas-graficas">
-<h2>Marcas Gráficas<a class="headerlink" href="#marcas-graficas" title="Link to this heading">#</a></h2>
+<h2><font color="gray"> 2.4 </font> Marcas Gráficas<a class="headerlink" href="#marcas-graficas" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Nossa exploração dos canais de codificação acima utiliza exclusivamente marcas do tipo <code class="docutils literal notranslate"><span class="pre">point</span></code> para visualizar os dados. No entanto, o tipo de marca <code class="docutils literal notranslate"><span class="pre">point</span></code> é apenas uma das muitas formas geométricas que podem ser usadas para representar visualmente os dados. O Altair inclui vários tipos de marcas integradas, incluindo:</p>
 <ul class="simple">
@@ -1059,8 +1075,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <li><p><code class="docutils literal notranslate"><span class="pre">mark_tick()</span></code> - Traços verticais ou horizontais.</p></li>
 </ul>
 <p>Para uma lista completa, com links para exemplos, consulte a <a class="reference external" href="https://altair-viz.github.io/user_guide/marks/index.html">documentação de marcas do Altair</a>. Em seguida, exploraremos alguns dos tipos de marcas mais comumente usados em gráficos estatísticos.</p>
-<section id="marcas-de-ponto-point-marks">
-<h3>Marcas de Ponto (<em>point marks</em>)<a class="headerlink" href="#marcas-de-ponto-point-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-ponto">
+<h3><font color="gray"> 2.4.1 </font> Marcas de Ponto<a class="headerlink" href="#marcas-de-ponto" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">point</span></code> representa pontos específicos, como em <em>gráficos de dispersão</em> (_scatter plots) e <em>gráficos de pontos</em> (<em>dot plots</em>). Além dos canais de codificação <code class="docutils literal notranslate"><span class="pre">x</span></code> e <code class="docutils literal notranslate"><span class="pre">y</span></code> (para especificar as posições dos pontos em 2D), as marcas de ponto podem usar os canais <code class="docutils literal notranslate"><span class="pre">color</span></code>, <code class="docutils literal notranslate"><span class="pre">size</span></code> e <code class="docutils literal notranslate"><span class="pre">shape</span></code> para transmitir informações adicionais de campos de dados.</p>
 <p>Abaixo está um gráfico de pontos (<em>dot plot</em>) de <code class="docutils literal notranslate"><span class="pre">fertility</span></code>, com o campo <code class="docutils literal notranslate"><span class="pre">cluster</span></code> codificado de forma redundante usando os canais <code class="docutils literal notranslate"><span class="pre">y</span></code> e <code class="docutils literal notranslate"><span class="pre">shape</span></code>.</p>
@@ -1077,23 +1093,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-f56e56f349f7466f8f8a1fee1ef15fce.vega-embed {
+  #altair-viz-176fd28fc0104efcb507622ac3036cd9.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f56e56f349f7466f8f8a1fee1ef15fce.vega-embed details,
-  #altair-viz-f56e56f349f7466f8f8a1fee1ef15fce.vega-embed details summary {
+  #altair-viz-176fd28fc0104efcb507622ac3036cd9.vega-embed details,
+  #altair-viz-176fd28fc0104efcb507622ac3036cd9.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f56e56f349f7466f8f8a1fee1ef15fce"></div>
+<div id="altair-viz-176fd28fc0104efcb507622ac3036cd9"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f56e56f349f7466f8f8a1fee1ef15fce") {
-      outputDiv = document.getElementById("altair-viz-f56e56f349f7466f8f8a1fee1ef15fce");
+    if (outputDiv.id !== "altair-viz-176fd28fc0104efcb507622ac3036cd9") {
+      outputDiv = document.getElementById("altair-viz-176fd28fc0104efcb507622ac3036cd9");
     }
 
     const paths = {
@@ -1159,23 +1175,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7e52db236c864d50966424118a51d598.vega-embed {
+  #altair-viz-4b5b08d3ec14413db2748230e58a1b5a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7e52db236c864d50966424118a51d598.vega-embed details,
-  #altair-viz-7e52db236c864d50966424118a51d598.vega-embed details summary {
+  #altair-viz-4b5b08d3ec14413db2748230e58a1b5a.vega-embed details,
+  #altair-viz-4b5b08d3ec14413db2748230e58a1b5a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7e52db236c864d50966424118a51d598"></div>
+<div id="altair-viz-4b5b08d3ec14413db2748230e58a1b5a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7e52db236c864d50966424118a51d598") {
-      outputDiv = document.getElementById("altair-viz-7e52db236c864d50966424118a51d598");
+    if (outputDiv.id !== "altair-viz-4b5b08d3ec14413db2748230e58a1b5a") {
+      outputDiv = document.getElementById("altair-viz-4b5b08d3ec14413db2748230e58a1b5a");
     }
 
     const paths = {
@@ -1227,8 +1243,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </script></div></div>
 </div>
 </section>
-<section id="marcas-de-circulo-circle-marks">
-<h3>Marcas de Círculo (<em>circle marks</em>)<a class="headerlink" href="#marcas-de-circulo-circle-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-circulo">
+<h3><font color="gray"> 2.4.2 </font> Marcas de Círculo<a class="headerlink" href="#marcas-de-circulo" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">circle</span></code> é uma abreviação conveniente para marcas <code class="docutils literal notranslate"><span class="pre">point</span></code> desenhadas como círculos preenchidos.</p>
 <div class="cell docutils container">
@@ -1244,23 +1260,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-6a11aef80432485a9b06fd03ef14e665.vega-embed {
+  #altair-viz-cba898cac73b46449dcc59096ecd7c48.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-6a11aef80432485a9b06fd03ef14e665.vega-embed details,
-  #altair-viz-6a11aef80432485a9b06fd03ef14e665.vega-embed details summary {
+  #altair-viz-cba898cac73b46449dcc59096ecd7c48.vega-embed details,
+  #altair-viz-cba898cac73b46449dcc59096ecd7c48.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-6a11aef80432485a9b06fd03ef14e665"></div>
+<div id="altair-viz-cba898cac73b46449dcc59096ecd7c48"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-6a11aef80432485a9b06fd03ef14e665") {
-      outputDiv = document.getElementById("altair-viz-6a11aef80432485a9b06fd03ef14e665");
+    if (outputDiv.id !== "altair-viz-cba898cac73b46449dcc59096ecd7c48") {
+      outputDiv = document.getElementById("altair-viz-cba898cac73b46449dcc59096ecd7c48");
     }
 
     const paths = {
@@ -1312,8 +1328,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </script></div></div>
 </div>
 </section>
-<section id="marcas-de-quadrado-square-marks">
-<h3>Marcas de Quadrado (<em>square marks</em>)<a class="headerlink" href="#marcas-de-quadrado-square-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-quadrado">
+<h3><font color="gray"> 2.4.3 </font> Marcas de Quadrado<a class="headerlink" href="#marcas-de-quadrado" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">square</span></code> é uma abreviação conveniente para marcas <code class="docutils literal notranslate"><span class="pre">point</span></code> desenhadas como quadrados preenchidos.</p>
 <div class="cell docutils container">
@@ -1329,23 +1345,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a581a0e008f949bdaeabece8d8f48627.vega-embed {
+  #altair-viz-cd4a7b6a590448e298cdc3d510836db4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a581a0e008f949bdaeabece8d8f48627.vega-embed details,
-  #altair-viz-a581a0e008f949bdaeabece8d8f48627.vega-embed details summary {
+  #altair-viz-cd4a7b6a590448e298cdc3d510836db4.vega-embed details,
+  #altair-viz-cd4a7b6a590448e298cdc3d510836db4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a581a0e008f949bdaeabece8d8f48627"></div>
+<div id="altair-viz-cd4a7b6a590448e298cdc3d510836db4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a581a0e008f949bdaeabece8d8f48627") {
-      outputDiv = document.getElementById("altair-viz-a581a0e008f949bdaeabece8d8f48627");
+    if (outputDiv.id !== "altair-viz-cd4a7b6a590448e298cdc3d510836db4") {
+      outputDiv = document.getElementById("altair-viz-cd4a7b6a590448e298cdc3d510836db4");
     }
 
     const paths = {
@@ -1397,8 +1413,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </script></div></div>
 </div>
 </section>
-<section id="marcas-de-traco-tick-marks">
-<h3>Marcas de Traço (<em>tick marks</em>)<a class="headerlink" href="#marcas-de-traco-tick-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-traco">
+<h3><font color="gray"> 2.4.4 </font> Marcas de Traço<a class="headerlink" href="#marcas-de-traco" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">tick</span></code> representa um ponto de dados usando um pequeno segmento de linha ou “traço”. Essas marcas são particularmente úteis para comparar valores em uma única dimensão com mínimo sobreposição. Um <em>gráfico de pontos</em> desenhado com marcas de traço é, às vezes, chamado de <em>gráfico de faixa</em> (<em>strip plot</em>).</p>
 <div class="cell docutils container">
@@ -1414,23 +1430,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-269f2be3001843368d9f39927d1e1249.vega-embed {
+  #altair-viz-f07d96a12d0749078e81822c985b7ba4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-269f2be3001843368d9f39927d1e1249.vega-embed details,
-  #altair-viz-269f2be3001843368d9f39927d1e1249.vega-embed details summary {
+  #altair-viz-f07d96a12d0749078e81822c985b7ba4.vega-embed details,
+  #altair-viz-f07d96a12d0749078e81822c985b7ba4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-269f2be3001843368d9f39927d1e1249"></div>
+<div id="altair-viz-f07d96a12d0749078e81822c985b7ba4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-269f2be3001843368d9f39927d1e1249") {
-      outputDiv = document.getElementById("altair-viz-269f2be3001843368d9f39927d1e1249");
+    if (outputDiv.id !== "altair-viz-f07d96a12d0749078e81822c985b7ba4") {
+      outputDiv = document.getElementById("altair-viz-f07d96a12d0749078e81822c985b7ba4");
     }
 
     const paths = {
@@ -1482,8 +1498,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </script></div></div>
 </div>
 </section>
-<section id="marcas-de-barra-bar-marks">
-<h3>Marcas de Barra (<em>bar marks</em>)<a class="headerlink" href="#marcas-de-barra-bar-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-barra">
+<h3><font color="gray"> 2.4.5 </font> Marcas de Barra<a class="headerlink" href="#marcas-de-barra" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">bar</span></code> desenha um retângulo com uma posição, largura e altura.</p>
 <p>O gráfico abaixo é um gráfico de barras (<em>bar chart</em>) simples da população (<code class="docutils literal notranslate"><span class="pre">pop</span></code>) de cada país.</p>
@@ -1499,23 +1515,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-0f80223a61f147d7b6d13d29d01010aa.vega-embed {
+  #altair-viz-8201627b08424050be3dcdb9028a3392.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0f80223a61f147d7b6d13d29d01010aa.vega-embed details,
-  #altair-viz-0f80223a61f147d7b6d13d29d01010aa.vega-embed details summary {
+  #altair-viz-8201627b08424050be3dcdb9028a3392.vega-embed details,
+  #altair-viz-8201627b08424050be3dcdb9028a3392.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0f80223a61f147d7b6d13d29d01010aa"></div>
+<div id="altair-viz-8201627b08424050be3dcdb9028a3392"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0f80223a61f147d7b6d13d29d01010aa") {
-      outputDiv = document.getElementById("altair-viz-0f80223a61f147d7b6d13d29d01010aa");
+    if (outputDiv.id !== "altair-viz-8201627b08424050be3dcdb9028a3392") {
+      outputDiv = document.getElementById("altair-viz-8201627b08424050be3dcdb9028a3392");
     }
 
     const paths = {
@@ -1582,23 +1598,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-ee17b73cbcb340b39fbe4faec0ebbe7a.vega-embed {
+  #altair-viz-ce07b31386c04ec4b154be2245c6b2e2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-ee17b73cbcb340b39fbe4faec0ebbe7a.vega-embed details,
-  #altair-viz-ee17b73cbcb340b39fbe4faec0ebbe7a.vega-embed details summary {
+  #altair-viz-ce07b31386c04ec4b154be2245c6b2e2.vega-embed details,
+  #altair-viz-ce07b31386c04ec4b154be2245c6b2e2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-ee17b73cbcb340b39fbe4faec0ebbe7a"></div>
+<div id="altair-viz-ce07b31386c04ec4b154be2245c6b2e2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ee17b73cbcb340b39fbe4faec0ebbe7a") {
-      outputDiv = document.getElementById("altair-viz-ee17b73cbcb340b39fbe4faec0ebbe7a");
+    if (outputDiv.id !== "altair-viz-ce07b31386c04ec4b154be2245c6b2e2") {
+      outputDiv = document.getElementById("altair-viz-ce07b31386c04ec4b154be2245c6b2e2");
     }
 
     const paths = {
@@ -1666,23 +1682,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-bd86f90f921347c7b54662096681aaeb.vega-embed {
+  #altair-viz-71fefdf6b0bb4c92bd0a1488b3b5d671.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-bd86f90f921347c7b54662096681aaeb.vega-embed details,
-  #altair-viz-bd86f90f921347c7b54662096681aaeb.vega-embed details summary {
+  #altair-viz-71fefdf6b0bb4c92bd0a1488b3b5d671.vega-embed details,
+  #altair-viz-71fefdf6b0bb4c92bd0a1488b3b5d671.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-bd86f90f921347c7b54662096681aaeb"></div>
+<div id="altair-viz-71fefdf6b0bb4c92bd0a1488b3b5d671"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-bd86f90f921347c7b54662096681aaeb") {
-      outputDiv = document.getElementById("altair-viz-bd86f90f921347c7b54662096681aaeb");
+    if (outputDiv.id !== "altair-viz-71fefdf6b0bb4c92bd0a1488b3b5d671") {
+      outputDiv = document.getElementById("altair-viz-71fefdf6b0bb4c92bd0a1488b3b5d671");
     }
 
     const paths = {
@@ -1734,8 +1750,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </script></div></div>
 </div>
 </section>
-<section id="marcas-de-linha-line-marks">
-<h3>Marcas de Linha (<em>line marks</em>)<a class="headerlink" href="#marcas-de-linha-line-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-linha">
+<h3><font color="gray"> 2.4.6 </font> Marcas de Linha<a class="headerlink" href="#marcas-de-linha" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">line</span></code> conecta pontos plotados com segmentos de linha, por exemplo, para que a inclinação de uma linha transmita informações sobre a taxa de variação.</p>
 <p>Vamos plotar um gráfico de linha (<em>line chart</em>) da fertilidade por país ao longo dos anos, usando o quadro de dados global de desenvolvimento completo e não filtrado. Novamente, ocultaremos a legenda e usaremos tooltips em vez disso.</p>
@@ -1755,23 +1771,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-d7c374a0be76496396eaf889d8686b5b.vega-embed {
+  #altair-viz-59658908bc8b453e8c4275885f7cfb81.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d7c374a0be76496396eaf889d8686b5b.vega-embed details,
-  #altair-viz-d7c374a0be76496396eaf889d8686b5b.vega-embed details summary {
+  #altair-viz-59658908bc8b453e8c4275885f7cfb81.vega-embed details,
+  #altair-viz-59658908bc8b453e8c4275885f7cfb81.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d7c374a0be76496396eaf889d8686b5b"></div>
+<div id="altair-viz-59658908bc8b453e8c4275885f7cfb81"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d7c374a0be76496396eaf889d8686b5b") {
-      outputDiv = document.getElementById("altair-viz-d7c374a0be76496396eaf889d8686b5b");
+    if (outputDiv.id !== "altair-viz-59658908bc8b453e8c4275885f7cfb81") {
+      outputDiv = document.getElementById("altair-viz-59658908bc8b453e8c4275885f7cfb81");
     }
 
     const paths = {
@@ -1844,23 +1860,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c08db6a1f0e248369775b4c13dba34cc.vega-embed {
+  #altair-viz-180233c1a6b24a8081b428796b8727db.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c08db6a1f0e248369775b4c13dba34cc.vega-embed details,
-  #altair-viz-c08db6a1f0e248369775b4c13dba34cc.vega-embed details summary {
+  #altair-viz-180233c1a6b24a8081b428796b8727db.vega-embed details,
+  #altair-viz-180233c1a6b24a8081b428796b8727db.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c08db6a1f0e248369775b4c13dba34cc"></div>
+<div id="altair-viz-180233c1a6b24a8081b428796b8727db"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c08db6a1f0e248369775b4c13dba34cc") {
-      outputDiv = document.getElementById("altair-viz-c08db6a1f0e248369775b4c13dba34cc");
+    if (outputDiv.id !== "altair-viz-180233c1a6b24a8081b428796b8727db") {
+      outputDiv = document.getElementById("altair-viz-180233c1a6b24a8081b428796b8727db");
     }
 
     const paths = {
@@ -1932,23 +1948,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-82c25069d6654e70b94cb12087d6343e.vega-embed {
+  #altair-viz-ac1fd4768b1e4d238a1cf823d9edf136.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-82c25069d6654e70b94cb12087d6343e.vega-embed details,
-  #altair-viz-82c25069d6654e70b94cb12087d6343e.vega-embed details summary {
+  #altair-viz-ac1fd4768b1e4d238a1cf823d9edf136.vega-embed details,
+  #altair-viz-ac1fd4768b1e4d238a1cf823d9edf136.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-82c25069d6654e70b94cb12087d6343e"></div>
+<div id="altair-viz-ac1fd4768b1e4d238a1cf823d9edf136"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-82c25069d6654e70b94cb12087d6343e") {
-      outputDiv = document.getElementById("altair-viz-82c25069d6654e70b94cb12087d6343e");
+    if (outputDiv.id !== "altair-viz-ac1fd4768b1e4d238a1cf823d9edf136") {
+      outputDiv = document.getElementById("altair-viz-ac1fd4768b1e4d238a1cf823d9edf136");
     }
 
     const paths = {
@@ -2000,8 +2016,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </script></div></div>
 </div>
 </section>
-<section id="marcas-de-area-area-marks">
-<h3>Marcas de Área (<em>area marks</em>)<a class="headerlink" href="#marcas-de-area-area-marks" title="Link to this heading">#</a></h3>
+<section id="marcas-de-area">
+<h3><font color="gray"> 2.4.7 </font> Marcas de Área<a class="headerlink" href="#marcas-de-area" title="Link to this heading">#</a></h3>
 <hr class="docutils" />
 <p>O tipo de marca <code class="docutils literal notranslate"><span class="pre">area</span></code> combina aspectos de outras marcas: ele visualiza conexões (inclinações) entre pontos de dados, mas também mostra uma região preenchida, com uma aresta padronizada para uma linha de base de valor zero.</p>
 <p>O gráfico abaixo é um gráfico de área (<em>area chart</em>) da população ao longo do tempo apenas para os Estados Unidos:</p>
@@ -2019,23 +2035,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4fe83987df0b474aa2665e5758e21929.vega-embed {
+  #altair-viz-b77d7daa19b440dd8d2e255edcfab376.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4fe83987df0b474aa2665e5758e21929.vega-embed details,
-  #altair-viz-4fe83987df0b474aa2665e5758e21929.vega-embed details summary {
+  #altair-viz-b77d7daa19b440dd8d2e255edcfab376.vega-embed details,
+  #altair-viz-b77d7daa19b440dd8d2e255edcfab376.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4fe83987df0b474aa2665e5758e21929"></div>
+<div id="altair-viz-b77d7daa19b440dd8d2e255edcfab376"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4fe83987df0b474aa2665e5758e21929") {
-      outputDiv = document.getElementById("altair-viz-4fe83987df0b474aa2665e5758e21929");
+    if (outputDiv.id !== "altair-viz-b77d7daa19b440dd8d2e255edcfab376") {
+      outputDiv = document.getElementById("altair-viz-b77d7daa19b440dd8d2e255edcfab376");
     }
 
     const paths = {
@@ -2099,23 +2115,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-12742c52afd946618ac6cbc4adcbfc93.vega-embed {
+  #altair-viz-99eddb1164944c2a962e4fa7705ca5e7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-12742c52afd946618ac6cbc4adcbfc93.vega-embed details,
-  #altair-viz-12742c52afd946618ac6cbc4adcbfc93.vega-embed details summary {
+  #altair-viz-99eddb1164944c2a962e4fa7705ca5e7.vega-embed details,
+  #altair-viz-99eddb1164944c2a962e4fa7705ca5e7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-12742c52afd946618ac6cbc4adcbfc93"></div>
+<div id="altair-viz-99eddb1164944c2a962e4fa7705ca5e7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-12742c52afd946618ac6cbc4adcbfc93") {
-      outputDiv = document.getElementById("altair-viz-12742c52afd946618ac6cbc4adcbfc93");
+    if (outputDiv.id !== "altair-viz-99eddb1164944c2a962e4fa7705ca5e7") {
+      outputDiv = document.getElementById("altair-viz-99eddb1164944c2a962e4fa7705ca5e7");
     }
 
     const paths = {
@@ -2186,23 +2202,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-0aa87a45ec5f45aa9aeaedd2ddf0c776.vega-embed {
+  #altair-viz-f7dddcde3cf748528f72ad8596f256fc.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-0aa87a45ec5f45aa9aeaedd2ddf0c776.vega-embed details,
-  #altair-viz-0aa87a45ec5f45aa9aeaedd2ddf0c776.vega-embed details summary {
+  #altair-viz-f7dddcde3cf748528f72ad8596f256fc.vega-embed details,
+  #altair-viz-f7dddcde3cf748528f72ad8596f256fc.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-0aa87a45ec5f45aa9aeaedd2ddf0c776"></div>
+<div id="altair-viz-f7dddcde3cf748528f72ad8596f256fc"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-0aa87a45ec5f45aa9aeaedd2ddf0c776") {
-      outputDiv = document.getElementById("altair-viz-0aa87a45ec5f45aa9aeaedd2ddf0c776");
+    if (outputDiv.id !== "altair-viz-f7dddcde3cf748528f72ad8596f256fc") {
+      outputDiv = document.getElementById("altair-viz-f7dddcde3cf748528f72ad8596f256fc");
     }
 
     const paths = {
@@ -2272,23 +2288,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-720093fbf6624efa97c9420463fe7f51.vega-embed {
+  #altair-viz-10b24b760e5d46c7b90f8e28d9bdf8af.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-720093fbf6624efa97c9420463fe7f51.vega-embed details,
-  #altair-viz-720093fbf6624efa97c9420463fe7f51.vega-embed details summary {
+  #altair-viz-10b24b760e5d46c7b90f8e28d9bdf8af.vega-embed details,
+  #altair-viz-10b24b760e5d46c7b90f8e28d9bdf8af.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-720093fbf6624efa97c9420463fe7f51"></div>
+<div id="altair-viz-10b24b760e5d46c7b90f8e28d9bdf8af"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-720093fbf6624efa97c9420463fe7f51") {
-      outputDiv = document.getElementById("altair-viz-720093fbf6624efa97c9420463fe7f51");
+    if (outputDiv.id !== "altair-viz-10b24b760e5d46c7b90f8e28d9bdf8af") {
+      outputDiv = document.getElementById("altair-viz-10b24b760e5d46c7b90f8e28d9bdf8af");
     }
 
     const paths = {
@@ -2353,23 +2369,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-766a468716dc460bbf0200fc5053e32c.vega-embed {
+  #altair-viz-3debde1a6ebd4ba4a2405dbc97cde71b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-766a468716dc460bbf0200fc5053e32c.vega-embed details,
-  #altair-viz-766a468716dc460bbf0200fc5053e32c.vega-embed details summary {
+  #altair-viz-3debde1a6ebd4ba4a2405dbc97cde71b.vega-embed details,
+  #altair-viz-3debde1a6ebd4ba4a2405dbc97cde71b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-766a468716dc460bbf0200fc5053e32c"></div>
+<div id="altair-viz-3debde1a6ebd4ba4a2405dbc97cde71b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-766a468716dc460bbf0200fc5053e32c") {
-      outputDiv = document.getElementById("altair-viz-766a468716dc460bbf0200fc5053e32c");
+    if (outputDiv.id !== "altair-viz-3debde1a6ebd4ba4a2405dbc97cde71b") {
+      outputDiv = document.getElementById("altair-viz-3debde1a6ebd4ba4a2405dbc97cde71b");
     }
 
     const paths = {
@@ -2437,23 +2453,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9e30a915fe1b4f93b99badc7c14800e4.vega-embed {
+  #altair-viz-bb1ceb8eeb9443aea23a84f0e4c0db1c.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9e30a915fe1b4f93b99badc7c14800e4.vega-embed details,
-  #altair-viz-9e30a915fe1b4f93b99badc7c14800e4.vega-embed details summary {
+  #altair-viz-bb1ceb8eeb9443aea23a84f0e4c0db1c.vega-embed details,
+  #altair-viz-bb1ceb8eeb9443aea23a84f0e4c0db1c.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9e30a915fe1b4f93b99badc7c14800e4"></div>
+<div id="altair-viz-bb1ceb8eeb9443aea23a84f0e4c0db1c"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9e30a915fe1b4f93b99badc7c14800e4") {
-      outputDiv = document.getElementById("altair-viz-9e30a915fe1b4f93b99badc7c14800e4");
+    if (outputDiv.id !== "altair-viz-bb1ceb8eeb9443aea23a84f0e4c0db1c") {
+      outputDiv = document.getElementById("altair-viz-bb1ceb8eeb9443aea23a84f0e4c0db1c");
     }
 
     const paths = {
@@ -2521,23 +2537,23 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9458b7f608eb48c1aef04a2b03ed6f6c.vega-embed {
+  #altair-viz-975f09134bc84b56a31071c8bf8e0b5f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9458b7f608eb48c1aef04a2b03ed6f6c.vega-embed details,
-  #altair-viz-9458b7f608eb48c1aef04a2b03ed6f6c.vega-embed details summary {
+  #altair-viz-975f09134bc84b56a31071c8bf8e0b5f.vega-embed details,
+  #altair-viz-975f09134bc84b56a31071c8bf8e0b5f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9458b7f608eb48c1aef04a2b03ed6f6c"></div>
+<div id="altair-viz-975f09134bc84b56a31071c8bf8e0b5f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9458b7f608eb48c1aef04a2b03ed6f6c") {
-      outputDiv = document.getElementById("altair-viz-9458b7f608eb48c1aef04a2b03ed6f6c");
+    if (outputDiv.id !== "altair-viz-975f09134bc84b56a31071c8bf8e0b5f") {
+      outputDiv = document.getElementById("altair-viz-975f09134bc84b56a31071c8bf8e0b5f");
     }
 
     const paths = {
@@ -2590,8 +2606,8 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
 </div>
 </section>
 </section>
-<section id="sumario">
-<h2>Sumário<a class="headerlink" href="#sumario" title="Link to this heading">#</a></h2>
+<section id="id2">
+<h2><font color="gray"> 2.5 </font> Resumo<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Completamos nosso tour pelos tipos de dados, canais de codificação e marcas gráficas! Você, agora, está preparado para explorar ainda mais o espaço de codificações, tipos de marcas e parâmetros de marcas. Para mais informações - incluindo recursos que pulamos! - dê uma olhada nas marcas e codificação da documentação do Altair.</p>
 <p>Na próxima seção, nós vamos ver o uso de transformação de dados para criar gráficos que resumem dados ou visualizem novos campos derivados. Em uma seção mais à frente, nós vamos analisar como customizar ainda mais os seus gráficos modificando escalas, eixos e legendas.</p>
@@ -2642,7 +2658,7 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">1. Introdução ao Altair</p>
+        <p class="prev-next-title"><font color="gray">1.</font> Introdução ao Altair</p>
       </div>
     </a>
     <a class="right-next"
@@ -2650,7 +2666,7 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">3. Transformação de dados</p>
+        <p class="prev-next-title"><font color="gray">3.</font> Transformação de dados</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -2671,37 +2687,31 @@ Por exemplo, poderíamos interpretar um conjunto de idades (10 anos, 20 anos, et
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">2. Tipos de dados, marcas gráficas e canais de codificação visual</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desenvolvimento-global-de-dados">Desenvolvimento Global de Dados</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-dados">Tipos de dados</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n">Nominal (N)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o">Ordinal (O)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitativo-q">Quantitativo (Q)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t">Temporal (T)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#desenvolvimento-global-de-dados"><font color="gray">2.1 </font> Desenvolvimento Global de Dados</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tipos-de-dados"><font color="gray">2.2 </font> Tipos de dados</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nominal-n"><font color="gray">2.2.1 </font> Nominal (N)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ordinal-o"><font color="gray">2.2.2 </font> Ordinal (O)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quantitativo-q"><font color="gray">2.2.3 </font> Quantitativo (Q)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#temporal-t"><font color="gray">2.2.4 </font> Temporal (T)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">2.2.5 </font> Resumo</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><font color="gray"> 2.2.5 </font> Resumo</a></li>
 </ul>
 </li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#canais-de-codificacao"><font color="gray"> 2.3 </font> Canais de Codificação</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x"><font color="gray"> 2.3.1 </font> X</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#y"><font color="gray"> 2.3.2 </font> Y</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-graficas"><font color="gray"> 2.4 </font> Marcas Gráficas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-ponto"><font color="gray"> 2.4.1 </font> Marcas de Ponto</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-circulo"><font color="gray"> 2.4.2 </font> Marcas de Círculo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-quadrado"><font color="gray"> 2.4.3 </font> Marcas de Quadrado</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-traco"><font color="gray"> 2.4.4 </font> Marcas de Traço</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-barra"><font color="gray"> 2.4.5 </font> Marcas de Barra</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-linha"><font color="gray"> 2.4.6 </font> Marcas de Linha</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-area"><font color="gray"> 2.4.7 </font> Marcas de Área</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#canais-de-codificacao">Canais de Codificação</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#x">X</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#y">Y</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-graficas">Marcas Gráficas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-ponto-point-marks">Marcas de Ponto (<em>point marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-circulo-circle-marks">Marcas de Círculo (<em>circle marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-quadrado-square-marks">Marcas de Quadrado (<em>square marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-traco-tick-marks">Marcas de Traço (<em>tick marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-barra-bar-marks">Marcas de Barra (<em>bar marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-linha-line-marks">Marcas de Linha (<em>line marks</em>)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#marcas-de-area-area-marks">Marcas de Área (<em>area marks</em>)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><font color="gray"> 2.5 </font> Resumo</a></li>
 </ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sumario">Sumário</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>

@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -169,28 +169,13 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="1_intro.html">1. Introdução ao Altair</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_types.html">2. Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
-
-<li class="toctree-l1"><a class="reference internal" href="3_transform.html">3. Transformação de dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_composition.html">5 Composição de Múltiplas Visualizações</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Interação</a></li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<li class="toctree-l1"><a class="reference internal" href="7_cartographics.html">7. Visualização Cartográfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="1_intro.html"><font color="gray">1.</font> Introdução ao Altair</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2_types.html"><font color="gray">2. </font> Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="3_transform.html"><font color="gray">3.</font> Transformação de dados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_scales.html"><font color="gray">4.</font> Escalas, Eixos e Legendas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_composition.html"><font color="gray">5</font> Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#"><font color="gray">6.</font> Interação</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_cartographics.html"><font color="gray">7.</font> Visualização Cartográfica</a></li>
 <li class="toctree-l1"><a class="reference internal" href="debugging.html">Guia de Depuração para Altair</a></li>
 </ul>
 
@@ -238,6 +223,37 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/content/6_interaction.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Colab"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Colab logo" src="../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
 
 
 
@@ -374,7 +390,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>6. Interação</h1>
+    <h1><font color="gray">6.</font> Interação</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,27 +400,19 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6. Interação</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">6.1 Datasets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes">6.2 Introduzindo seleções</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas-dynamic-queries">6.3 Consultas dinâmicas (<em>Dynamic Queries</em>)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas-inputs">Vinculando seleções a múltiplas entradas (<em>inputs</em>)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas">Usando visualizações como consultas dinâmicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets"><font color="gray">6.1</font> Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes"><font color="gray">6.2</font> Introduzindo seleções</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas"><font color="gray">6.3</font> Consultas dinâmicas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas"><font color="gray">6.3.1</font> Vinculando seleções a múltiplas entradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas"><font color="gray">6.3.2</font> Usando visualizações como consultas dinâmicas</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">6.4 Movimentando e Ampliando</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">6.5 Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sumario">6.8 Sumário</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.1 Datasets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">6.2 Introduzindo seleções</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">6.5 Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6.8 Sumário</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando"><font color="gray">6.4</font> Movimentando e Ampliando</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes"><font color="gray">6.5</font> Navegação: Visão geral + Detalhes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">6.8</font> Resumo</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -415,8 +423,8 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="interacao">
-<h1>6. Interação<a class="headerlink" href="#interacao" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="interacao">
+<h1><font color="gray">6.</font> Interação<a class="headerlink" href="#interacao" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <blockquote>
 <div><p><em>“A graphic is not ‘drawn’ once and for all; it is ‘constructed’ and reconstructed until it reveals all the relationships constituted by the interplay of the data. The best graphic operations are those carried out by the decision-maker themself.”</em> — <a class="reference external" href="https://books.google.com/books?id=csqX_xnm4tcC">Jacques Bertin</a></p>
@@ -442,9 +450,9 @@
 </div>
 </div>
 </div>
-</section>
 <section id="datasets">
-<h1>6.1 Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h1>
+<h2><font color="gray">6.1</font> Datasets<a class="headerlink" href="#datasets" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Nós vamos visuzalisar uma variedade de datasets da coleção <a class="reference external" href="https://github.com/vega/vega-datasets">vega-datasets</a>:</p>
 <ul class="simple">
 <li><p>O dataset <code class="docutils literal notranslate"><span class="pre">cars</span></code> com modelos entre 1970 e começos dos anos 1980.</p></li>
@@ -466,7 +474,8 @@
 </div>
 </section>
 <section id="introduzindo-selecoes">
-<h1>6.2 Introduzindo seleções<a class="headerlink" href="#introduzindo-selecoes" title="Link to this heading">#</a></h1>
+<h2><font color="gray">6.2</font> Introduzindo seleções<a class="headerlink" href="#introduzindo-selecoes" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Vamos começar com uma seleção básica: simplesmente clicar em um ponto para destacá-lo. Usando o <em>dataset</em> <code class="docutils literal notranslate"><span class="pre">cars</span></code>, criaremos um gráfico de dispersão (<em>scatter plot</em>) relacionando potência (<em>horsepower</em>) e milhas por galão (<em>miles per gallon</em>), com uma codificação de cor baseada no número de cilindros do motor do carro.</p>
 <p>Além disso, criaremos uma instância de seleção chamando <code class="docutils literal notranslate"><span class="pre">alt.selection_single()</span></code>, indicando que queremos que a seleção seja definida sobre um <em>único valor</em>. Por padrão, a seleção usa um clique do mouse para determinar o valor selecionado. Para registrar uma seleção em um gráfico, devemos adicioná-la usando o método <code class="docutils literal notranslate"><span class="pre">.add_selection()</span></code>.</p>
 <p>Uma vez definida a seleção, podemos utilizá-la como parâmetro para <em>codificações condicionais</em>, que aplicam uma codificação diferente dependendo se um registro de dados está dentro ou fora da seleção. Por exemplo, considere o seguinte código:</p>
@@ -491,33 +500,33 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\2101507836.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\2101507836.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selection = alt.selection_single();
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\2101507836.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\2101507836.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(cars).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-b6989b3d805d4215852bf6b51dad6a7c.vega-embed {
+  #altair-viz-4bc02840876b4a588f60227002f19c92.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-b6989b3d805d4215852bf6b51dad6a7c.vega-embed details,
-  #altair-viz-b6989b3d805d4215852bf6b51dad6a7c.vega-embed details summary {
+  #altair-viz-4bc02840876b4a588f60227002f19c92.vega-embed details,
+  #altair-viz-4bc02840876b4a588f60227002f19c92.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-b6989b3d805d4215852bf6b51dad6a7c"></div>
+<div id="altair-viz-4bc02840876b4a588f60227002f19c92"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-b6989b3d805d4215852bf6b51dad6a7c") {
-      outputDiv = document.getElementById("altair-viz-b6989b3d805d4215852bf6b51dad6a7c");
+    if (outputDiv.id !== "altair-viz-4bc02840876b4a588f60227002f19c92") {
+      outputDiv = document.getElementById("altair-viz-4bc02840876b4a588f60227002f19c92");
     }
 
     const paths = {
@@ -607,36 +616,36 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\2299552586.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\2299552586.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single()).properties(title=&#39;Single (Click)&#39;),
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\1277325702.py:2: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\2299552586.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\2299552586.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi()).properties(title=&#39;Multi (Shift-Click)&#39;),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-a7f78fa8418440d3b6e5f73409a1a1a2.vega-embed {
+  #altair-viz-0f88c68adb024a00816808523b119bb0.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a7f78fa8418440d3b6e5f73409a1a1a2.vega-embed details,
-  #altair-viz-a7f78fa8418440d3b6e5f73409a1a1a2.vega-embed details summary {
+  #altair-viz-0f88c68adb024a00816808523b119bb0.vega-embed details,
+  #altair-viz-0f88c68adb024a00816808523b119bb0.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a7f78fa8418440d3b6e5f73409a1a1a2"></div>
+<div id="altair-viz-0f88c68adb024a00816808523b119bb0"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a7f78fa8418440d3b6e5f73409a1a1a2") {
-      outputDiv = document.getElementById("altair-viz-a7f78fa8418440d3b6e5f73409a1a1a2");
+    if (outputDiv.id !== "altair-viz-0f88c68adb024a00816808523b119bb0") {
+      outputDiv = document.getElementById("altair-viz-0f88c68adb024a00816808523b119bb0");
     }
 
     const paths = {
@@ -699,36 +708,36 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\861132474.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\861132474.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single(on=&#39;mouseover&#39;)).properties(title=&#39;Single (Mouseover)&#39;),
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\1277325702.py:2: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_13852\861132474.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_9984\861132474.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi(on=&#39;mouseover&#39;)).properties(title=&#39;Multi (Shift-Mouseover)&#39;)
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-fafb3ecc5c344e8c99989d0c3bd69b9b.vega-embed {
+  #altair-viz-9e2c642723ef434b815e36dae0816379.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-fafb3ecc5c344e8c99989d0c3bd69b9b.vega-embed details,
-  #altair-viz-fafb3ecc5c344e8c99989d0c3bd69b9b.vega-embed details summary {
+  #altair-viz-9e2c642723ef434b815e36dae0816379.vega-embed details,
+  #altair-viz-9e2c642723ef434b815e36dae0816379.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-fafb3ecc5c344e8c99989d0c3bd69b9b"></div>
+<div id="altair-viz-9e2c642723ef434b815e36dae0816379"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-fafb3ecc5c344e8c99989d0c3bd69b9b") {
-      outputDiv = document.getElementById("altair-viz-fafb3ecc5c344e8c99989d0c3bd69b9b");
+    if (outputDiv.id !== "altair-viz-9e2c642723ef434b815e36dae0816379") {
+      outputDiv = document.getElementById("altair-viz-9e2c642723ef434b815e36dae0816379");
     }
 
     const paths = {
@@ -781,8 +790,10 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 <p>Agora que cobrimos as bases das seleções em Altair, vamos por um tour através das várias técnicas de interação que encerram!</p>
 </section>
-<section id="consultas-dinamicas-dynamic-queries">
-<h1>6.3 Consultas dinâmicas (<em>Dynamic Queries</em>)<a class="headerlink" href="#consultas-dinamicas-dynamic-queries" title="Link to this heading">#</a></h1>
+<section id="consultas-dinamicas">
+<h2><font color="gray">6.3</font> Consultas dinâmicas<a class="headerlink" href="#consultas-dinamicas" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
+<p>Introduzindo seleções</p>
 <p><em>Consultas dinâmicas</em> permitem a exploração rápida e reversível de dados para isolar padrões de interesse. Conforme definido por <a class="reference external" href="https://www.cs.umd.edu/~ben/papers/Ahlberg1992Dynamic.pdf">Ahlberg, Williamson e Shneiderman</a>, uma consulta dinâmica:</p>
 <ul class="simple">
 <li><p>representa uma consulta graficamente,</p></li>
@@ -800,6 +811,199 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <span class="n">genres</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># get unique field values</span>
 <span class="n">genres</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="n">genres</span><span class="p">))</span> <span class="c1"># filter out None values</span>
 <span class="n">genres</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span> <span class="c1"># sort alphabetically</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">gaierror</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:1344,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1343</span> <span class="k">try</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1344</span>     <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1345</span>               <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1346</span> <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1336,</span> in <span class="ni">HTTPConnection.request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1335</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;Send a complete request to the server.&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1336</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_request</span><span class="p">(</span><span class="n">method</span><span class="p">,</span> <span class="n">url</span><span class="p">,</span> <span class="n">body</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1382,</span> in <span class="ni">HTTPConnection._send_request</span><span class="nt">(self, method, url, body, headers, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1381</span>     <span class="n">body</span> <span class="o">=</span> <span class="n">_encode</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="s1">&#39;body&#39;</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1382</span> <span class="bp">self</span><span class="o">.</span><span class="n">endheaders</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1331,</span> in <span class="ni">HTTPConnection.endheaders</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1330</span>     <span class="k">raise</span> <span class="n">CannotSendHeader</span><span class="p">()</span>
+<span class="ne">-&gt; </span><span class="mi">1331</span> <span class="bp">self</span><span class="o">.</span><span class="n">_send_output</span><span class="p">(</span><span class="n">message_body</span><span class="p">,</span> <span class="n">encode_chunked</span><span class="o">=</span><span class="n">encode_chunked</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1091,</span> in <span class="ni">HTTPConnection._send_output</span><span class="nt">(self, message_body, encode_chunked)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1090</span> <span class="k">del</span> <span class="bp">self</span><span class="o">.</span><span class="n">_buffer</span><span class="p">[:]</span>
+<span class="ne">-&gt; </span><span class="mi">1091</span> <span class="bp">self</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1093</span> <span class="k">if</span> <span class="n">message_body</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1094</span> 
+<span class="g g-Whitespace">   </span><span class="mi">1095</span>     <span class="c1"># create a consistent interface to message_body</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1035,</span> in <span class="ni">HTTPConnection.send</span><span class="nt">(self, data)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1034</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">auto_open</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1035</span>     <span class="bp">self</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1036</span> <span class="k">else</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1470,</span> in <span class="ni">HTTPSConnection.connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1468</span> <span class="s2">&quot;Connect to a host on a given (SSL) port.&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1470</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1472</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_tunnel_host</span><span class="p">:</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\http\client.py:1001,</span> in <span class="ni">HTTPConnection.connect</span><span class="nt">(self)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1000</span> <span class="n">sys</span><span class="o">.</span><span class="n">audit</span><span class="p">(</span><span class="s2">&quot;http.client.connect&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1001</span> <span class="bp">self</span><span class="o">.</span><span class="n">sock</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_create_connection</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1002</span>     <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">host</span><span class="p">,</span><span class="bp">self</span><span class="o">.</span><span class="n">port</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">timeout</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">source_address</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1003</span> <span class="c1"># Might fail in OSs that don&#39;t implement TCP_NODELAY</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\socket.py:828,</span> in <span class="ni">create_connection</span><span class="nt">(address, timeout, source_address, all_errors)</span>
+<span class="g g-Whitespace">    </span><span class="mi">827</span> <span class="n">exceptions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ne">--&gt; </span><span class="mi">828</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">getaddrinfo</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">SOCK_STREAM</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">829</span>     <span class="n">af</span><span class="p">,</span> <span class="n">socktype</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">canonname</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">res</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\socket.py:963,</span> in <span class="ni">getaddrinfo</span><span class="nt">(host, port, family, type, proto, flags)</span>
+<span class="g g-Whitespace">    </span><span class="mi">962</span> <span class="n">addrlist</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="ne">--&gt; </span><span class="mi">963</span> <span class="k">for</span> <span class="n">res</span> <span class="ow">in</span> <span class="n">_socket</span><span class="o">.</span><span class="n">getaddrinfo</span><span class="p">(</span><span class="n">host</span><span class="p">,</span> <span class="n">port</span><span class="p">,</span> <span class="n">family</span><span class="p">,</span> <span class="nb">type</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">flags</span><span class="p">):</span>
+<span class="g g-Whitespace">    </span><span class="mi">964</span>     <span class="n">af</span><span class="p">,</span> <span class="n">socktype</span><span class="p">,</span> <span class="n">proto</span><span class="p">,</span> <span class="n">canonname</span><span class="p">,</span> <span class="n">sa</span> <span class="o">=</span> <span class="n">res</span>
+
+<span class="ne">gaierror</span>: [Errno 11001] getaddrinfo failed
+
+<span class="n">During</span> <span class="n">handling</span> <span class="n">of</span> <span class="n">the</span> <span class="n">above</span> <span class="n">exception</span><span class="p">,</span> <span class="n">another</span> <span class="n">exception</span> <span class="n">occurred</span><span class="p">:</span>
+
+<span class="ne">URLError</span><span class="g g-Whitespace">                                  </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span> <span class="c1"># load movies data</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">genres</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># get unique field values</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">genres</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">filter</span><span class="p">(</span><span class="k">lambda</span> <span class="n">d</span><span class="p">:</span> <span class="n">d</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">,</span> <span class="n">genres</span><span class="p">))</span> <span class="c1"># filter out None values</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py:791,</span> in <span class="ni">read_json</span><span class="nt">(path_or_buf, orient, typ, dtype, convert_axes, convert_dates, keep_default_dates, precise_float, date_unit, encoding, encoding_errors, lines, chunksize, compression, nrows, storage_options, dtype_backend, engine)</span>
+<span class="g g-Whitespace">    </span><span class="mi">788</span> <span class="k">if</span> <span class="n">convert_axes</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">orient</span> <span class="o">!=</span> <span class="s2">&quot;table&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">789</span>     <span class="n">convert_axes</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="ne">--&gt; </span><span class="mi">791</span> <span class="n">json_reader</span> <span class="o">=</span> <span class="n">JsonReader</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">792</span>     <span class="n">path_or_buf</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">793</span>     <span class="n">orient</span><span class="o">=</span><span class="n">orient</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">794</span>     <span class="n">typ</span><span class="o">=</span><span class="n">typ</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">795</span>     <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">796</span>     <span class="n">convert_axes</span><span class="o">=</span><span class="n">convert_axes</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">797</span>     <span class="n">convert_dates</span><span class="o">=</span><span class="n">convert_dates</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">798</span>     <span class="n">keep_default_dates</span><span class="o">=</span><span class="n">keep_default_dates</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">799</span>     <span class="n">precise_float</span><span class="o">=</span><span class="n">precise_float</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">800</span>     <span class="n">date_unit</span><span class="o">=</span><span class="n">date_unit</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">801</span>     <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">802</span>     <span class="n">lines</span><span class="o">=</span><span class="n">lines</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">803</span>     <span class="n">chunksize</span><span class="o">=</span><span class="n">chunksize</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">804</span>     <span class="n">compression</span><span class="o">=</span><span class="n">compression</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">805</span>     <span class="n">nrows</span><span class="o">=</span><span class="n">nrows</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">806</span>     <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">807</span>     <span class="n">encoding_errors</span><span class="o">=</span><span class="n">encoding_errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">808</span>     <span class="n">dtype_backend</span><span class="o">=</span><span class="n">dtype_backend</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">809</span>     <span class="n">engine</span><span class="o">=</span><span class="n">engine</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">810</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">812</span> <span class="k">if</span> <span class="n">chunksize</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">813</span>     <span class="k">return</span> <span class="n">json_reader</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py:904,</span> in <span class="ni">JsonReader.__init__</span><span class="nt">(self, filepath_or_buffer, orient, typ, dtype, convert_axes, convert_dates, keep_default_dates, precise_float, date_unit, encoding, lines, chunksize, compression, nrows, storage_options, encoding_errors, dtype_backend, engine)</span>
+<span class="g g-Whitespace">    </span><span class="mi">902</span>     <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">filepath_or_buffer</span>
+<span class="g g-Whitespace">    </span><span class="mi">903</span> <span class="k">elif</span> <span class="bp">self</span><span class="o">.</span><span class="n">engine</span> <span class="o">==</span> <span class="s2">&quot;ujson&quot;</span><span class="p">:</span>
+<span class="ne">--&gt; </span><span class="mi">904</span>     <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_data_from_filepath</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">905</span>     <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_preprocess_data</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py:944,</span> in <span class="ni">JsonReader._get_data_from_filepath</span><span class="nt">(self, filepath_or_buffer)</span>
+<span class="g g-Whitespace">    </span><span class="mi">937</span> <span class="n">filepath_or_buffer</span> <span class="o">=</span> <span class="n">stringify_path</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">938</span> <span class="k">if</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">939</span>     <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">940</span>     <span class="ow">or</span> <span class="n">is_url</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">941</span>     <span class="ow">or</span> <span class="n">is_fsspec_url</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">942</span>     <span class="ow">or</span> <span class="n">file_exists</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">943</span> <span class="p">):</span>
+<span class="ne">--&gt; </span><span class="mi">944</span>     <span class="bp">self</span><span class="o">.</span><span class="n">handles</span> <span class="o">=</span> <span class="n">get_handle</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">945</span>         <span class="n">filepath_or_buffer</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">946</span>         <span class="s2">&quot;r&quot;</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">947</span>         <span class="n">encoding</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">948</span>         <span class="n">compression</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">compression</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">949</span>         <span class="n">storage_options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">950</span>         <span class="n">errors</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">encoding_errors</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">951</span>     <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">952</span>     <span class="n">filepath_or_buffer</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">handles</span><span class="o">.</span><span class="n">handle</span>
+<span class="g g-Whitespace">    </span><span class="mi">953</span> <span class="k">elif</span> <span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">954</span>     <span class="nb">isinstance</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="nb">str</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">955</span>     <span class="ow">and</span> <span class="n">filepath_or_buffer</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">958</span>     <span class="ow">and</span> <span class="ow">not</span> <span class="n">file_exists</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">959</span> <span class="p">):</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py:728,</span> in <span class="ni">get_handle</span><span class="nt">(path_or_buf, mode, encoding, compression, memory_map, is_text, errors, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">725</span>     <span class="n">codecs</span><span class="o">.</span><span class="n">lookup_error</span><span class="p">(</span><span class="n">errors</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">727</span> <span class="c1"># open URLs</span>
+<span class="ne">--&gt; </span><span class="mi">728</span> <span class="n">ioargs</span> <span class="o">=</span> <span class="n">_get_filepath_or_buffer</span><span class="p">(</span>
+<span class="g g-Whitespace">    </span><span class="mi">729</span>     <span class="n">path_or_buf</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">730</span>     <span class="n">encoding</span><span class="o">=</span><span class="n">encoding</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">731</span>     <span class="n">compression</span><span class="o">=</span><span class="n">compression</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">732</span>     <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">733</span>     <span class="n">storage_options</span><span class="o">=</span><span class="n">storage_options</span><span class="p">,</span>
+<span class="g g-Whitespace">    </span><span class="mi">734</span> <span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">736</span> <span class="n">handle</span> <span class="o">=</span> <span class="n">ioargs</span><span class="o">.</span><span class="n">filepath_or_buffer</span>
+<span class="g g-Whitespace">    </span><span class="mi">737</span> <span class="n">handles</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">BaseBuffer</span><span class="p">]</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py:384,</span> in <span class="ni">_get_filepath_or_buffer</span><span class="nt">(filepath_or_buffer, encoding, compression, mode, storage_options)</span>
+<span class="g g-Whitespace">    </span><span class="mi">382</span> <span class="c1"># assuming storage_options is to be interpreted as headers</span>
+<span class="g g-Whitespace">    </span><span class="mi">383</span> <span class="n">req_info</span> <span class="o">=</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">Request</span><span class="p">(</span><span class="n">filepath_or_buffer</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">storage_options</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">384</span> <span class="k">with</span> <span class="n">urlopen</span><span class="p">(</span><span class="n">req_info</span><span class="p">)</span> <span class="k">as</span> <span class="n">req</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">385</span>     <span class="n">content_encoding</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;Content-Encoding&quot;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">386</span>     <span class="k">if</span> <span class="n">content_encoding</span> <span class="o">==</span> <span class="s2">&quot;gzip&quot;</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">387</span>         <span class="c1"># Override compression based on Content-Encoding header</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py:289,</span> in <span class="ni">urlopen</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">    </span><span class="mi">283</span><span class="w"> </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">284</span><span class="sd"> Lazy-import wrapper for stdlib urlopen, as that imports a big chunk of</span>
+<span class="g g-Whitespace">    </span><span class="mi">285</span><span class="sd"> the stdlib.</span>
+<span class="g g-Whitespace">    </span><span class="mi">286</span><span class="sd"> &quot;&quot;&quot;</span>
+<span class="g g-Whitespace">    </span><span class="mi">287</span> <span class="kn">import</span><span class="w"> </span><span class="nn">urllib.request</span>
+<span class="ne">--&gt; </span><span class="mi">289</span> <span class="k">return</span> <span class="n">urllib</span><span class="o">.</span><span class="n">request</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:215,</span> in <span class="ni">urlopen</span><span class="nt">(url, data, timeout, cafile, capath, cadefault, context)</span>
+<span class="g g-Whitespace">    </span><span class="mi">213</span> <span class="k">else</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">214</span>     <span class="n">opener</span> <span class="o">=</span> <span class="n">_opener</span>
+<span class="ne">--&gt; </span><span class="mi">215</span> <span class="k">return</span> <span class="n">opener</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">timeout</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:515,</span> in <span class="ni">OpenerDirector.open</span><span class="nt">(self, fullurl, data, timeout)</span>
+<span class="g g-Whitespace">    </span><span class="mi">512</span>     <span class="n">req</span> <span class="o">=</span> <span class="n">meth</span><span class="p">(</span><span class="n">req</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">514</span> <span class="n">sys</span><span class="o">.</span><span class="n">audit</span><span class="p">(</span><span class="s1">&#39;urllib.Request&#39;</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">full_url</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">headers</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">())</span>
+<span class="ne">--&gt; </span><span class="mi">515</span> <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_open</span><span class="p">(</span><span class="n">req</span><span class="p">,</span> <span class="n">data</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">517</span> <span class="c1"># post-process response</span>
+<span class="g g-Whitespace">    </span><span class="mi">518</span> <span class="n">meth_name</span> <span class="o">=</span> <span class="n">protocol</span><span class="o">+</span><span class="s2">&quot;_response&quot;</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:532,</span> in <span class="ni">OpenerDirector._open</span><span class="nt">(self, req, data)</span>
+<span class="g g-Whitespace">    </span><span class="mi">529</span>     <span class="k">return</span> <span class="n">result</span>
+<span class="g g-Whitespace">    </span><span class="mi">531</span> <span class="n">protocol</span> <span class="o">=</span> <span class="n">req</span><span class="o">.</span><span class="n">type</span>
+<span class="ne">--&gt; </span><span class="mi">532</span> <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_call_chain</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">handle_open</span><span class="p">,</span> <span class="n">protocol</span><span class="p">,</span> <span class="n">protocol</span> <span class="o">+</span>
+<span class="g g-Whitespace">    </span><span class="mi">533</span>                           <span class="s1">&#39;_open&#39;</span><span class="p">,</span> <span class="n">req</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">534</span> <span class="k">if</span> <span class="n">result</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">535</span>     <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:492,</span> in <span class="ni">OpenerDirector._call_chain</span><span class="nt">(self, chain, kind, meth_name, *args)</span>
+<span class="g g-Whitespace">    </span><span class="mi">490</span> <span class="k">for</span> <span class="n">handler</span> <span class="ow">in</span> <span class="n">handlers</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">491</span>     <span class="n">func</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">handler</span><span class="p">,</span> <span class="n">meth_name</span><span class="p">)</span>
+<span class="ne">--&gt; </span><span class="mi">492</span>     <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+<span class="g g-Whitespace">    </span><span class="mi">493</span>     <span class="k">if</span> <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+<span class="g g-Whitespace">    </span><span class="mi">494</span>         <span class="k">return</span> <span class="n">result</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:1392,</span> in <span class="ni">HTTPSHandler.https_open</span><span class="nt">(self, req)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1391</span> <span class="k">def</span><span class="w"> </span><span class="nf">https_open</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">req</span><span class="p">):</span>
+<span class="ne">-&gt; </span><span class="mi">1392</span>     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">do_open</span><span class="p">(</span><span class="n">http</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">HTTPSConnection</span><span class="p">,</span> <span class="n">req</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1393</span>                         <span class="n">context</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_context</span><span class="p">)</span>
+
+<span class="nn">File ~\AppData\Local\Programs\Python\Python312\Lib\urllib\request.py:1347,</span> in <span class="ni">AbstractHTTPHandler.do_open</span><span class="nt">(self, http_class, req, **http_conn_args)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1344</span>         <span class="n">h</span><span class="o">.</span><span class="n">request</span><span class="p">(</span><span class="n">req</span><span class="o">.</span><span class="n">get_method</span><span class="p">(),</span> <span class="n">req</span><span class="o">.</span><span class="n">selector</span><span class="p">,</span> <span class="n">req</span><span class="o">.</span><span class="n">data</span><span class="p">,</span> <span class="n">headers</span><span class="p">,</span>
+<span class="g g-Whitespace">   </span><span class="mi">1345</span>                   <span class="n">encode_chunked</span><span class="o">=</span><span class="n">req</span><span class="o">.</span><span class="n">has_header</span><span class="p">(</span><span class="s1">&#39;Transfer-encoding&#39;</span><span class="p">))</span>
+<span class="g g-Whitespace">   </span><span class="mi">1346</span>     <span class="k">except</span> <span class="ne">OSError</span> <span class="k">as</span> <span class="n">err</span><span class="p">:</span> <span class="c1"># timeout error</span>
+<span class="ne">-&gt; </span><span class="mi">1347</span>         <span class="k">raise</span> <span class="n">URLError</span><span class="p">(</span><span class="n">err</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1348</span>     <span class="n">r</span> <span class="o">=</span> <span class="n">h</span><span class="o">.</span><span class="n">getresponse</span><span class="p">()</span>
+<span class="g g-Whitespace">   </span><span class="mi">1349</span> <span class="k">except</span><span class="p">:</span>
+
+<span class="ne">URLError</span>: &lt;urlopen error [Errno 11001] getaddrinfo failed&gt;
 </pre></div>
 </div>
 </div>
@@ -834,6 +1038,58 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Gustavo\AppData\Local\Temp\ipykernel_28952\2770894913.py:1: AltairDeprecationWarning: 
+Deprecated since `altair=5.0.0`. Use selection_point instead.
+  selectGenre = alt.selection_single(
+</pre></div>
+</div>
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">TypeError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">9</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">selectGenre</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span>     <span class="n">name</span><span class="o">=</span><span class="s1">&#39;Select&#39;</span><span class="p">,</span> <span class="c1"># name the selection &#39;Select&#39;</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span>     <span class="n">fields</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">],</span> <span class="c1"># limit selection to the Major_Genre field</span>
+<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">init</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Major_Genre&#39;</span><span class="p">:</span> <span class="n">genres</span><span class="p">[</span><span class="mi">0</span><span class="p">]},</span> <span class="c1"># use first genre entry as initial value</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span>     <span class="n">bind</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">binding_select</span><span class="p">(</span><span class="n">options</span><span class="o">=</span><span class="n">genres</span><span class="p">)</span> <span class="c1"># bind to a menu of unique genre values</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">8</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">movies</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
+<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">selectGenre</span>
+<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+   <span class="p">(</span><span class="o">...</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">14</span>     <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selectGenre</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.75</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.05</span><span class="p">))</span>
+<span class="g g-Whitespace">     </span><span class="mi">15</span> <span class="p">)</span>
+
+<span class="nn">File c:\Users\Gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\typing_extensions.py:2853,</span> in <span class="ni">deprecated.__call__.&lt;locals&gt;.wrapper</span><span class="nt">(*args, **kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2850</span> <span class="nd">@functools</span><span class="o">.</span><span class="n">wraps</span><span class="p">(</span><span class="n">arg</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">2851</span> <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+<span class="g g-Whitespace">   </span><span class="mi">2852</span>     <span class="n">warnings</span><span class="o">.</span><span class="n">warn</span><span class="p">(</span><span class="n">msg</span><span class="p">,</span> <span class="n">category</span><span class="o">=</span><span class="n">category</span><span class="p">,</span> <span class="n">stacklevel</span><span class="o">=</span><span class="n">stacklevel</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">2853</span>     <span class="k">return</span> <span class="n">arg</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\Gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\altair\vegalite\v5\api.py:1749,</span> in <span class="ni">selection_single</span><span class="nt">(**kwargs)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1746</span> <span class="nd">@utils</span><span class="o">.</span><span class="n">deprecated</span><span class="p">(</span><span class="n">version</span><span class="o">=</span><span class="s2">&quot;5.0.0&quot;</span><span class="p">,</span> <span class="n">alternative</span><span class="o">=</span><span class="s2">&quot;selection_point&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1747</span> <span class="k">def</span><span class="w"> </span><span class="nf">selection_single</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Parameter</span><span class="p">:</span>
+<span class="g g-Whitespace">   </span><span class="mi">1748</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;&#39;selection_single&#39; is deprecated.  Use &#39;selection_point&#39;.&quot;&quot;&quot;</span>
+<span class="ne">-&gt; </span><span class="mi">1749</span>     <span class="k">return</span> <span class="n">_selection</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s2">&quot;point&quot;</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\Gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\altair\vegalite\v5\api.py:1443,</span> in <span class="ni">_selection</span><span class="nt">(type, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1440</span>     <span class="n">msg</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;&#39;type&#39; must be &#39;point&#39; or &#39;interval&#39;&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1441</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+<span class="ne">-&gt; </span><span class="mi">1443</span> <span class="k">return</span> <span class="n">param</span><span class="p">(</span><span class="n">select</span><span class="o">=</span><span class="n">select</span><span class="p">,</span> <span class="o">**</span><span class="n">param_kwds</span><span class="p">)</span>
+
+<span class="nn">File c:\Users\Gustavo\AppData\Local\Programs\Python\Python312\Lib\site-packages\altair\vegalite\v5\api.py:1413,</span> in <span class="ni">param</span><span class="nt">(name, value, bind, empty, expr, **kwds)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1411</span>     <span class="n">parameter</span><span class="o">.</span><span class="n">param_type</span> <span class="o">=</span> <span class="s2">&quot;selection&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1412</span> <span class="k">else</span><span class="p">:</span>
+<span class="ne">-&gt; </span><span class="mi">1413</span>     <span class="n">parameter</span><span class="o">.</span><span class="n">param</span> <span class="o">=</span> <span class="n">core</span><span class="o">.</span><span class="n">SelectionParameter</span><span class="p">(</span>
+<span class="g g-Whitespace">   </span><span class="mi">1414</span>         <span class="n">name</span><span class="o">=</span><span class="n">parameter</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">bind</span><span class="o">=</span><span class="n">bind</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="n">value</span><span class="p">,</span> <span class="n">expr</span><span class="o">=</span><span class="n">expr</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span>
+<span class="g g-Whitespace">   </span><span class="mi">1415</span>     <span class="p">)</span>
+<span class="g g-Whitespace">   </span><span class="mi">1416</span>     <span class="n">parameter</span><span class="o">.</span><span class="n">param_type</span> <span class="o">=</span> <span class="s2">&quot;selection&quot;</span>
+<span class="g g-Whitespace">   </span><span class="mi">1418</span> <span class="k">return</span> <span class="n">parameter</span>
+
+<span class="ne">TypeError</span>: altair.vegalite.v5.schema.core.SelectionParameter() got multiple values for keyword argument &#39;value&#39;
+</pre></div>
+</div>
+</div>
 </div>
 <p>Nossa construção acima melhora múltiplos aspectos das seleções:</p>
 <ul class="simple">
@@ -843,8 +1099,9 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <li><p><code class="docutils literal notranslate"><span class="pre">Vinculamos</span></code> a seleção a um widget de interface, neste caso um menu suspenso via <code class="docutils literal notranslate"><span class="pre">binding_select</span></code>.</p></li>
 <li><p>Como antes, usamos uma codificação condicional para controlar o canal de opacidade.</p></li>
 </ul>
-<section id="vinculando-selecoes-a-multiplas-entradas-inputs">
-<h2>Vinculando seleções a múltiplas entradas (<em>inputs</em>)<a class="headerlink" href="#vinculando-selecoes-a-multiplas-entradas-inputs" title="Link to this heading">#</a></h2>
+<section id="vinculando-selecoes-a-multiplas-entradas">
+<h3><font color="gray">6.3.1</font> Vinculando seleções a múltiplas entradas<a class="headerlink" href="#vinculando-selecoes-a-multiplas-entradas" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Uma instância de seleção pode ser vinculada a <em>múltiplas</em> ferramentas (<em>widgets</em>) de consulta dinâmica. Vamos modificar o exemplo acima para fornecer filtros para <em>ambos</em> <code class="docutils literal notranslate"><span class="pre">Major_Genre</span></code> e <code class="docutils literal notranslate"><span class="pre">MPAA_Rating</span></code>, usando botões de opção em vez de um menu. Nossa seleção <code class="docutils literal notranslate"><span class="pre">single</span></code> agora é definida sobre um único <em>par</em> de valores de gênero e classificação MPAA</p>
 <p><em>Procure por conjunções surpreendentes de gênero e classificação. Há algum filme de terror com classificação G ou PG?</em></p>
 <div class="cell docutils container">
@@ -873,7 +1130,8 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </section>
 <section id="usando-visualizacoes-como-consultas-dinamicas">
-<h2>Usando visualizações como consultas dinâmicas<a class="headerlink" href="#usando-visualizacoes-como-consultas-dinamicas" title="Link to this heading">#</a></h2>
+<h3><font color="gray">6.3.2</font> Usando visualizações como consultas dinâmicas<a class="headerlink" href="#usando-visualizacoes-como-consultas-dinamicas" title="Link to this heading">#</a></h3>
+<hr class="docutils" />
 <p>Embora os widgets de interface padrão mostrem os valores de parâmetros de consulta <em>possíveis</em>, eles não visualizam a <em>distribuição</em> desses valores. Também podemos desejar usar interações mais ricas, como seleções de vários valores ou intervalos, em vez de widgets de entrada que selecionam um único valor por vez.</p>
 <p>Para resolver esses problemas, podemos criar gráficos adicionais para visualizar dados e dar suporte a consultas dinâmicas. Vamos adicionar um histograma da contagem de filmes por ano e usar uma seleção de intervalo para destacar dinamicamente os filmes em períodos de tempo selecionados.</p>
 <p><em>Interaja com o histograma do ano para explorar filmes de diferentes períodos de tempo. Você viu alguma evidência de <a class="reference external" href="https://pt.wikipedia.org/wiki/Vi%C3%A9s_de_sele%C3%A7%C3%A3o">viés de seleção</a> ou <a class="reference external" href="https://en.wikipedia.org/wiki/Sampling_bias">sampling bias</a> ao longo dos anos? (Como o ano e as classificações dos críticos se relacionam?)</em></p>
@@ -921,7 +1179,8 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </section>
 </section>
 <section id="movimentando-e-ampliando">
-<h1>6.4 Movimentando e Ampliando<a class="headerlink" href="#movimentando-e-ampliando" title="Link to this heading">#</a></h1>
+<h2><font color="gray">6.4</font> Movimentando e Ampliando<a class="headerlink" href="#movimentando-e-ampliando" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>O gráfico de dispersão (<em>scatter plot</em>) da pontuação dos filmes está um pouco confuso em alguns lugares, tornando difícil examinar pontos em regiões com mais densas. Usando as técnicas de interação de <em>movimentação</em> e <em>ampliação</em>, podemos inspecionar regiões com maior densidade de pontos de mais perto.</p>
 <p>Vamos começar pensando sobre como podemos expressar a movimentação e a ampliação usando as seleções do Altair. O que define a “janela de visualização” do gráfico? <em>Os domínios das escalas dos eixos!</em></p>
 <p>Podemos mudar os domínios de escala para modificar a faixa de valores de dados visualizada. Para fazer isso interativamente, podemos vincular uma seleção de intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) a domínios de escala com o código <code class="docutils literal notranslate"><span class="pre">bind='scales'</span></code>. O resultado é que, ao invés de termos uma região selecionada que pode ser arrastada e ampliada, poderemos agora arrastar e ampliar toda a área do gráfico!</p>
@@ -941,80 +1200,6 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-c190c7ae3299&gt;:1: AltairDeprecationWarning: 
-Deprecated since `altair=5.0.0`. Use add_params instead.
-  alt.Chart(movies).mark_circle().add_selection(
-</pre></div>
-</div>
-<div class="output text_html">
-<style>
-  #altair-viz-e547e85e03be48eb882b04eb00de060b.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-e547e85e03be48eb882b04eb00de060b.vega-embed details,
-  #altair-viz-e547e85e03be48eb882b04eb00de060b.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-e547e85e03be48eb882b04eb00de060b"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e547e85e03be48eb882b04eb00de060b") {
-      outputDiv = document.getElementById("altair-viz-e547e85e03be48eb882b04eb00de060b");
-    }
-
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/movies.json"}, "mark": {"type": "circle"}, "encoding": {"tooltip": [{"field": "Title", "type": "nominal"}, {"field": "Release_Date", "type": "nominal"}, {"field": "IMDB_Rating", "type": "quantitative"}, {"field": "Rotten_Tomatoes_Rating", "type": "quantitative"}], "x": {"field": "Rotten_Tomatoes_Rating", "type": "quantitative"}, "y": {"axis": {"minExtent": 30}, "field": "IMDB_Rating", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_7", "select": {"type": "interval"}, "bind": "scales"}], "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 <p><em>Ampliando, podemos ver que as avaliações tem precisão limitada! As avaliações do Rotten Tomatoes são inteiros, enquanto as do IMDB são separadas por décimos. Como resultado, há pontos sobrepostos mesmo quando ampliamos,  com vários filmes compartilhando a mesma avaliação.</em></p>
 <p>Lendo o código acima, você pode perceber o código <code class="docutils literal notranslate"><span class="pre">alt.Axis(minExtent=30)</span></code> no canal de codificação <code class="docutils literal notranslate"><span class="pre">y</span></code>. O parâmetro <code class="docutils literal notranslate"><span class="pre">minExtent</span></code> garante que uma quantidade mínima de espaço está reservada para marcações no eixo e rótulos. Por que fazer isso? Quando deslocamos e ampliamos, os rótulos do eixo podem mudar e fazer a posição do título do eixo mudar. Ao estabelecer uma extensão mínima, podemos reduzir movimentos que causam distração no gráfico. <em>Tente mudar o valor do <code class="docutils literal notranslate"><span class="pre">minExtent</span></code>, definindo-o como zero e então diminuindo a ampliação para ver o que acontece quando rótulos de eixo mais longos entram na visualização.</em></p>
@@ -1032,75 +1217,6 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<style>
-  #altair-viz-70839b4b116a43efa368adba74ccda6b.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-70839b4b116a43efa368adba74ccda6b.vega-embed details,
-  #altair-viz-70839b4b116a43efa368adba74ccda6b.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-70839b4b116a43efa368adba74ccda6b"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-70839b4b116a43efa368adba74ccda6b") {
-      outputDiv = document.getElementById("altair-viz-70839b4b116a43efa368adba74ccda6b");
-    }
-
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/movies.json"}, "mark": {"type": "circle"}, "encoding": {"tooltip": [{"field": "Title", "type": "nominal"}, {"field": "Release_Date", "type": "nominal"}, {"field": "IMDB_Rating", "type": "quantitative"}, {"field": "Rotten_Tomatoes_Rating", "type": "quantitative"}], "x": {"field": "Rotten_Tomatoes_Rating", "type": "quantitative"}, "y": {"axis": {"minExtent": 30}, "field": "IMDB_Rating", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_8", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 <p>Por padrão, ligação de escala para seleções inclui os canais tanto do eixo <code class="docutils literal notranslate"><span class="pre">x</span></code> quanto do eixo <code class="docutils literal notranslate"><span class="pre">y</span></code>. E se quisermos limitar a movimentação e a ampliação em uma única dimensão? podemos invocar <code class="docutils literal notranslate"><span class="pre">encodings=['x']</span></code> para restringir a seleção somente para o canal <code class="docutils literal notranslate"><span class="pre">x</span></code>:</p>
 <div class="cell docutils container">
@@ -1118,85 +1234,12 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-13-b50f012c6ec6&gt;:1: AltairDeprecationWarning: 
-Deprecated since `altair=5.0.0`. Use add_params instead.
-  alt.Chart(movies).mark_circle().add_selection(
-</pre></div>
-</div>
-<div class="output text_html">
-<style>
-  #altair-viz-8da0d5aedd83409ea7779d8aaf78fd12.vega-embed {
-    width: 100%;
-    display: flex;
-  }
-
-  #altair-viz-8da0d5aedd83409ea7779d8aaf78fd12.vega-embed details,
-  #altair-viz-8da0d5aedd83409ea7779d8aaf78fd12.vega-embed details summary {
-    position: relative;
-  }
-</style>
-<div id="altair-viz-8da0d5aedd83409ea7779d8aaf78fd12"></div>
-<script type="text/javascript">
-  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8da0d5aedd83409ea7779d8aaf78fd12") {
-      outputDiv = document.getElementById("altair-viz-8da0d5aedd83409ea7779d8aaf78fd12");
-    }
-
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.20.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
-    };
-
-    function maybeLoadScript(lib, version) {
-      var key = `${lib.replace("-", "")}_version`;
-      return (VEGA_DEBUG[key] == version) ?
-        Promise.resolve(paths[lib]) :
-        new Promise(function(resolve, reject) {
-          var s = document.createElement('script');
-          document.getElementsByTagName("head")[0].appendChild(s);
-          s.async = true;
-          s.onload = () => {
-            VEGA_DEBUG[key] = version;
-            return resolve(paths[lib]);
-          };
-          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-          s.src = paths[lib];
-        });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      let deps = ["vega-embed"];
-      require(deps, displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else {
-      maybeLoadScript("vega", "5")
-        .then(() => maybeLoadScript("vega-lite", "5.20.1"))
-        .then(() => maybeLoadScript("vega-embed", "6"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/movies.json"}, "mark": {"type": "circle"}, "encoding": {"tooltip": [{"field": "Title", "type": "nominal"}, {"field": "Release_Date", "type": "nominal"}, {"field": "IMDB_Rating", "type": "quantitative"}, {"field": "Rotten_Tomatoes_Rating", "type": "quantitative"}], "x": {"field": "Rotten_Tomatoes_Rating", "type": "quantitative"}, "y": {"axis": {"minExtent": 30}, "field": "IMDB_Rating", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_9", "select": {"type": "interval", "encodings": ["x"]}, "bind": "scales"}], "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 <p><em>Ao ampliar somente ao longo do eixo x, o formato dos dados visualizados pode mudar, potencialmente afetando nossa percepção das relações nos dados. <a class="reference external" href="http://vis.stanford.edu/papers/arclength-banking">Escolher uma proporção adequada</a> é uma preocupação importante no design de visualizações!</em></p>
 </section>
 <section id="navegacao-visao-geral-detalhes">
-<h1>6.5 Navegação: Visão geral + Detalhes<a class="headerlink" href="#navegacao-visao-geral-detalhes" title="Link to this heading">#</a></h1>
+<h2><font color="gray">6.5</font> Navegação: Visão geral + Detalhes<a class="headerlink" href="#navegacao-visao-geral-detalhes" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Ao optar por uma visão panorâmica ou um zoom, ajustamos diretamente When panning and zooming, we directly adjust the “janela de visualização” de um gráfico. A estratégia de navegação de <em>visão geral + detalhes</em>, pelo contrário usa uma tela de janela de visualização para mostrar <em>todos</em> os dados enquando permite seleções com zoom in e out em uma tela de foco separado.</p>
 <p>Abaixo temos dois gráficos de área (<em>area charts</em>) mostrando uma década de flutuações de preço para o índice de ações da S&amp;P 500. Inicialmente ambos os gráficos mostram o mesmo intervalo de dados. <em>Clique e arraste no gráfico de visão geral inferior para atualizar o foco da tela e examinar períodos de tempo específicos.</em></p>
 <div class="cell docutils container">
@@ -1222,7 +1265,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p>Ao contrário do nosso caso anterior de zoom in &amp; out, aqui não queremos vincular uma seleção diretamente às escalas de um único gráfico interativo. Ao invés disso, queremos vincular a seleção a um domínio de escala em <em>outro</em> gráfico. Para fazer isso, atualizamos o canal de codificação <code class="docutils literal notranslate"><span class="pre">x</span></code> para o nosso gráfico de foco, configurando o <code class="docutils literal notranslate"><span class="pre">domínio</span></code> de escala pare referenciar nossa seleção <code class="docutils literal notranslate"><span class="pre">brush</span></code>. Se nenhum intervalo está definido (seleção vazia), o Altair ignora o pincel e usa os dados subjacentes para determinar o domínio. Quando um intervalo de pincel é criado, o Altair o usa em substituição ao <code class="docutils literal notranslate"><span class="pre">domínio</span></code> da escala para o gráfico de interesse.</p>
 </section>
 <section id="detalhes-sob-demanda">
-<h1><font color="gray">6.6</font> Detalhes sob Demanda<a class="headerlink" href="#detalhes-sob-demanda" title="Link to this heading">#</a></h1>
+<h2><font color="gray">6.6</font> Detalhes sob Demanda<a class="headerlink" href="#detalhes-sob-demanda" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Uma vez que identificamos pontos de interesse em uma visualização, frequentemente queremos saber mais sobre eles. <em>Detalhes sob demanda</em> refere-se à consulta interativa para obter mais informações sobre valores selecionados. <em>Tooltips</em> são uma forma útil de fornecer detalhes sob demanda. No entanto, os tooltips normalmente mostram informações para um único ponto de dados de cada vez. Como podemos mostrar mais?</p>
 <p>O gráfico de dispersão (<em>scatter plot</em>) das avaliações de filmes inclui vários outliers potencialmente interessantes, onde as classificações do Rotten Tomatoes e do IMDB discordam. Vamos criar um gráfico que permita selecionar pontos interativamente e mostrar seus rótulos. Para acionar a consulta de filtro em qualquer interação de “hover” ou “click”, utilizaremos o operador de composição <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html#composing-multiple-selections">Altair</a> <code class="docutils literal notranslate"><span class="pre">|</span></code> (“or”).</p>
@@ -1264,57 +1307,6 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div id="altair-viz-883f25541a0e48899f1e8afd330ed07e"></div>
-<script type="text/javascript">
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-883f25541a0e48899f1e8afd330ed07e") {
-      outputDiv = document.getElementById("altair-viz-883f25541a0e48899f1e8afd330ed07e");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () => resolve(paths[lib]);
-        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName("head")[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === "function") {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript("vega")
-        .then(() => loadScript("vega-lite"))
-        .then(() => loadScript("vega-embed"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "circle", "encoding": {"x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "selection": {"selector012": {"type": "single", "on": "mouseover", "nearest": true, "empty": "none"}, "selector013": {"type": "multi", "empty": "none"}}}, {"mark": {"type": "point", "size": 100, "stroke": "firebrick", "strokeWidth": 1}, "encoding": {"x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "transform": [{"filter": {"or": [{"selection": "selector012"}, {"selection": "selector013"}]}}]}, {"mark": {"type": "text", "align": "right", "dx": 4, "dy": -8, "stroke": "white", "strokeWidth": 2}, "encoding": {"text": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "transform": [{"filter": {"or": [{"selection": "selector012"}, {"selection": "selector013"}]}}]}, {"mark": {"type": "text", "align": "right", "dx": 4, "dy": -8}, "encoding": {"text": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "transform": [{"filter": {"or": [{"selection": "selector012"}, {"selection": "selector013"}]}}]}], "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/movies.json"}, "height": 450, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 <p>O exemplo acima adiciona três novas camadas ao gráfico de dispersão: uma anotação circular, texto branco para fornecer um fundo legível e texto preto mostrando o título de um filme. Além disso, este exemplo utiliza duas seleções em conjunto:</p>
 <ol class="arabic simple">
@@ -1371,468 +1363,12 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </pre></div>
 </div>
 </div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div id="altair-viz-9a60e36f46a24f72a2163f9cf52987ba"></div>
-<script type="text/javascript">
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9a60e36f46a24f72a2163f9cf52987ba") {
-      outputDiv = document.getElementById("altair-viz-9a60e36f46a24f72a2163f9cf52987ba");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () => resolve(paths[lib]);
-        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName("head")[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === "function") {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript("vega")
-        .then(() => loadScript("vega-lite"))
-        .then(() => loadScript("vega-embed"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "line", "encoding": {"color": {"type": "nominal", "field": "symbol"}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}}, {"mark": {"type": "rule", "color": "#aaa"}, "encoding": {"x": {"type": "temporal", "field": "date"}}, "transform": [{"filter": {"selection": "selector014"}}]}, {"mark": "circle", "encoding": {"color": {"type": "nominal", "field": "symbol"}, "opacity": {"condition": {"value": 1, "selection": "selector014"}, "value": 0}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}, "selection": {"selector014": {"type": "single", "encodings": ["x"], "on": "mouseover", "nearest": true, "empty": "none"}}}, {"mark": {"type": "text", "align": "left", "dx": 5, "dy": -5, "stroke": "white", "strokeWidth": 2}, "encoding": {"color": {"type": "nominal", "field": "symbol"}, "text": {"type": "quantitative", "field": "price"}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}, "transform": [{"filter": {"selection": "selector014"}}]}, {"mark": {"type": "text", "align": "left", "dx": 5, "dy": -5}, "encoding": {"color": {"type": "nominal", "field": "symbol"}, "text": {"type": "quantitative", "field": "price"}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}, "transform": [{"filter": {"selection": "selector014"}}]}], "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/stocks.csv"}, "height": 400, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
 </div>
 <p><em>Pondo na prática o que aprendemos até agora: você pode modificar o gráfico de dispersão de filmes acima (aquele com a consulta dinâmica ao longo dos anos) para incluir uma marca <code class="docutils literal notranslate"><span class="pre">rule</span></code> que mostre a média da avaliação do IMDB (ou Rotten Tomatoes) para os dados contidos na seleção do intervalo de <code class="docutils literal notranslate"><span class="pre">ano</span></code>?</em></p>
 </section>
 <section id="revisitando-o-brushing-linking">
-<h1><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”<a class="headerlink" href="#revisitando-o-brushing-linking" title="Link to this heading">#</a></h1>
-<p>Mais cedo nesse capítulo vimos um exemplo de “<em>brushing and linking</em>” (algo como <em>podar e conectar</em>, em português): usando um histograma de query dinâmico para realçar pontos num scatter plot das notas de filmes. Aqui, vamos visitar alguns exemplos adicionais envolvendo seleções linkadas.</p>
-<p>Retornando a base de dados do <code class="docutils literal notranslate"><span class="pre">cars</span></code>, podemos usar o operador <code class="docutils literal notranslate"><span class="pre">repeat</span></code> para criar uma <a class="reference external" href="https://pt.wikipedia.org/wiki/Gr%C3%A1fico_de_dispers%C3%A3o">matriz de gráfico de dispersão (ou SPLOM)</a> que mostra as associações entre a aceleração, potência e a quilometragem. Podemos definir uma seleção do intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) e incluir isso dentro das especificações repetidas do gráfico de dispersão para conseguirmos ter seleções conectadas em todas as visualizações.</p>
-<p><em>Clique e arraste em qualquer uma das visualizações individuais para fazer o brushing &amp; linking!</em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">brush</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_interval</span><span class="p">(</span>
-    <span class="n">resolve</span><span class="o">=</span><span class="s1">&#39;global&#39;</span> <span class="c1"># resolve all selections to a single global instance</span>
-<span class="p">)</span>
-
-<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
-    <span class="n">brush</span>
-<span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s1">&#39;column&#39;</span><span class="p">),</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;quantitative&#39;</span><span class="p">),</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s1">&#39;row&#39;</span><span class="p">),</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;quantitative&#39;</span><span class="p">),</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">brush</span><span class="p">,</span> <span class="s1">&#39;Cylinders:O&#39;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">)),</span>
-    <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">brush</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.8</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">140</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">140</span>
-<span class="p">)</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span>
-    <span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Acceleration&#39;</span><span class="p">,</span> <span class="s1">&#39;Horsepower&#39;</span><span class="p">,</span> <span class="s1">&#39;Miles_per_Gallon&#39;</span><span class="p">],</span>
-    <span class="n">row</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Miles_per_Gallon&#39;</span><span class="p">,</span> <span class="s1">&#39;Horsepower&#39;</span><span class="p">,</span> <span class="s1">&#39;Acceleration&#39;</span><span class="p">]</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Note que no código acima usamos o <code class="docutils literal notranslate"><span class="pre">resolve='global'</span></code> no intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) de seleção. A configuração padrão do <code class="docutils literal notranslate"><span class="pre">'global'</span></code> indica que entre todas as visualizações apenas uma seleção pode estar ativa ao mesmo tempo. Entretanto, em alguns casos queremos ter múltiplas seleções em múltiplas visualizações e juntar os resultados. Se nós usarmos <code class="docutils literal notranslate"><span class="pre">resolve='union'</span></code>, a seleção principal vai conter a <em>união</em> de todas as seleções: se um ponto estiver dentro da união de seleções ele será selecionado. Alternativamente, se usarmos o <code class="docutils literal notranslate"><span class="pre">resolve='intersect'</span></code>, a seleção principal vai consistir na intersecção de todas as seleções individuais: apenas os pontos nessa intersecção serão contabilizados e selecionados.</p>
-<p><em>Tente mudar o parâmetro <code class="docutils literal notranslate"><span class="pre">resolve</span></code> para <code class="docutils literal notranslate"><span class="pre">'union'</span></code> ou <code class="docutils literal notranslate"><span class="pre">'intersect'</span></code> para ver como ele muda a lógica de seleção resultante.</em></p>
-</section>
-<section id="sumario">
-<h1>6.8 Sumário<a class="headerlink" href="#sumario" title="Link to this heading">#</a></h1>
-<p>Para mais detalhes sobre as opções de interação disponíveis em Altair, por facor consulte a <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html">Documentação de seleção interativa para Altair</a>. Para detalhes sobre como customizar manipuladores de eventes, por exemplo para compor técnicas de múltiplas intereções ou aceitar inputs de toque para dispositivos touch-screen, veja a <a class="reference external" href="https://vega.github.io/vega-lite/docs/selection.html">documentação de seleção Vega-Lite</a>.</p>
-<p>Interessado em aprender mais?</p>
-<ul class="simple">
-<li><p>A abstração de <em>seleção</em> foi introduzida no artigo <a class="reference external" href="http://idl.cs.washington.edu/papers/vega-lite/">Vega-Lite: A Grammar of Interactive Graphics</a>, por Satyanarayan, Moritz, Wongsuphasawat, &amp; Heer.</p></li>
-<li><p>O sistema PRIM-9 (para projeções, rotações, isolamento e masking de até 9 dimensõess) é uma das primeiras ferramentas de visualização interativa, construída no início dos anos 70 por Fisherkeller, Tukey, &amp; Friedman. <a class="reference external" href="http://stat-graphics.org/movies/prim9.html">Um vídeo retrô de demonstração sobreviveu!</a></p></li>
-<li><p>O conceito de pincelar e &amp; linkar foi cristalizado por Becker, Cleveland, &amp; Wilks em seu artigo de 1987 <a class="reference external" href="https://scholar.google.com/scholar?cluster=14817303117298653693">Dynamic Graphics for Data Analysis</a>.</p></li>
-<li><p>Para um sumário compreensivo de técnicas de interação para visualizações, veja <a class="reference external" href="https://queue.acm.org/detail.cfm?id=2146416">Interactive Dynamics for Visual Analysis</a> por Heer &amp; Shneiderman.</p></li>
-<li><p>Finalmente, para um tratado sobre o que torna uma interalçao efetiva leia o clássico <a class="reference external" href="https://scholar.google.com/scholar?cluster=15702972136892195211">Direct Manipulation Interfaces</a> de Hutchins, Hollan, &amp; Norman.</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">altair</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">alt</span>
-<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id1">
-<h1>6.1 Datasets<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>Nós vamos visuzalisar uma variedade de datasets da coleção <a class="reference external" href="https://github.com/vega/vega-datasets">vega-datasets</a>:</p>
-<ul class="simple">
-<li><p>O dataset <code class="docutils literal notranslate"><span class="pre">cars</span></code> com modelos entre 1970 e começos dos anos 1980.</p></li>
-<li><p>O dataset <code class="docutils literal notranslate"><span class="pre">movies</span></code>, usado previamente no capítulo <a class="reference external" href="https://github.com/uwdata/visualization-curriculum/blob/master/altair_data_transformation.ipynb">Data Transformation</a>,</p></li>
-<li><p>O dataset contendo 10 anos de cotações de ações <a class="reference external" href="https://en.wikipedia.org/wiki/S%26P_500_Index">S&amp;P 500</a> (<code class="docutils literal notranslate"><span class="pre">sp500</span></code>),</p></li>
-<li><p>O dataset das cotações de empresas de tecnologia <code class="docutils literal notranslate"><span class="pre">stocks</span></code> e</p></li>
-<li><p>O dataset <code class="docutils literal notranslate"><span class="pre">flights</span></code>, incluindo hora de partida, distância e atraso de chegada.</p></li>
-</ul>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">cars</span> <span class="o">=</span> <span class="s1">&#39;https://cdn.jsdelivr.net/npm/vega-datasets@1/data/cars.json&#39;</span>
-<span class="n">movies</span> <span class="o">=</span> <span class="s1">&#39;https://cdn.jsdelivr.net/npm/vega-datasets@1/data/movies.json&#39;</span>
-<span class="n">sp500</span> <span class="o">=</span> <span class="s1">&#39;https://cdn.jsdelivr.net/npm/vega-datasets@1/data/sp500.csv&#39;</span>
-<span class="n">stocks</span> <span class="o">=</span> <span class="s1">&#39;https://cdn.jsdelivr.net/npm/vega-datasets@1/data/stocks.csv&#39;</span>
-<span class="n">flights</span> <span class="o">=</span> <span class="s1">&#39;https://cdn.jsdelivr.net/npm/vega-datasets@1/data/flights-5k.json&#39;</span>
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-<section id="id2">
-<h1>6.2 Introduzindo seleções<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
-<p>Vamos começar com uma seleção básica: simplesmente clicar em um ponto para destacá-lo. Usando o <em>dataset</em> <code class="docutils literal notranslate"><span class="pre">cars</span></code>, criaremos um gráfico de dispersão (<em>scatter plot</em>) relacionando potência (<em>horsepower</em>) e milhas por galão (<em>miles per gallon</em>), com uma codificação de cor baseada no número de cilindros do motor do carro.</p>
-<p>Além disso, criaremos uma instância de seleção chamando <code class="docutils literal notranslate"><span class="pre">alt.selection_single()</span></code>, indicando que queremos que a seleção seja definida sobre um <em>único valor</em>. Por padrão, a seleção usa um clique do mouse para determinar o valor selecionado. Para registrar uma seleção em um gráfico, devemos adicioná-la usando o método <code class="docutils literal notranslate"><span class="pre">.add_selection()</span></code>.</p>
-<p>Uma vez definida a seleção, podemos utilizá-la como parâmetro para <em>codificações condicionais</em>, que aplicam uma codificação diferente dependendo se um registro de dados está dentro ou fora da seleção. Por exemplo, considere o seguinte código:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="s1">&#39;Cylinders:O&#39;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">))</span>
-</pre></div>
-</div>
-<p>Essa definição de codificação especifica que os pontos de dados contidos na <code class="docutils literal notranslate"><span class="pre">selection</span></code> devem ser coloridos de acordo com o campo <code class="docutils literal notranslate"><span class="pre">Cylinders</span></code>, enquanto os pontos não selecionados devem usar a cor padrão <code class="docutils literal notranslate"><span class="pre">grey</span></code>. Uma seleção vazia inclui <em>todos</em> os pontos de dados, de modo que, inicialmente, todos os pontos serão coloridos.</p>
-<p><em>Tente clicar em diferentes pontos no gráfico abaixo. O que acontece? (Clique no fundo resetar a seleção.)</em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">();</span>
-  
-<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
-    <span class="n">selection</span>
-<span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Horsepower:Q&#39;</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Miles_per_Gallon:Q&#39;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="s1">&#39;Cylinders:O&#39;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">)),</span>
-    <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.8</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_16708\2101507836.py:1: AltairDeprecationWarning: 
-Deprecated since `altair=5.0.0`. Use selection_point instead.
-  selection = alt.selection_single();
-</pre></div>
-</div>
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="n">selection</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">();</span>
-<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span>     <span class="n">selection</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-<span class="g g-Whitespace">      </span><span class="mi">6</span>     <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Horsepower:Q&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">7</span>     <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Miles_per_Gallon:Q&#39;</span><span class="p">,</span>
-<span class="g g-Whitespace">      </span><span class="mi">8</span>     <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="s1">&#39;Cylinders:O&#39;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">)),</span>
-<span class="g g-Whitespace">      </span><span class="mi">9</span>     <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.8</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
-<span class="g g-Whitespace">     </span><span class="mi">10</span> <span class="p">)</span>
-
-<span class="ne">NameError</span>: name &#39;cars&#39; is not defined
-</pre></div>
-</div>
-</div>
-</div>
-<p>É claro que destacar pontos de dados um a um não é particularmente promissor! Entretanto, como veremos, seleções de um único valor são um útil bloco de construção de interações mais poderosas. Of course, highlighting individual data points one-at-a-time is not particularly exciting! As we’ll see, however, single value selections provide a useful building block for more powerful interactions. Além disso, seleções de um único valor só podem pertencer a um desses três tipos fornecidos pelo Altair:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">selection_single</span></code> - seleciona um único valor discreto, por configuração inicial através de cliques.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">selection_multi</span></code> - seleciona múltiplos valores discretos. O primeiro é selcionado por um clique de mouse e os seguintes, values. The first value is selected on mouse click and additional values toggled using shift-click.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">selection_interval</span></code> - seleciona um intervalo contínuo de valores e é iniciado pelo arrastar do mouse.</p></li>
-</ul>
-<p>Vamos comparar cada um desses tipos de seleção lado a lado. Para manter seu código organizado, vamos primeiro definir uma função (<code class="docutils literal notranslate"><span class="pre">plot</span></code>) que gera uma especificação para gráfico de dispersão (<em>scatter plot</em>) exatamente como a que vimos acima. Podemos passar uma seleção para a função <code class="docutils literal notranslate"><span class="pre">plot</span></code> Para aplicá-la ao gráfico:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">plot</span><span class="p">(</span><span class="n">selection</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">cars</span><span class="p">)</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span>
-        <span class="n">selection</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-        <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Horsepower:Q&#39;</span><span class="p">,</span>
-        <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Miles_per_Gallon:Q&#39;</span><span class="p">,</span>
-        <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="s1">&#39;Cylinders:O&#39;</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;grey&#39;</span><span class="p">)),</span>
-        <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">selection</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.8</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mf">0.1</span><span class="p">))</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-        <span class="n">width</span><span class="o">=</span><span class="mi">240</span><span class="p">,</span>
-        <span class="n">height</span><span class="o">=</span><span class="mi">180</span>
-    <span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Vamos usar nossa função <code class="docutils literal notranslate"><span class="pre">plot</span></code> para criar três variantes de gráficos, uma para cada tipo de seleção.</p>
-<p>O primeiro (<code class="docutils literal notranslate"><span class="pre">single</span></code>) gráfico replica nosso exemplo anterior. O segundo (<code class="docutils literal notranslate"><span class="pre">multi</span></code>) gráfico aceita interações shift-click para alternar inclusão de múltiplos pontos dentro da seleção. O terceiro (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) gráfico gera uma seleção de região (ou <em>brush</em>) pelo arrastar do mouse. Uma vez criada, você pode arrastar o pincel por aí para selecionar diferentes pontosnce created, ou rodar quando o cursor está dentro da região para mudar a escala (zoom) do pincel.</p>
-<p><em>Tente interagir com cada um dos gráficos abaixo!</em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">hconcat</span><span class="p">(</span>
-  <span class="n">plot</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">())</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Single (Click)&#39;</span><span class="p">),</span>
-  <span class="n">plot</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">selection_multi</span><span class="p">())</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Multi (Shift-Click)&#39;</span><span class="p">),</span>
-  <span class="n">plot</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">selection_interval</span><span class="p">())</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Interval (Drag)&#39;</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Os exemplos acima utilizam interações padrão (clique, shift-clique, arrastar) para cada tipo de seleção. Podemos customizar as interações mais a fundo ao fonecer especificações de input usando a <a class="reference external" href="https://vega.github.io/vega/docs/event-streams/">sintaxe de seleção de eventos do Vega</a>. Por exemplo, podemos modificar nossos gráficos <code class="docutils literal notranslate"><span class="pre">single</span></code> e <code class="docutils literal notranslate"><span class="pre">multi</span></code> para que tenham por gatilho eventos de <code class="docutils literal notranslate"><span class="pre">passagem</span> <span class="pre">de</span> <span class="pre">mouse</span></code> <em>(<code class="docutils literal notranslate"><span class="pre">mouseover</span></code>)</em> ao invés dos de <code class="docutils literal notranslate"><span class="pre">clique</span></code>.</p>
-<p><em>Mantenha pressionada a tecla Shift no segundo gráfico para “pintar” com os dados!</em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">hconcat</span><span class="p">(</span>
-  <span class="n">plot</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Single (Mouseover)&#39;</span><span class="p">),</span>
-  <span class="n">plot</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">selection_multi</span><span class="p">(</span><span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s1">&#39;Multi (Shift-Mouseover)&#39;</span><span class="p">)</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Agora que cobrimos as bases das seleções em Altair, vamos por um tour através das várias técnicas de interação que encerram!</p>
-</section>
-<section id="id3">
-<h1>6.5 Navegação: Visão geral + Detalhes<a class="headerlink" href="#id3" title="Link to this heading">#</a></h1>
-<p>Ao optar por uma visão panorâmica ou um zoom, ajustamos diretamente When panning and zooming, we directly adjust the “janela de visualização” de um gráfico. A estratégia de navegação de <em>visão geral + detalhes</em>, pelo contrário usa uma tela de janela de visualização para mostrar <em>todos</em> os dados enquando permite seleções com zoom in e out em uma tela de foco separado.</p>
-<p>Abaixo temos dois gráficos de área mostrando uma década de flutuações de preço para o índice de ações da S&amp;P 500. Inicialmente ambos os gráficos mostram o mesmo intervalo de dados. <em>Clique e arraste no gráfico de visão geral inferior para atualizar o foco da tela e examinar períodos de tempo específicos.</em></p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">brush</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_interval</span><span class="p">(</span><span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">]);</span>
-
-<span class="n">base</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_area</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;date:T&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">),</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;price:Q&#39;</span><span class="p">)</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">700</span>
-<span class="p">)</span>
-
-<span class="n">alt</span><span class="o">.</span><span class="n">vconcat</span><span class="p">(</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;date:T&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="n">brush</span><span class="p">))),</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">brush</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">height</span><span class="o">=</span><span class="mi">60</span><span class="p">),</span>
-    <span class="n">data</span><span class="o">=</span><span class="n">sp500</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Ao contrário do nosso caso anterior de zoom in &amp; out, aqui não queremos vincular uma seleção diretamente às escalas de um único gráfico interativo. Ao invés disso, queremos vincular a seleção a um domínio de escala em <em>outro</em> gráfico. Para fazer isso, atualizamos o canal de codificação <code class="docutils literal notranslate"><span class="pre">x</span></code> para o nosso gráfico de foco, configurando o <code class="docutils literal notranslate"><span class="pre">domínio</span></code> de escala pare referenciar nossa seleção <code class="docutils literal notranslate"><span class="pre">brush</span></code>. Se nenhum intervalo está definido (seleção vazia), o Altair ignora o pincel e usa os dados subjacentes para determinar o domínio. Quando um intervalo de pincel é criado, o Altair o usa em substituição ao <code class="docutils literal notranslate"><span class="pre">domínio</span></code> da escala para o gráfico de interesse.</p>
-</section>
-<section id="id4">
-<h1><font color="gray">6.6</font> Detalhes sob Demanda<a class="headerlink" href="#id4" title="Link to this heading">#</a></h1>
+<h2><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”<a class="headerlink" href="#revisitando-o-brushing-linking" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
-<p>Uma vez que identificamos pontos de interesse em uma visualização, frequentemente queremos saber mais sobre eles. <em>Detalhes sob demanda</em> refere-se à consulta interativa para obter mais informações sobre valores selecionados. <em>Tooltips</em> são uma forma útil de fornecer detalhes sob demanda. No entanto, os tooltips normalmente mostram informações para um único ponto de dados de cada vez. Como podemos mostrar mais?</p>
-<p>O gráfico de dispersão das avaliações de filmes inclui vários outliers potencialmente interessantes, onde as classificações do Rotten Tomatoes e do IMDB discordam. Vamos criar um gráfico que permita selecionar pontos interativamente e mostrar seus rótulos. Para acionar a consulta de filtro em qualquer interação de “hover” ou “click”, utilizaremos o operador de composição <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html#composing-multiple-selections">Altair</a> <code class="docutils literal notranslate"><span class="pre">|</span></code> (“or”).</p>
-<p><em>Passando o mouse sobre os pontos no gráfico de dispersão abaixo, você verá um destaque e o título do rótulo. Pressione Shift e clique nos pontos para tornar as anotações persistentes e ver vários rótulos ao mesmo tempo.</em> Quais filmes são amados pelos críticos do Rotten Tomatoes, mas não pelo público geral no IMDB (ou vice-versa)? Veja se você consegue encontrar possíveis erros, onde dois filmes com o mesmo nome foram acidentalmente combinados!</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">hover</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
-    <span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span>  <span class="c1"># selecionar ao passar o mouse</span>
-    <span class="n">nearest</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>    <span class="c1"># selecionar o ponto mais próximo do cursor</span>
-    <span class="n">empty</span><span class="o">=</span><span class="s1">&#39;none&#39;</span>     <span class="c1"># seleção vazia não deve corresponder a nada</span>
-<span class="p">)</span>
-
-<span class="n">click</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_multi</span><span class="p">(</span>
-    <span class="n">empty</span><span class="o">=</span><span class="s1">&#39;none&#39;</span> <span class="c1"># seleção vazia não corresponde a nenhum ponto</span>
-<span class="p">)</span>
-
-<span class="c1"># codificações do gráfico de dispersão compartilhadas por todas as marcas</span>
-<span class="n">plot</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="s1">&#39;Rotten_Tomatoes_Rating:Q&#39;</span><span class="p">,</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;IMDB_Rating:Q&#39;</span>
-<span class="p">)</span>
-
-<span class="c1"># base compartilhada para novas camadas</span>
-<span class="n">base</span> <span class="o">=</span> <span class="n">plot</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span>
-    <span class="n">hover</span> <span class="o">|</span> <span class="n">click</span> <span class="c1"># filtrar para pontos em qualquer seleção</span>
-<span class="p">)</span>
-
-<span class="c1"># camadas de pontos do gráfico de dispersão, anotações de halo e rótulos de título</span>
-<span class="n">alt</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span>
-    <span class="n">plot</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">hover</span><span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">click</span><span class="p">),</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">mark_point</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;firebrick&#39;</span><span class="p">,</span> <span class="n">strokeWidth</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">dx</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">dy</span><span class="o">=-</span><span class="mi">8</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">strokeWidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;Title:N&#39;</span><span class="p">),</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">dx</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">dy</span><span class="o">=-</span><span class="mi">8</span><span class="p">,</span> <span class="n">align</span><span class="o">=</span><span class="s1">&#39;right&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s1">&#39;Title:N&#39;</span><span class="p">),</span>
-    <span class="n">data</span><span class="o">=</span><span class="n">movies</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">450</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div id="altair-viz-883f25541a0e48899f1e8afd330ed07e"></div>
-<script type="text/javascript">
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-883f25541a0e48899f1e8afd330ed07e") {
-      outputDiv = document.getElementById("altair-viz-883f25541a0e48899f1e8afd330ed07e");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () => resolve(paths[lib]);
-        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName("head")[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === "function") {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript("vega")
-        .then(() => loadScript("vega-lite"))
-        .then(() => loadScript("vega-embed"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "circle", "encoding": {"x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "selection": {"selector012": {"type": "single", "on": "mouseover", "nearest": true, "empty": "none"}, "selector013": {"type": "multi", "empty": "none"}}}, {"mark": {"type": "point", "size": 100, "stroke": "firebrick", "strokeWidth": 1}, "encoding": {"x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "transform": [{"filter": {"or": [{"selection": "selector012"}, {"selection": "selector013"}]}}]}, {"mark": {"type": "text", "align": "right", "dx": 4, "dy": -8, "stroke": "white", "strokeWidth": 2}, "encoding": {"text": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "transform": [{"filter": {"or": [{"selection": "selector012"}, {"selection": "selector013"}]}}]}, {"mark": {"type": "text", "align": "right", "dx": 4, "dy": -8}, "encoding": {"text": {"type": "nominal", "field": "Title"}, "x": {"type": "quantitative", "field": "Rotten_Tomatoes_Rating"}, "y": {"type": "quantitative", "field": "IMDB_Rating"}}, "transform": [{"filter": {"or": [{"selection": "selector012"}, {"selection": "selector013"}]}}]}], "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/movies.json"}, "height": 450, "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
-</div>
-<p>O exemplo acima adiciona três novas camadas ao gráfico de dispersão: uma anotação circular, texto branco para fornecer um fundo legível e texto preto mostrando o título de um filme. Além disso, este exemplo utiliza duas seleções em conjunto:</p>
-<ol class="arabic simple">
-<li><p>Uma seleção única (<code class="docutils literal notranslate"><span class="pre">hover</span></code>) que inclui <code class="docutils literal notranslate"><span class="pre">nearest=True</span></code> para selecionar automaticamente o ponto de dados mais próximo à medida que o mouse se move.</p></li>
-<li><p>Uma seleção múltipla (<code class="docutils literal notranslate"><span class="pre">click</span></code>) para criar seleções persistentes por meio do shift-click.</p></li>
-</ol>
-<p>Ambas as seleções incluem o conjunto <code class="docutils literal notranslate"><span class="pre">empty='none'</span></code> para indicar que nenhum ponto deve ser incluído se a seleção estiver vazia. Essas seleções são então combinadas em um único predicado de filtro — o lógico <em>ou</em> de <code class="docutils literal notranslate"><span class="pre">hover</span></code> e <code class="docutils literal notranslate"><span class="pre">click</span></code> — para incluir pontos que pertencem a <em>qualquer uma</em> das seleções. Usamos esse predicado para filtrar as novas camadas e exibir anotações e rótulos apenas para os pontos selecionados.</p>
-<p>Usando seleções e camadas, podemos realizar uma série de designs diferentes para detalhes sob demanda! Por exemplo, aqui está uma série temporal com escala logarítmica dos preços das ações de tecnologia, anotada com uma linha de guia e rótulos para a data mais próxima do cursor do mouse:</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># selecione um ponto para o qual fornecer detalhes sob demanda</span>
-<span class="n">label</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_single</span><span class="p">(</span>
-    <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span> <span class="c1"># limitar seleção ao valor no eixo x</span>
-    <span class="n">on</span><span class="o">=</span><span class="s1">&#39;mouseover&#39;</span><span class="p">,</span>  <span class="c1"># selecionar em eventos de passar o mouse</span>
-    <span class="n">nearest</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>    <span class="c1"># selecionar o ponto de dados mais próximo ao cursor</span>
-    <span class="n">empty</span><span class="o">=</span><span class="s1">&#39;none&#39;</span>     <span class="c1"># seleção vazia não inclui pontos de dados</span>
-<span class="p">)</span>
-
-<span class="c1"># defina nosso gráfico base de linha dos preços das ações</span>
-<span class="n">base</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;date:T&#39;</span><span class="p">),</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;price:Q&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s1">&#39;log&#39;</span><span class="p">)),</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Color</span><span class="p">(</span><span class="s1">&#39;symbol:N&#39;</span><span class="p">)</span>
-<span class="p">)</span>
-
-<span class="n">alt</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span>
-    <span class="n">base</span><span class="p">,</span> <span class="c1"># gráfico base de linha</span>
-
-    <span class="c1"># adicione uma marca de linha para servir como linha guia</span>
-    <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_rule</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;#aaa&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-        <span class="n">x</span><span class="o">=</span><span class="s1">&#39;date:T&#39;</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
-
-    <span class="c1"># adicione marcas de círculo para os pontos de tempo selecionados, esconda pontos não selecionados</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">mark_circle</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-        <span class="n">opacity</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">condition</span><span class="p">(</span><span class="n">label</span><span class="p">,</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
-
-    <span class="c1"># adicione texto com borda branca para fornecer um fundo legível para os rótulos</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">dx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">dy</span><span class="o">=-</span><span class="mi">5</span><span class="p">,</span> <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;white&#39;</span><span class="p">,</span> <span class="n">strokeWidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-        <span class="n">text</span><span class="o">=</span><span class="s1">&#39;price:Q&#39;</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
-
-    <span class="c1"># adicione rótulos de texto para os preços das ações</span>
-    <span class="n">base</span><span class="o">.</span><span class="n">mark_text</span><span class="p">(</span><span class="n">align</span><span class="o">=</span><span class="s1">&#39;left&#39;</span><span class="p">,</span> <span class="n">dx</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">dy</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-        <span class="n">text</span><span class="o">=</span><span class="s1">&#39;price:Q&#39;</span>
-    <span class="p">)</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">label</span><span class="p">),</span>
-
-    <span class="n">data</span><span class="o">=</span><span class="n">stocks</span>
-<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
-    <span class="n">width</span><span class="o">=</span><span class="mi">700</span><span class="p">,</span>
-    <span class="n">height</span><span class="o">=</span><span class="mi">400</span>
-<span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html">
-<div id="altair-viz-9a60e36f46a24f72a2163f9cf52987ba"></div>
-<script type="text/javascript">
-  (function(spec, embedOpt){
-    let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9a60e36f46a24f72a2163f9cf52987ba") {
-      outputDiv = document.getElementById("altair-viz-9a60e36f46a24f72a2163f9cf52987ba");
-    }
-    const paths = {
-      "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
-      "vega-lib": "https://cdn.jsdelivr.net/npm//vega-lib?noext",
-      "vega-lite": "https://cdn.jsdelivr.net/npm//vega-lite@4.8.1?noext",
-      "vega-embed": "https://cdn.jsdelivr.net/npm//vega-embed@6?noext",
-    };
-
-    function loadScript(lib) {
-      return new Promise(function(resolve, reject) {
-        var s = document.createElement('script');
-        s.src = paths[lib];
-        s.async = true;
-        s.onload = () => resolve(paths[lib]);
-        s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
-        document.getElementsByTagName("head")[0].appendChild(s);
-      });
-    }
-
-    function showError(err) {
-      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
-      throw err;
-    }
-
-    function displayChart(vegaEmbed) {
-      vegaEmbed(outputDiv, spec, embedOpt)
-        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
-    }
-
-    if(typeof define === "function" && define.amd) {
-      requirejs.config({paths});
-      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
-    } else if (typeof vegaEmbed === "function") {
-      displayChart(vegaEmbed);
-    } else {
-      loadScript("vega")
-        .then(() => loadScript("vega-lite"))
-        .then(() => loadScript("vega-embed"))
-        .catch(showError)
-        .then(() => displayChart(vegaEmbed));
-    }
-  })({"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "layer": [{"mark": "line", "encoding": {"color": {"type": "nominal", "field": "symbol"}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}}, {"mark": {"type": "rule", "color": "#aaa"}, "encoding": {"x": {"type": "temporal", "field": "date"}}, "transform": [{"filter": {"selection": "selector014"}}]}, {"mark": "circle", "encoding": {"color": {"type": "nominal", "field": "symbol"}, "opacity": {"condition": {"value": 1, "selection": "selector014"}, "value": 0}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}, "selection": {"selector014": {"type": "single", "encodings": ["x"], "on": "mouseover", "nearest": true, "empty": "none"}}}, {"mark": {"type": "text", "align": "left", "dx": 5, "dy": -5, "stroke": "white", "strokeWidth": 2}, "encoding": {"color": {"type": "nominal", "field": "symbol"}, "text": {"type": "quantitative", "field": "price"}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}, "transform": [{"filter": {"selection": "selector014"}}]}, {"mark": {"type": "text", "align": "left", "dx": 5, "dy": -5}, "encoding": {"color": {"type": "nominal", "field": "symbol"}, "text": {"type": "quantitative", "field": "price"}, "x": {"type": "temporal", "field": "date"}, "y": {"type": "quantitative", "field": "price", "scale": {"type": "log"}}}, "transform": [{"filter": {"selection": "selector014"}}]}], "data": {"url": "https://cdn.jsdelivr.net/npm/vega-datasets@1/data/stocks.csv"}, "height": 400, "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v4.8.1.json"}, {"mode": "vega-lite"});
-</script></div></div>
-</div>
-<p><em>Pondo em prática o que aprendemos até agora: você pode modificar o gráfico de dispersão de filmes acima (aquele com a consulta dinâmica ao longo dos anos) para incluir uma marca <code class="docutils literal notranslate"><span class="pre">rule</span></code> que mostre a média da avaliação do IMDB (ou Rotten Tomatoes) para os dados contidos na seleção do intervalo de <code class="docutils literal notranslate"><span class="pre">ano</span></code>?</em></p>
-</section>
-<section id="id5">
-<h1><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”<a class="headerlink" href="#id5" title="Link to this heading">#</a></h1>
 <p>Mais cedo nesse capítulo vimos um exemplo de “<em>brushing and linking</em>” (algo como <em>podar e conectar</em>, em português): usando um histograma de query dinâmico para realçar pontos num scatter plot das notas de filmes. Aqui, vamos visitar alguns exemplos adicionais envolvendo seleções linkadas.</p>
 <p>Retornando a base de dados do <code class="docutils literal notranslate"><span class="pre">cars</span></code>, podemos usar o operador <code class="docutils literal notranslate"><span class="pre">repeat</span></code> para criar uma <a class="reference external" href="https://pt.wikipedia.org/wiki/Gr%C3%A1fico_de_dispers%C3%A3o">matriz de gráfico de dispersão (ou SPLOM)</a> que mostra as associações entre a aceleração, potência e a quilometragem. Podemos definir uma seleção do intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) e incluir isso dentro das especificações repetidas do gráfico de dispersão para conseguirmos ter seleções conectadas em todas as visualizações.</p>
 <p><em>Clique e arraste em qualquer uma das visualizações individuais para fazer o brushing &amp; linking!</em></p>
@@ -1863,8 +1399,9 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <p>Note que no código acima usamos o <code class="docutils literal notranslate"><span class="pre">resolve='global'</span></code> no intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) de seleção. A configuração padrão do <code class="docutils literal notranslate"><span class="pre">'global'</span></code> indica que entre todas as visualizações apenas uma seleção pode estar ativa ao mesmo tempo. Entretanto, em alguns casos queremos ter múltiplas seleções em múltiplas visualizações e juntar os resultados. Se nós usarmos <code class="docutils literal notranslate"><span class="pre">resolve='union'</span></code>, a seleção principal vai conter a <em>união</em> de todas as seleções: se um ponto estiver dentro da união de seleções ele será selecionado. Alternativamente, se usarmos o <code class="docutils literal notranslate"><span class="pre">resolve='intersect'</span></code>, a seleção principal vai consistir na intersecção de todas as seleções individuais: apenas os pontos nessa intersecção serão contabilizados e selecionados.</p>
 <p><em>Tente mudar o parâmetro <code class="docutils literal notranslate"><span class="pre">resolve</span></code> para <code class="docutils literal notranslate"><span class="pre">'union'</span></code> ou <code class="docutils literal notranslate"><span class="pre">'intersect'</span></code> para ver como ele muda a lógica de seleção resultante.</em></p>
 </section>
-<section id="id6">
-<h1>6.8 Sumário<a class="headerlink" href="#id6" title="Link to this heading">#</a></h1>
+<section id="resumo">
+<h2><font color="gray">6.8</font> Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
+<hr class="docutils" />
 <p>Para mais detalhes sobre as opções de interação disponíveis em Altair, por facor consulte a <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html">Documentação de seleção interativa para Altair</a>. Para detalhes sobre como customizar manipuladores de eventes, por exemplo para compor técnicas de múltiplas intereções ou aceitar inputs de toque para dispositivos touch-screen, veja a <a class="reference external" href="https://vega.github.io/vega-lite/docs/selection.html">documentação de seleção Vega-Lite</a>.</p>
 <p>Interessado em aprender mais?</p>
 <ul class="simple">
@@ -1874,6 +1411,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <li><p>Para um sumário compreensivo de técnicas de interação para visualizações, veja <a class="reference external" href="https://queue.acm.org/detail.cfm?id=2146416">Interactive Dynamics for Visual Analysis</a> por Heer &amp; Shneiderman.</p></li>
 <li><p>Finalmente, para um tratado sobre o que torna uma interalçao efetiva leia o clássico <a class="reference external" href="https://scholar.google.com/scholar?cluster=15702972136892195211">Direct Manipulation Interfaces</a> de Hutchins, Hollan, &amp; Norman.</p></li>
 </ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -1912,7 +1450,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">5 Composição de Múltiplas Visualizações</p>
+        <p class="prev-next-title"><font color="gray">5</font> Composição de Múltiplas Visualizações</p>
       </div>
     </a>
     <a class="right-next"
@@ -1920,7 +1458,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">7. Visualização Cartográfica</p>
+        <p class="prev-next-title"><font color="gray">7.</font> Visualização Cartográfica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1941,27 +1479,19 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">6. Interação</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">6.1 Datasets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes">6.2 Introduzindo seleções</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas-dynamic-queries">6.3 Consultas dinâmicas (<em>Dynamic Queries</em>)</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas-inputs">Vinculando seleções a múltiplas entradas (<em>inputs</em>)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas">Usando visualizações como consultas dinâmicas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets"><font color="gray">6.1</font> Datasets</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes"><font color="gray">6.2</font> Introduzindo seleções</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas"><font color="gray">6.3</font> Consultas dinâmicas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas"><font color="gray">6.3.1</font> Vinculando seleções a múltiplas entradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas"><font color="gray">6.3.2</font> Usando visualizações como consultas dinâmicas</a></li>
 </ul>
 </li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">6.4 Movimentando e Ampliando</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">6.5 Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sumario">6.8 Sumário</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">6.1 Datasets</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">6.2 Introduzindo seleções</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">6.5 Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id5"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">6.8 Sumário</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando"><font color="gray">6.4</font> Movimentando e Ampliando</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes"><font color="gray">6.5</font> Navegação: Visão geral + Detalhes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda"><font color="gray">6.6</font> Detalhes sob Demanda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking"><font color="gray">6.7</font> Revisitando o “Brushing &amp; Linking”</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo"><font color="gray">6.8</font> Resumo</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
