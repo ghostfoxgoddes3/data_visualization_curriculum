@@ -27,4 +27,4 @@ Desenvolvido na Universidade de Washington por Jeffrey Heer, Dominik Moritz, Jak
 A tradução foi realizada e estudada pela primeira vez pela primeira turma de verão do Impatech, corrigida pelos monitores da disciplina de Introdução à Ciência de Dados e orientada pela professora Asla Medeiros e Sá.
 
 ## Agradecimentos
-À Pedro Martineli, que me ajudou a manejar os erros e converter o [repositório github](https://github.com/ghostfoxgoddes3/data_visualization_curriculum) que eu havia traduzido em jupyter book. Eu te amo! Sem você (e sua paciência invejável) nada disso seria possível.
+À [Pedro Martineli](https://github.com/martinelipedro), que me ajudou a manejar os erros e converter o [repositório github](https://github.com/ghostfoxgoddes3/data_visualization_curriculum) que eu havia traduzido em jupyter book. Eu te amo! Sem você (e sua paciência invejável) nada disso seria possível.
