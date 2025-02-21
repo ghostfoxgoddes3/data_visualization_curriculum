@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>5. Composição de Múltiplas Visualizações &#8212; My sample book</title>
+    <title>5. Composição de múltiplas visualizações &#8212; My sample book</title>
   
   
   
@@ -88,7 +88,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="6. Interação" href="6_inter.html" />
-    <link rel="prev" title="4. Escalas, Eixos e Legendas" href="4_scales.html" />
+    <link rel="prev" title="4. Escalas, eixos e legendas" href="4_scales.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -197,10 +197,10 @@
 <li class="toctree-l1"><a class="reference internal" href="1_intro.html">1. Introdução ao Altair</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_types.html">2. Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3_trans.html">3. Transformação de dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, eixos e legendas</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Composição de múltiplas visualizações</a></li>
 <li class="toctree-l1"><a class="reference internal" href="6_inter.html">6. Interação</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_geo.html">7. Visualização Cartográfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_geo.html">7. Visualização cartográfica</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPORTE</span></p>
 <ul class="nav bd-sidenav">
@@ -418,7 +418,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>5. Composição de Múltiplas Visualizações</h1>
+    <h1>5. Composição de múltiplas visualizações</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -428,16 +428,16 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos">5.1 Dados Meteorológicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos">5.1 Dados meteorológicos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camada">5.2 Camada</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eixos-compartilhados">5.2.1 Eixos Compartilhados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-eixo-duplo">5.2.2 Gráficos de Eixo Duplo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eixos-compartilhados">5.2.1 Eixos compartilhados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-eixo-duplo">5.2.2 Gráficos de eixo duplo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faceta">5.3 Faceta</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenacao">5.4 Concatenação</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repeticao">5.5 Repetição</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebra-de-composicao-de-visualizacoes">5.6 Álgebra de Composição de Visualizações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebra-de-composicao-de-visualizacoes">5.6 Álgebra de composição de visualizações</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">5.7 Resumo</a></li>
 </ul>
             </nav>
@@ -451,7 +451,7 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="composicao-de-multiplas-visualizacoes">
-<h1>5. Composição de Múltiplas Visualizações<a class="headerlink" href="#composicao-de-multiplas-visualizacoes" title="Link to this heading">#</a></h1>
+<h1>5. Composição de múltiplas visualizações<a class="headerlink" href="#composicao-de-multiplas-visualizacoes" title="Link to this heading">#</a></h1>
 <hr class="docutils" />
 <p>Ao visualizar vários campos de dados diferentes, podemos ficar tentados a usar tantos canais de codificação visual quanto pudermos: <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code>, <code class="docutils literal notranslate"><span class="pre">color</span></code>, <code class="docutils literal notranslate"><span class="pre">size</span></code>, <code class="docutils literal notranslate"><span class="pre">shape</span></code> e assim por diante. No entanto, à medida que o número de canais de codificação aumenta, um gráfico pode rapidamente tornar-se desordenado e difícil de ler. Uma alternativa para “sobrecarregar” um único gráfico é, em vez disso, compor vários gráficos de uma forma que facilite comparações rápidas.</p>
 <p>Neste capítulo, examinaremos uma variedade de operações para composição de múltiplas visualizações:</p>
@@ -472,7 +472,7 @@
 </div>
 </div>
 <section id="dados-meteorologicos">
-<h2>5.1 Dados Meteorológicos<a class="headerlink" href="#dados-meteorologicos" title="Link to this heading">#</a></h2>
+<h2>5.1 Dados meteorológicos<a class="headerlink" href="#dados-meteorologicos" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Estaremos visualizando estatísticas meteorológicas para as cidades americanas de Seattle e Nova York. Vamos carregar o conjunto de dados e dar uma olhada nas primeiras e últimas 10 linhas:</p>
 <div class="cell docutils container">
@@ -768,7 +768,7 @@
 <hr class="docutils" />
 <p>Uma das formas mais comuns de combinar vários gráficos é <em>sobrepor</em> marcas umas sobre as outras. Se os domínios das escalas subjacentes forem compatíveis, podemos mesclá-los para formar <em>eixos compartilhados</em>. Se uma das codificações em <code class="docutils literal notranslate"><span class="pre">x</span></code> ou <code class="docutils literal notranslate"><span class="pre">y</span></code> não for compatível, podemos, em vez disso, criar um gráfico de <em>eixos duplos</em>, que sobrepõe marcas usando escalas e eixos separados.</p>
 <section id="eixos-compartilhados">
-<h3>5.2.1 Eixos Compartilhados<a class="headerlink" href="#eixos-compartilhados" title="Link to this heading">#</a></h3>
+<h3>5.2.1 Eixos compartilhados<a class="headerlink" href="#eixos-compartilhados" title="Link to this heading">#</a></h3>
 <p>Vamos começar plotando as temperaturas médias mínima e máxima por mês:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -783,23 +783,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4b4c622001134f1481e3b848900ea682.vega-embed {
+  #altair-viz-197f1376f609443d9454acd9433a0614.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4b4c622001134f1481e3b848900ea682.vega-embed details,
-  #altair-viz-4b4c622001134f1481e3b848900ea682.vega-embed details summary {
+  #altair-viz-197f1376f609443d9454acd9433a0614.vega-embed details,
+  #altair-viz-197f1376f609443d9454acd9433a0614.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4b4c622001134f1481e3b848900ea682"></div>
+<div id="altair-viz-197f1376f609443d9454acd9433a0614"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4b4c622001134f1481e3b848900ea682") {
-      outputDiv = document.getElementById("altair-viz-4b4c622001134f1481e3b848900ea682");
+    if (outputDiv.id !== "altair-viz-197f1376f609443d9454acd9433a0614") {
+      outputDiv = document.getElementById("altair-viz-197f1376f609443d9454acd9433a0614");
     }
 
     const paths = {
@@ -866,23 +866,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-95f4b114fcb746d2a6ad8d2b7a8e9617.vega-embed {
+  #altair-viz-676a522bb18f4932bffef921633a24c6.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-95f4b114fcb746d2a6ad8d2b7a8e9617.vega-embed details,
-  #altair-viz-95f4b114fcb746d2a6ad8d2b7a8e9617.vega-embed details summary {
+  #altair-viz-676a522bb18f4932bffef921633a24c6.vega-embed details,
+  #altair-viz-676a522bb18f4932bffef921633a24c6.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-95f4b114fcb746d2a6ad8d2b7a8e9617"></div>
+<div id="altair-viz-676a522bb18f4932bffef921633a24c6"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-95f4b114fcb746d2a6ad8d2b7a8e9617") {
-      outputDiv = document.getElementById("altair-viz-95f4b114fcb746d2a6ad8d2b7a8e9617");
+    if (outputDiv.id !== "altair-viz-676a522bb18f4932bffef921633a24c6") {
+      outputDiv = document.getElementById("altair-viz-676a522bb18f4932bffef921633a24c6");
     }
 
     const paths = {
@@ -951,23 +951,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-c77bb4e31e9d4792b7d226d8aa5bc1f7.vega-embed {
+  #altair-viz-e99b63b3ead745c281abd9d487aa1592.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-c77bb4e31e9d4792b7d226d8aa5bc1f7.vega-embed details,
-  #altair-viz-c77bb4e31e9d4792b7d226d8aa5bc1f7.vega-embed details summary {
+  #altair-viz-e99b63b3ead745c281abd9d487aa1592.vega-embed details,
+  #altair-viz-e99b63b3ead745c281abd9d487aa1592.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-c77bb4e31e9d4792b7d226d8aa5bc1f7"></div>
+<div id="altair-viz-e99b63b3ead745c281abd9d487aa1592"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-c77bb4e31e9d4792b7d226d8aa5bc1f7") {
-      outputDiv = document.getElementById("altair-viz-c77bb4e31e9d4792b7d226d8aa5bc1f7");
+    if (outputDiv.id !== "altair-viz-e99b63b3ead745c281abd9d487aa1592") {
+      outputDiv = document.getElementById("altair-viz-e99b63b3ead745c281abd9d487aa1592");
     }
 
     const paths = {
@@ -1044,23 +1044,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-9cfaa1e7e9074332ad350a4ff2a590e8.vega-embed {
+  #altair-viz-0cfdd48be4b44127af8e87a0aabe9724.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-9cfaa1e7e9074332ad350a4ff2a590e8.vega-embed details,
-  #altair-viz-9cfaa1e7e9074332ad350a4ff2a590e8.vega-embed details summary {
+  #altair-viz-0cfdd48be4b44127af8e87a0aabe9724.vega-embed details,
+  #altair-viz-0cfdd48be4b44127af8e87a0aabe9724.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-9cfaa1e7e9074332ad350a4ff2a590e8"></div>
+<div id="altair-viz-0cfdd48be4b44127af8e87a0aabe9724"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-9cfaa1e7e9074332ad350a4ff2a590e8") {
-      outputDiv = document.getElementById("altair-viz-9cfaa1e7e9074332ad350a4ff2a590e8");
+    if (outputDiv.id !== "altair-viz-0cfdd48be4b44127af8e87a0aabe9724") {
+      outputDiv = document.getElementById("altair-viz-0cfdd48be4b44127af8e87a0aabe9724");
     }
 
     const paths = {
@@ -1137,23 +1137,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a645b07a59bc48d9b51cff432dab8f5e.vega-embed {
+  #altair-viz-585c0f32ff2e4a9dbebe831a2dc35ec7.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a645b07a59bc48d9b51cff432dab8f5e.vega-embed details,
-  #altair-viz-a645b07a59bc48d9b51cff432dab8f5e.vega-embed details summary {
+  #altair-viz-585c0f32ff2e4a9dbebe831a2dc35ec7.vega-embed details,
+  #altair-viz-585c0f32ff2e4a9dbebe831a2dc35ec7.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a645b07a59bc48d9b51cff432dab8f5e"></div>
+<div id="altair-viz-585c0f32ff2e4a9dbebe831a2dc35ec7"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a645b07a59bc48d9b51cff432dab8f5e") {
-      outputDiv = document.getElementById("altair-viz-a645b07a59bc48d9b51cff432dab8f5e");
+    if (outputDiv.id !== "altair-viz-585c0f32ff2e4a9dbebe831a2dc35ec7") {
+      outputDiv = document.getElementById("altair-viz-585c0f32ff2e4a9dbebe831a2dc35ec7");
     }
 
     const paths = {
@@ -1215,23 +1215,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-64a490b281924deb860352b919381990.vega-embed {
+  #altair-viz-579dfebf858f4f36b8dc902efe23d15f.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-64a490b281924deb860352b919381990.vega-embed details,
-  #altair-viz-64a490b281924deb860352b919381990.vega-embed details summary {
+  #altair-viz-579dfebf858f4f36b8dc902efe23d15f.vega-embed details,
+  #altair-viz-579dfebf858f4f36b8dc902efe23d15f.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-64a490b281924deb860352b919381990"></div>
+<div id="altair-viz-579dfebf858f4f36b8dc902efe23d15f"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-64a490b281924deb860352b919381990") {
-      outputDiv = document.getElementById("altair-viz-64a490b281924deb860352b919381990");
+    if (outputDiv.id !== "altair-viz-579dfebf858f4f36b8dc902efe23d15f") {
+      outputDiv = document.getElementById("altair-viz-579dfebf858f4f36b8dc902efe23d15f");
     }
 
     const paths = {
@@ -1285,7 +1285,7 @@
 <p>Observe que a ordem dos elementos em uma camada é importante, pois as camadas subsequentes serão desenhadas sobre as anteriores. <em>Tente trocar a ordem dos gráficos nas células acima. O que acontece? (Dica: preste atenção na cor das marcas de linha (<code class="docutils literal notranslate"><span class="pre">line</span></code>).)</em></p>
 </section>
 <section id="graficos-de-eixo-duplo">
-<h3>5.2.2 Gráficos de Eixo Duplo<a class="headerlink" href="#graficos-de-eixo-duplo" title="Link to this heading">#</a></h3>
+<h3>5.2.2 Gráficos de eixo duplo<a class="headerlink" href="#graficos-de-eixo-duplo" title="Link to this heading">#</a></h3>
 <p><em>Seattle tem a reputação de ser uma cidade chuvosa. Será que isso é merecido?</em></p>
 <p>Vamos analisar a precipitação junto com a temperatura para entender melhor. Primeiro, vamos criar um gráfico básico que mostra a precipitação média mensal em Seattle:</p>
 <div class="cell docutils container">
@@ -1305,23 +1305,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-30930d6fd46842739a69b4ece2f7dad7.vega-embed {
+  #altair-viz-190db7c2bee94d9ba7b725d92f5e6c3b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-30930d6fd46842739a69b4ece2f7dad7.vega-embed details,
-  #altair-viz-30930d6fd46842739a69b4ece2f7dad7.vega-embed details summary {
+  #altair-viz-190db7c2bee94d9ba7b725d92f5e6c3b.vega-embed details,
+  #altair-viz-190db7c2bee94d9ba7b725d92f5e6c3b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-30930d6fd46842739a69b4ece2f7dad7"></div>
+<div id="altair-viz-190db7c2bee94d9ba7b725d92f5e6c3b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-30930d6fd46842739a69b4ece2f7dad7") {
-      outputDiv = document.getElementById("altair-viz-30930d6fd46842739a69b4ece2f7dad7");
+    if (outputDiv.id !== "altair-viz-190db7c2bee94d9ba7b725d92f5e6c3b") {
+      outputDiv = document.getElementById("altair-viz-190db7c2bee94d9ba7b725d92f5e6c3b");
     }
 
     const paths = {
@@ -1400,23 +1400,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-55d5d8d989654de8af5da59ff4f16327.vega-embed {
+  #altair-viz-93b96e93be1b42ffaa724b645beeb8ac.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-55d5d8d989654de8af5da59ff4f16327.vega-embed details,
-  #altair-viz-55d5d8d989654de8af5da59ff4f16327.vega-embed details summary {
+  #altair-viz-93b96e93be1b42ffaa724b645beeb8ac.vega-embed details,
+  #altair-viz-93b96e93be1b42ffaa724b645beeb8ac.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-55d5d8d989654de8af5da59ff4f16327"></div>
+<div id="altair-viz-93b96e93be1b42ffaa724b645beeb8ac"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-55d5d8d989654de8af5da59ff4f16327") {
-      outputDiv = document.getElementById("altair-viz-55d5d8d989654de8af5da59ff4f16327");
+    if (outputDiv.id !== "altair-viz-93b96e93be1b42ffaa724b645beeb8ac") {
+      outputDiv = document.getElementById("altair-viz-93b96e93be1b42ffaa724b645beeb8ac");
     }
 
     const paths = {
@@ -1497,23 +1497,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-030faa0fdb0b474a831e7009a346a9ae.vega-embed {
+  #altair-viz-508627ef3e3d4a848e539b271fc9dabd.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-030faa0fdb0b474a831e7009a346a9ae.vega-embed details,
-  #altair-viz-030faa0fdb0b474a831e7009a346a9ae.vega-embed details summary {
+  #altair-viz-508627ef3e3d4a848e539b271fc9dabd.vega-embed details,
+  #altair-viz-508627ef3e3d4a848e539b271fc9dabd.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-030faa0fdb0b474a831e7009a346a9ae"></div>
+<div id="altair-viz-508627ef3e3d4a848e539b271fc9dabd"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-030faa0fdb0b474a831e7009a346a9ae") {
-      outputDiv = document.getElementById("altair-viz-030faa0fdb0b474a831e7009a346a9ae");
+    if (outputDiv.id !== "altair-viz-508627ef3e3d4a848e539b271fc9dabd") {
+      outputDiv = document.getElementById("altair-viz-508627ef3e3d4a848e539b271fc9dabd");
     }
 
     const paths = {
@@ -1591,23 +1591,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-df9b71c529e146db933e9be8084e070b.vega-embed {
+  #altair-viz-6699845195784d7680926ad3d8fbc3e8.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-df9b71c529e146db933e9be8084e070b.vega-embed details,
-  #altair-viz-df9b71c529e146db933e9be8084e070b.vega-embed details summary {
+  #altair-viz-6699845195784d7680926ad3d8fbc3e8.vega-embed details,
+  #altair-viz-6699845195784d7680926ad3d8fbc3e8.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-df9b71c529e146db933e9be8084e070b"></div>
+<div id="altair-viz-6699845195784d7680926ad3d8fbc3e8"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-df9b71c529e146db933e9be8084e070b") {
-      outputDiv = document.getElementById("altair-viz-df9b71c529e146db933e9be8084e070b");
+    if (outputDiv.id !== "altair-viz-6699845195784d7680926ad3d8fbc3e8") {
+      outputDiv = document.getElementById("altair-viz-6699845195784d7680926ad3d8fbc3e8");
     }
 
     const paths = {
@@ -1680,23 +1680,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-a3432485677748e3b6d2003f8e22fa92.vega-embed {
+  #altair-viz-5ec00d24930645148445ddc5caa3f58b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-a3432485677748e3b6d2003f8e22fa92.vega-embed details,
-  #altair-viz-a3432485677748e3b6d2003f8e22fa92.vega-embed details summary {
+  #altair-viz-5ec00d24930645148445ddc5caa3f58b.vega-embed details,
+  #altair-viz-5ec00d24930645148445ddc5caa3f58b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-a3432485677748e3b6d2003f8e22fa92"></div>
+<div id="altair-viz-5ec00d24930645148445ddc5caa3f58b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-a3432485677748e3b6d2003f8e22fa92") {
-      outputDiv = document.getElementById("altair-viz-a3432485677748e3b6d2003f8e22fa92");
+    if (outputDiv.id !== "altair-viz-5ec00d24930645148445ddc5caa3f58b") {
+      outputDiv = document.getElementById("altair-viz-5ec00d24930645148445ddc5caa3f58b");
     }
 
     const paths = {
@@ -1773,23 +1773,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1119a291117644b694870e6d9848c965.vega-embed {
+  #altair-viz-90dc6c2f705b40e6897d7afd9263be64.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1119a291117644b694870e6d9848c965.vega-embed details,
-  #altair-viz-1119a291117644b694870e6d9848c965.vega-embed details summary {
+  #altair-viz-90dc6c2f705b40e6897d7afd9263be64.vega-embed details,
+  #altair-viz-90dc6c2f705b40e6897d7afd9263be64.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1119a291117644b694870e6d9848c965"></div>
+<div id="altair-viz-90dc6c2f705b40e6897d7afd9263be64"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1119a291117644b694870e6d9848c965") {
-      outputDiv = document.getElementById("altair-viz-1119a291117644b694870e6d9848c965");
+    if (outputDiv.id !== "altair-viz-90dc6c2f705b40e6897d7afd9263be64") {
+      outputDiv = document.getElementById("altair-viz-90dc6c2f705b40e6897d7afd9263be64");
     }
 
     const paths = {
@@ -1870,23 +1870,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-95f48b4868bf4a9c8978e9e9a39e1852.vega-embed {
+  #altair-viz-863a5472c4f34af089768a8fae07f5a3.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-95f48b4868bf4a9c8978e9e9a39e1852.vega-embed details,
-  #altair-viz-95f48b4868bf4a9c8978e9e9a39e1852.vega-embed details summary {
+  #altair-viz-863a5472c4f34af089768a8fae07f5a3.vega-embed details,
+  #altair-viz-863a5472c4f34af089768a8fae07f5a3.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-95f48b4868bf4a9c8978e9e9a39e1852"></div>
+<div id="altair-viz-863a5472c4f34af089768a8fae07f5a3"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-95f48b4868bf4a9c8978e9e9a39e1852") {
-      outputDiv = document.getElementById("altair-viz-95f48b4868bf4a9c8978e9e9a39e1852");
+    if (outputDiv.id !== "altair-viz-863a5472c4f34af089768a8fae07f5a3") {
+      outputDiv = document.getElementById("altair-viz-863a5472c4f34af089768a8fae07f5a3");
     }
 
     const paths = {
@@ -1966,23 +1966,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-27b60b2b706f480e8c74d43307a2390b.vega-embed {
+  #altair-viz-0ffd821fce884d0891ded1c18b96b498.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-27b60b2b706f480e8c74d43307a2390b.vega-embed details,
-  #altair-viz-27b60b2b706f480e8c74d43307a2390b.vega-embed details summary {
+  #altair-viz-0ffd821fce884d0891ded1c18b96b498.vega-embed details,
+  #altair-viz-0ffd821fce884d0891ded1c18b96b498.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-27b60b2b706f480e8c74d43307a2390b"></div>
+<div id="altair-viz-0ffd821fce884d0891ded1c18b96b498"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-27b60b2b706f480e8c74d43307a2390b") {
-      outputDiv = document.getElementById("altair-viz-27b60b2b706f480e8c74d43307a2390b");
+    if (outputDiv.id !== "altair-viz-0ffd821fce884d0891ded1c18b96b498") {
+      outputDiv = document.getElementById("altair-viz-0ffd821fce884d0891ded1c18b96b498");
     }
 
     const paths = {
@@ -2062,23 +2062,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-129d7f4b4534470889181edc9d77958d.vega-embed {
+  #altair-viz-62397add7be343cca6f5a6307e3536eb.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-129d7f4b4534470889181edc9d77958d.vega-embed details,
-  #altair-viz-129d7f4b4534470889181edc9d77958d.vega-embed details summary {
+  #altair-viz-62397add7be343cca6f5a6307e3536eb.vega-embed details,
+  #altair-viz-62397add7be343cca6f5a6307e3536eb.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-129d7f4b4534470889181edc9d77958d"></div>
+<div id="altair-viz-62397add7be343cca6f5a6307e3536eb"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-129d7f4b4534470889181edc9d77958d") {
-      outputDiv = document.getElementById("altair-viz-129d7f4b4534470889181edc9d77958d");
+    if (outputDiv.id !== "altair-viz-62397add7be343cca6f5a6307e3536eb") {
+      outputDiv = document.getElementById("altair-viz-62397add7be343cca6f5a6307e3536eb");
     }
 
     const paths = {
@@ -2158,23 +2158,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-7609b65e68dd4e088a6ea03a24f4d198.vega-embed {
+  #altair-viz-4cf7e826974541658cee688f3b222d20.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-7609b65e68dd4e088a6ea03a24f4d198.vega-embed details,
-  #altair-viz-7609b65e68dd4e088a6ea03a24f4d198.vega-embed details summary {
+  #altair-viz-4cf7e826974541658cee688f3b222d20.vega-embed details,
+  #altair-viz-4cf7e826974541658cee688f3b222d20.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-7609b65e68dd4e088a6ea03a24f4d198"></div>
+<div id="altair-viz-4cf7e826974541658cee688f3b222d20"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-7609b65e68dd4e088a6ea03a24f4d198") {
-      outputDiv = document.getElementById("altair-viz-7609b65e68dd4e088a6ea03a24f4d198");
+    if (outputDiv.id !== "altair-viz-4cf7e826974541658cee688f3b222d20") {
+      outputDiv = document.getElementById("altair-viz-4cf7e826974541658cee688f3b222d20");
     }
 
     const paths = {
@@ -2247,23 +2247,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-d643ae39e4854d9cbd30940b52fe9a23.vega-embed {
+  #altair-viz-32949ecc3b724482bc64fc4e1437b8cd.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d643ae39e4854d9cbd30940b52fe9a23.vega-embed details,
-  #altair-viz-d643ae39e4854d9cbd30940b52fe9a23.vega-embed details summary {
+  #altair-viz-32949ecc3b724482bc64fc4e1437b8cd.vega-embed details,
+  #altair-viz-32949ecc3b724482bc64fc4e1437b8cd.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d643ae39e4854d9cbd30940b52fe9a23"></div>
+<div id="altair-viz-32949ecc3b724482bc64fc4e1437b8cd"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d643ae39e4854d9cbd30940b52fe9a23") {
-      outputDiv = document.getElementById("altair-viz-d643ae39e4854d9cbd30940b52fe9a23");
+    if (outputDiv.id !== "altair-viz-32949ecc3b724482bc64fc4e1437b8cd") {
+      outputDiv = document.getElementById("altair-viz-32949ecc3b724482bc64fc4e1437b8cd");
     }
 
     const paths = {
@@ -2337,23 +2337,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-533d6f9e0de042b9920fbcb6a3d34948.vega-embed {
+  #altair-viz-da811c7c69c74f85aec32a06f49b0f04.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-533d6f9e0de042b9920fbcb6a3d34948.vega-embed details,
-  #altair-viz-533d6f9e0de042b9920fbcb6a3d34948.vega-embed details summary {
+  #altair-viz-da811c7c69c74f85aec32a06f49b0f04.vega-embed details,
+  #altair-viz-da811c7c69c74f85aec32a06f49b0f04.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-533d6f9e0de042b9920fbcb6a3d34948"></div>
+<div id="altair-viz-da811c7c69c74f85aec32a06f49b0f04"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-533d6f9e0de042b9920fbcb6a3d34948") {
-      outputDiv = document.getElementById("altair-viz-533d6f9e0de042b9920fbcb6a3d34948");
+    if (outputDiv.id !== "altair-viz-da811c7c69c74f85aec32a06f49b0f04") {
+      outputDiv = document.getElementById("altair-viz-da811c7c69c74f85aec32a06f49b0f04");
     }
 
     const paths = {
@@ -2435,23 +2435,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-54546581212c4f63b8847c826b966670.vega-embed {
+  #altair-viz-d9212a2e5f0547aea6a6da621c248ed4.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-54546581212c4f63b8847c826b966670.vega-embed details,
-  #altair-viz-54546581212c4f63b8847c826b966670.vega-embed details summary {
+  #altair-viz-d9212a2e5f0547aea6a6da621c248ed4.vega-embed details,
+  #altair-viz-d9212a2e5f0547aea6a6da621c248ed4.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-54546581212c4f63b8847c826b966670"></div>
+<div id="altair-viz-d9212a2e5f0547aea6a6da621c248ed4"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-54546581212c4f63b8847c826b966670") {
-      outputDiv = document.getElementById("altair-viz-54546581212c4f63b8847c826b966670");
+    if (outputDiv.id !== "altair-viz-d9212a2e5f0547aea6a6da621c248ed4") {
+      outputDiv = document.getElementById("altair-viz-d9212a2e5f0547aea6a6da621c248ed4");
     }
 
     const paths = {
@@ -2526,23 +2526,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-8c9ea9be93b94516893a50b0c4ed08ba.vega-embed {
+  #altair-viz-576c1d065c5d4e05b52b5d2479570246.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-8c9ea9be93b94516893a50b0c4ed08ba.vega-embed details,
-  #altair-viz-8c9ea9be93b94516893a50b0c4ed08ba.vega-embed details summary {
+  #altair-viz-576c1d065c5d4e05b52b5d2479570246.vega-embed details,
+  #altair-viz-576c1d065c5d4e05b52b5d2479570246.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-8c9ea9be93b94516893a50b0c4ed08ba"></div>
+<div id="altair-viz-576c1d065c5d4e05b52b5d2479570246"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8c9ea9be93b94516893a50b0c4ed08ba") {
-      outputDiv = document.getElementById("altair-viz-8c9ea9be93b94516893a50b0c4ed08ba");
+    if (outputDiv.id !== "altair-viz-576c1d065c5d4e05b52b5d2479570246") {
+      outputDiv = document.getElementById("altair-viz-576c1d065c5d4e05b52b5d2479570246");
     }
 
     const paths = {
@@ -2598,7 +2598,7 @@
 <p><em>Finalmente, para realmente apreciar tudo que o operador</em><code class="docutils literal notranslate"><span class="pre">repeat</span></code> <em>pode oferecer, reserve um momento para imaginar como você pode recriar a SPLOM acima usando apenas</em> <code class="docutils literal notranslate"><span class="pre">hconcat</span></code> <em>e</em> <code class="docutils literal notranslate"><span class="pre">vconcat</span></code><em>!</em></p>
 </section>
 <section id="algebra-de-composicao-de-visualizacoes">
-<h2>5.6 Álgebra de Composição de Visualizações<a class="headerlink" href="#algebra-de-composicao-de-visualizacoes" title="Link to this heading">#</a></h2>
+<h2>5.6 Álgebra de composição de visualizações<a class="headerlink" href="#algebra-de-composicao-de-visualizacoes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Juntos, os operados <code class="docutils literal notranslate"><span class="pre">layer</span></code>, <code class="docutils literal notranslate"><span class="pre">facet</span></code>, <code class="docutils literal notranslate"><span class="pre">concat</span></code> e <code class="docutils literal notranslate"><span class="pre">repeat</span></code> formam uma <em>álgebra de composição de visualizações</em>: diversos operadores podem ser combinados para construir uma variedade de visualizações múltiplas.</p>
 <p>Como exemplo, vamos começar com dois gráficos básicos: um histograma e uma linha simples (uma única marca <code class="docutils literal notranslate"><span class="pre">rule</span></code>) mostrando uma média global.</p>
@@ -2624,23 +2624,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-4a8478ec8147485fb10e7dbe9d389ad1.vega-embed {
+  #altair-viz-01311baf484f4908a5afe1a00471cb4a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-4a8478ec8147485fb10e7dbe9d389ad1.vega-embed details,
-  #altair-viz-4a8478ec8147485fb10e7dbe9d389ad1.vega-embed details summary {
+  #altair-viz-01311baf484f4908a5afe1a00471cb4a.vega-embed details,
+  #altair-viz-01311baf484f4908a5afe1a00471cb4a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-4a8478ec8147485fb10e7dbe9d389ad1"></div>
+<div id="altair-viz-01311baf484f4908a5afe1a00471cb4a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-4a8478ec8147485fb10e7dbe9d389ad1") {
-      outputDiv = document.getElementById("altair-viz-4a8478ec8147485fb10e7dbe9d389ad1");
+    if (outputDiv.id !== "altair-viz-01311baf484f4908a5afe1a00471cb4a") {
+      outputDiv = document.getElementById("altair-viz-01311baf484f4908a5afe1a00471cb4a");
     }
 
     const paths = {
@@ -2717,23 +2717,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-45a1da3a860145d7ab98dfcf8a454fa3.vega-embed {
+  #altair-viz-9989ac5ca564418cae55a3774f51c11b.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-45a1da3a860145d7ab98dfcf8a454fa3.vega-embed details,
-  #altair-viz-45a1da3a860145d7ab98dfcf8a454fa3.vega-embed details summary {
+  #altair-viz-9989ac5ca564418cae55a3774f51c11b.vega-embed details,
+  #altair-viz-9989ac5ca564418cae55a3774f51c11b.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-45a1da3a860145d7ab98dfcf8a454fa3"></div>
+<div id="altair-viz-9989ac5ca564418cae55a3774f51c11b"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-45a1da3a860145d7ab98dfcf8a454fa3") {
-      outputDiv = document.getElementById("altair-viz-45a1da3a860145d7ab98dfcf8a454fa3");
+    if (outputDiv.id !== "altair-viz-9989ac5ca564418cae55a3774f51c11b") {
+      outputDiv = document.getElementById("altair-viz-9989ac5ca564418cae55a3774f51c11b");
     }
 
     const paths = {
@@ -2852,23 +2852,23 @@
 <div class="cell_output docutils container">
 <div class="output text_html">
 <style>
-  #altair-viz-1a2ac71f8d364d049736ae1a4de229d6.vega-embed {
+  #altair-viz-f9ca9cb084f3402eb10ac33c9d0cadb2.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-1a2ac71f8d364d049736ae1a4de229d6.vega-embed details,
-  #altair-viz-1a2ac71f8d364d049736ae1a4de229d6.vega-embed details summary {
+  #altair-viz-f9ca9cb084f3402eb10ac33c9d0cadb2.vega-embed details,
+  #altair-viz-f9ca9cb084f3402eb10ac33c9d0cadb2.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-1a2ac71f8d364d049736ae1a4de229d6"></div>
+<div id="altair-viz-f9ca9cb084f3402eb10ac33c9d0cadb2"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-1a2ac71f8d364d049736ae1a4de229d6") {
-      outputDiv = document.getElementById("altair-viz-1a2ac71f8d364d049736ae1a4de229d6");
+    if (outputDiv.id !== "altair-viz-f9ca9cb084f3402eb10ac33c9d0cadb2") {
+      outputDiv = document.getElementById("altair-viz-f9ca9cb084f3402eb10ac33c9d0cadb2");
     }
 
     const paths = {
@@ -2986,7 +2986,7 @@
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">4. Escalas, Eixos e Legendas</p>
+        <p class="prev-next-title">4. Escalas, eixos e legendas</p>
       </div>
     </a>
     <a class="right-next"
@@ -3015,16 +3015,16 @@
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos">5.1 Dados Meteorológicos</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dados-meteorologicos">5.1 Dados meteorológicos</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#camada">5.2 Camada</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eixos-compartilhados">5.2.1 Eixos Compartilhados</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-eixo-duplo">5.2.2 Gráficos de Eixo Duplo</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eixos-compartilhados">5.2.1 Eixos compartilhados</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#graficos-de-eixo-duplo">5.2.2 Gráficos de eixo duplo</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#faceta">5.3 Faceta</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#concatenacao">5.4 Concatenação</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repeticao">5.5 Repetição</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebra-de-composicao-de-visualizacoes">5.6 Álgebra de Composição de Visualizações</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#algebra-de-composicao-de-visualizacoes">5.6 Álgebra de composição de visualizações</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">5.7 Resumo</a></li>
 </ul>
   </nav></div>
