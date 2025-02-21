@@ -1,14 +1,16 @@
 # Introdução
 
-Um currículo de visualização de dados com capítulos interativos, usando [Vega-Lite](https://vega.github.io/vega-lite/) e [Altair](https://altair-viz.github.io/). Esse livro digital contem uma série de Jupyter notebooks baseados em Python, sendo que o conjunto correspondente em JavaScript notebooks está disponível online em [Observable](https://observablehq.com/@uwdata/data-visualization-curriculum).
+Tradução de [um currículo de visualização de dados](https://idl.uw.edu/visualization-curriculum) com capítulos interativos, usando [Vega-Lite](https://vega.github.io/vega-lite/) e [Altair](https://altair-viz.github.io/). Esse livro digital contem uma série de Jupyter notebooks baseados em Python.
+
+
+_Observação:_ Após a percepção de um erro no debbuging guide, foi requisitada uma correção para os criadores, a qual foi aceita. Logo, essa atividade parte da versão de fevereiro de 25, que conta com essa correção.
 
 ## Começando
 
 O currículo de visualização pode ser usado online ou no seu computador pessoal. Você pode ver e interagir diretamente com os gráficos em cada Jupyter notebook. Se desejar modificar o código, temos algumas opções:
 
-- Para ler JavaScript notebooks online usando o [Observable](https://observablehq.com/), navegue para a página linkada acima e clique no notebook correspondente.
 - Para ler Python notebooks online usando o [Colab](https://colab.research.google.com/), clique na seção correspondente nesse livro, deslize o mouse até o foguetinho no canto superior direito da página e selecione a opção "Colab" do menu.
-- Para ler Python notebooks localmente,siga as instruções abaixo:
+- Para ler Python notebooks localmente, siga as instruções abaixo:
 
 ### Instalação Local 
 
@@ -24,5 +26,5 @@ Desenvolvido na Universidade de Washington por Jeffrey Heer, Dominik Moritz, Jak
 
 A tradução foi realizada e estudada pela primeira vez pela primeira turma de verão do Impatech, corrigida pelos monitores da disciplina de Introdução à Ciência de Dados e orientada pela professora Asla Medeiros e Sá.
 
-
-_Observação:_ Após a percepção de um erro no debbuging guide, foi requisitada uma correção para os criadores, a qual foi aceita. Logo, essa atividade parte da versão de fevereiro de 25, que conta com essa correção.
+## Agradecimentos
+À [Pedro Martineli](https://github.com/martinelipedro), que me ajudou a manejar os erros e converter o [repositório github](https://github.com/ghostfoxgoddes3/data_visualization_curriculum) que eu havia traduzido em jupyter book. Eu te amo! Sem você (e sua paciência invejável) nada disso seria possível.
