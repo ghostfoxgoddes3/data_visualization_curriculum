@@ -23,3 +23,6 @@ Dependendo do seu ambiente de programação (e se você tem ou não conexão a i
 Desenvolvido na Universidade de Washington por Jeffrey Heer, Dominik Moritz, Jake VanderPlas e Brock Craft. Graças ao [UW Interactive Data Lab](https://idl.cs.washington.edu/) e Arvind Satyanarayan por suas valiosas dicas e opiniões! Graças também aos estudantes do [UW CSE512 Spring 2019](https://courses.cs.washington.edu/courses/cse512/19sp/), o primeiro grupo a usar esses notebooks como componente integrante do seu curso.
 
 A tradução foi realizada e estudada pela primeira vez pela primeira turma de verão do Impatech, corrigida pelos monitores da disciplina de Introdução à Ciência de Dados e orientada pela professora Asla Medeiros e Sá.
+
+
+_Observação:_ Após a percepção de um erro no debbuging guide, foi requisitada uma correção para os criadores, a qual foi aceita. Logo, essa atividade parte da versão de fevereiro de 25, que conta com essa correção.

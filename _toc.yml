@@ -3,12 +3,18 @@
 
 format: jb-book
 root: content/curriculum/intro
-chapters:
-- file: content/curriculum/1_intro
-- file: content/curriculum/2_types
-- file: content/curriculum/3_trans
-- file: content/curriculum/4_scales
-- file: content/curriculum/5_compo
-- file: content/curriculum/6_inter
-- file: content/curriculum/7_geo
-- file: content/support/debugging
+
+parts:
+    -   caption: CURRÍCULO
+        chapters:
+            - file: content/curriculum/1_intro
+            - file: content/curriculum/2_types
+            - file: content/curriculum/3_trans
+            - file: content/curriculum/4_scales
+            - file: content/curriculum/5_compo
+            - file: content/curriculum/6_inter
+            - file: content/curriculum/7_geo
+            
+    -   caption: SUPORTE
+        chapters:
+            - file: content/support/debugging

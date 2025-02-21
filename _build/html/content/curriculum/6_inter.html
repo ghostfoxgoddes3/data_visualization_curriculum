@@ -30,13 +30,22 @@
   <link href="../../_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 <link href="../../_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=720ed60b" />
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/basic.css?v=fb9458d3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=720ed60b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/theme.css?v=a243ae73" />
   
   <!-- So that users can add custom icons -->
   <script src="../../_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
@@ -61,10 +70,25 @@
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'content/curriculum/6_inter';</script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/copybutton_funcs.js?v=776a791e"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/language_data.js?v=d4673a71"></script>
+    <script src="../../_static/searchtools.js?v=63a53a7d"></script>
+    <script src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
+    <script src="../../_static/scripts/bootstrap.js?v=7583a70d"></script>
+    <script src="../../_static/scripts/fontawesome.js?v=9b125980"></script>
+    <script src="../../_static/scripts/pydata-sphinx-theme.js?v=a1eb5d9f"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="7. Visualização Cartográfica" href="7_geo.html" />
-    <link rel="prev" title="5. Composição de Múltiplas Visualizações" href="5_compo.html" />
+    <link rel="next" title="7. Visualização cartográfica" href="7_geo.html" />
+    <link rel="prev" title="5. Composição de múltiplas visualizações" href="5_compo.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -168,14 +192,18 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">CURRÍCULO</span></p>
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1_intro.html">1. Introdução ao Altair</a></li>
 <li class="toctree-l1"><a class="reference internal" href="2_types.html">2. Tipos de dados, marcas gráficas e canais de codificação visual</a></li>
 <li class="toctree-l1"><a class="reference internal" href="3_trans.html">3. Transformação de dados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, Eixos e Legendas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_compo.html">5. Composição de Múltiplas Visualizações</a></li>
+<li class="toctree-l1"><a class="reference internal" href="4_scales.html">4. Escalas, eixos e legendas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5_compo.html">5. Composição de múltiplas visualizações</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">6. Interação</a></li>
-<li class="toctree-l1"><a class="reference internal" href="7_geo.html">7. Visualização Cartográfica</a></li>
+<li class="toctree-l1"><a class="reference internal" href="7_geo.html">7. Visualização cartográfica</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">SUPORTE</span></p>
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="../support/debugging.html">Guia de Depuração para Altair</a></li>
 </ul>
 
@@ -403,15 +431,21 @@
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">6.1 Datasets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes">6.2 Introduzindo seleções</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas">6.3 Consultas dinâmicas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas">6.3.1 Vinculando seleções a múltiplas entradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplos-inputs-entradas">6.3.1 Vinculando seleções a múltiplos <code class="docutils literal notranslate"><span class="pre">inputs</span></code> (entradas)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas">6.3.2 Usando visualizações como consultas dinâmicas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">6.4 Movimentando e Ampliando</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">6.5 Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda">6.6 Detalhes sob Demanda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking">6.7 Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">6.8 Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">6.4 Movimentando e ampliando</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">6.5 Navegação: visão geral + detalhes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda">6.6 Detalhes sob demanda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking">6.7 Revisitando o “Brushing &amp; Linking”</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-filtering">6.7.1 Cross-Filtering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">6.8 Resumo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apendice-sobre-a-representacao-do-tempo">6.8.1 Apêndice: Sobre a Representação do Tempo</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -500,33 +534,33 @@
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\2101507836.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\2101507836.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selection = alt.selection_single();
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\2101507836.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\2101507836.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   alt.Chart(cars).mark_circle().add_selection(
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-606531aed3bb40a3a1982835ca20553a.vega-embed {
+  #altair-viz-d612a357377845aba36349730147291a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-606531aed3bb40a3a1982835ca20553a.vega-embed details,
-  #altair-viz-606531aed3bb40a3a1982835ca20553a.vega-embed details summary {
+  #altair-viz-d612a357377845aba36349730147291a.vega-embed details,
+  #altair-viz-d612a357377845aba36349730147291a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-606531aed3bb40a3a1982835ca20553a"></div>
+<div id="altair-viz-d612a357377845aba36349730147291a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-606531aed3bb40a3a1982835ca20553a") {
-      outputDiv = document.getElementById("altair-viz-606531aed3bb40a3a1982835ca20553a");
+    if (outputDiv.id !== "altair-viz-d612a357377845aba36349730147291a") {
+      outputDiv = document.getElementById("altair-viz-d612a357377845aba36349730147291a");
     }
 
     const paths = {
@@ -616,36 +650,36 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\2299552586.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\2299552586.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single()).properties(title=&#39;Single (Click)&#39;),
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\1277325702.py:2: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\2299552586.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\2299552586.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi()).properties(title=&#39;Multi (Shift-Click)&#39;),
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-f485c4fde12a4ae8b97d17b03986ef46.vega-embed {
+  #altair-viz-58ee00819de9461a870e3cfd570e1020.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-f485c4fde12a4ae8b97d17b03986ef46.vega-embed details,
-  #altair-viz-f485c4fde12a4ae8b97d17b03986ef46.vega-embed details summary {
+  #altair-viz-58ee00819de9461a870e3cfd570e1020.vega-embed details,
+  #altair-viz-58ee00819de9461a870e3cfd570e1020.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-f485c4fde12a4ae8b97d17b03986ef46"></div>
+<div id="altair-viz-58ee00819de9461a870e3cfd570e1020"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-f485c4fde12a4ae8b97d17b03986ef46") {
-      outputDiv = document.getElementById("altair-viz-f485c4fde12a4ae8b97d17b03986ef46");
+    if (outputDiv.id !== "altair-viz-58ee00819de9461a870e3cfd570e1020") {
+      outputDiv = document.getElementById("altair-viz-58ee00819de9461a870e3cfd570e1020");
     }
 
     const paths = {
@@ -708,36 +742,36 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\861132474.py:2: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\861132474.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_single(on=&#39;mouseover&#39;)).properties(title=&#39;Single (Mouseover)&#39;),
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\1277325702.py:2: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\1277325702.py:2: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use add_params instead.
   return alt.Chart(cars).mark_circle().add_selection(
-C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\861132474.py:3: AltairDeprecationWarning: 
+C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\861132474.py:3: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   plot(alt.selection_multi(on=&#39;mouseover&#39;)).properties(title=&#39;Multi (Shift-Mouseover)&#39;)
 </pre></div>
 </div>
 <div class="output text_html">
 <style>
-  #altair-viz-d81e3753a4424acebc501e69a38ac947.vega-embed {
+  #altair-viz-65fc086a5be04507af8484dea469d23a.vega-embed {
     width: 100%;
     display: flex;
   }
 
-  #altair-viz-d81e3753a4424acebc501e69a38ac947.vega-embed details,
-  #altair-viz-d81e3753a4424acebc501e69a38ac947.vega-embed details summary {
+  #altair-viz-65fc086a5be04507af8484dea469d23a.vega-embed details,
+  #altair-viz-65fc086a5be04507af8484dea469d23a.vega-embed details summary {
     position: relative;
   }
 </style>
-<div id="altair-viz-d81e3753a4424acebc501e69a38ac947"></div>
+<div id="altair-viz-65fc086a5be04507af8484dea469d23a"></div>
 <script type="text/javascript">
   var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d81e3753a4424acebc501e69a38ac947") {
-      outputDiv = document.getElementById("altair-viz-d81e3753a4424acebc501e69a38ac947");
+    if (outputDiv.id !== "altair-viz-65fc086a5be04507af8484dea469d23a") {
+      outputDiv = document.getElementById("altair-viz-65fc086a5be04507af8484dea469d23a");
     }
 
     const paths = {
@@ -846,7 +880,7 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_8036\1363799673.py:1: AltairDeprecationWarning: 
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\gabyd\AppData\Local\Temp\ipykernel_12400\1363799673.py:1: AltairDeprecationWarning: 
 Deprecated since `altair=5.0.0`. Use selection_point instead.
   selectGenre = alt.selection_single(
 </pre></div>
@@ -906,8 +940,8 @@ Deprecated since `altair=5.0.0`. Use selection_point instead.
 <li><p><code class="docutils literal notranslate"><span class="pre">Vinculamos</span></code> a seleção a um widget de interface, neste caso um menu suspenso via <code class="docutils literal notranslate"><span class="pre">binding_select</span></code>.</p></li>
 <li><p>Como antes, usamos uma codificação condicional para controlar o canal de opacidade.</p></li>
 </ul>
-<section id="vinculando-selecoes-a-multiplas-entradas">
-<h3>6.3.1 Vinculando seleções a múltiplas entradas<a class="headerlink" href="#vinculando-selecoes-a-multiplas-entradas" title="Link to this heading">#</a></h3>
+<section id="vinculando-selecoes-a-multiplos-inputs-entradas">
+<h3>6.3.1 Vinculando seleções a múltiplos <code class="docutils literal notranslate"><span class="pre">inputs</span></code> (entradas)<a class="headerlink" href="#vinculando-selecoes-a-multiplos-inputs-entradas" title="Link to this heading">#</a></h3>
 <p>Uma instância de seleção pode ser vinculada a <em>múltiplas</em> ferramentas (<em>widgets</em>) de consulta dinâmica. Vamos modificar o exemplo acima para fornecer filtros para <em>ambos</em> <code class="docutils literal notranslate"><span class="pre">Major_Genre</span></code> e <code class="docutils literal notranslate"><span class="pre">MPAA_Rating</span></code>, usando botões de opção em vez de um menu. Nossa seleção <code class="docutils literal notranslate"><span class="pre">single</span></code> agora é definida sobre um único <em>par</em> de valores de gênero e classificação MPAA</p>
 <p><em>Procure por conjunções surpreendentes de gênero e classificação. Há algum filme de terror com classificação G ou PG?</em></p>
 <div class="cell docutils container">
@@ -1113,7 +1147,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </section>
 </section>
 <section id="movimentando-e-ampliando">
-<h2>6.4 Movimentando e Ampliando<a class="headerlink" href="#movimentando-e-ampliando" title="Link to this heading">#</a></h2>
+<h2>6.4 Movimentando e ampliando<a class="headerlink" href="#movimentando-e-ampliando" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>O gráfico de dispersão (<em>scatter plot</em>) da pontuação dos filmes está um pouco confuso em alguns lugares, tornando difícil examinar pontos em regiões com mais densas. Usando as técnicas de interação de <em>movimentação</em> e <em>ampliação</em>, podemos inspecionar regiões com maior densidade de pontos de mais perto.</p>
 <p>Vamos começar pensando sobre como podemos expressar a movimentação e a ampliação usando as seleções do Altair. O que define a “janela de visualização” do gráfico? <em>Os domínios das escalas dos eixos!</em></p>
@@ -1389,7 +1423,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p><em>Ao ampliar somente ao longo do eixo x, o formato dos dados visualizados pode mudar, potencialmente afetando nossa percepção das relações nos dados. <a class="reference external" href="http://vis.stanford.edu/papers/arclength-banking">Escolher uma proporção adequada</a> é uma preocupação importante no design de visualizações!</em></p>
 </section>
 <section id="navegacao-visao-geral-detalhes">
-<h2>6.5 Navegação: Visão geral + Detalhes<a class="headerlink" href="#navegacao-visao-geral-detalhes" title="Link to this heading">#</a></h2>
+<h2>6.5 Navegação: visão geral + detalhes<a class="headerlink" href="#navegacao-visao-geral-detalhes" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Ao optar por uma visão panorâmica ou um zoom, ajustamos diretamente When panning and zooming, we directly adjust the “janela de visualização” de um gráfico. A estratégia de navegação de <em>visão geral + detalhes</em>, pelo contrário usa uma tela de janela de visualização para mostrar <em>todos</em> os dados enquando permite seleções com zoom in e out em uma tela de foco separado.</p>
 <p>Abaixo temos dois gráficos de área (<em>area charts</em>) mostrando uma década de flutuações de preço para o índice de ações da S&amp;P 500. Inicialmente ambos os gráficos mostram o mesmo intervalo de dados. <em>Clique e arraste no gráfico de visão geral inferior para atualizar o foco da tela e examinar períodos de tempo específicos.</em></p>
@@ -1490,7 +1524,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <p>Ao contrário do nosso caso anterior de zoom in &amp; out, aqui não queremos vincular uma seleção diretamente às escalas de um único gráfico interativo. Ao invés disso, queremos vincular a seleção a um domínio de escala em <em>outro</em> gráfico. Para fazer isso, atualizamos o canal de codificação <code class="docutils literal notranslate"><span class="pre">x</span></code> para o nosso gráfico de foco, configurando o <code class="docutils literal notranslate"><span class="pre">domínio</span></code> de escala pare referenciar nossa seleção <code class="docutils literal notranslate"><span class="pre">brush</span></code>. Se nenhum intervalo está definido (seleção vazia), o Altair ignora o pincel e usa os dados subjacentes para determinar o domínio. Quando um intervalo de pincel é criado, o Altair o usa em substituição ao <code class="docutils literal notranslate"><span class="pre">domínio</span></code> da escala para o gráfico de interesse.</p>
 </section>
 <section id="detalhes-sob-demanda">
-<h2>6.6 Detalhes sob Demanda<a class="headerlink" href="#detalhes-sob-demanda" title="Link to this heading">#</a></h2>
+<h2>6.6 Detalhes sob demanda<a class="headerlink" href="#detalhes-sob-demanda" title="Link to this heading">#</a></h2>
 <hr class="docutils" />
 <p>Uma vez que identificamos pontos de interesse em uma visualização, frequentemente queremos saber mais sobre eles. <em>Detalhes sob demanda</em> refere-se à consulta interativa para obter mais informações sobre valores selecionados. <em>Tooltips</em> são uma forma útil de fornecer detalhes sob demanda. No entanto, os tooltips normalmente mostram informações para um único ponto de dados de cada vez. Como podemos mostrar mais?</p>
 <p>O gráfico de dispersão (<em>scatter plot</em>) das avaliações de filmes inclui vários outliers potencialmente interessantes, onde as classificações do Rotten Tomatoes e do IMDB discordam. Vamos criar um gráfico que permita selecionar pontos interativamente e mostrar seus rótulos. Para acionar a consulta de filtro em qualquer interação de “hover” ou “click”, utilizaremos o operador de composição <a class="reference external" href="https://altair-viz.github.io/user_guide/interactions.html#composing-multiple-selections">Altair</a> <code class="docutils literal notranslate"><span class="pre">|</span></code> (“or”).</p>
@@ -1854,6 +1888,49 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 </div>
 <p>Note que no código acima usamos o <code class="docutils literal notranslate"><span class="pre">resolve='global'</span></code> no intervalo (<code class="docutils literal notranslate"><span class="pre">interval</span></code>) de seleção. A configuração padrão do <code class="docutils literal notranslate"><span class="pre">'global'</span></code> indica que entre todas as visualizações apenas uma seleção pode estar ativa ao mesmo tempo. Entretanto, em alguns casos queremos ter múltiplas seleções em múltiplas visualizações e juntar os resultados. Se nós usarmos <code class="docutils literal notranslate"><span class="pre">resolve='union'</span></code>, a seleção principal vai conter a <em>união</em> de todas as seleções: se um ponto estiver dentro da união de seleções ele será selecionado. Alternativamente, se usarmos o <code class="docutils literal notranslate"><span class="pre">resolve='intersect'</span></code>, a seleção principal vai consistir na intersecção de todas as seleções individuais: apenas os pontos nessa intersecção serão contabilizados e selecionados.</p>
 <p><em>Tente mudar o parâmetro <code class="docutils literal notranslate"><span class="pre">resolve</span></code> para <code class="docutils literal notranslate"><span class="pre">'union'</span></code> ou <code class="docutils literal notranslate"><span class="pre">'intersect'</span></code> para ver como ele muda a lógica de seleção resultante.</em></p>
+<section id="cross-filtering">
+<h3>6.7.1 Cross-Filtering<a class="headerlink" href="#cross-filtering" title="Link to this heading">#</a></h3>
+<p>Os exemplos de brushing e linking que vimos usam codificações condicionais, por exemplo, para alterar valores de opacidade em resposta a uma seleção. Outra opção é usar uma seleção definida em uma visualização para <em>filtrar</em> o conteúdo de outra visualização.</p>
+<p>Vamos construir uma coleção de histogramas para o conjunto de dados <code class="docutils literal notranslate"><span class="pre">flights</span></code>: <code class="docutils literal notranslate"><span class="pre">delay</span></code> de chegada (quão cedo ou tarde um voo chega, em minutos), <code class="docutils literal notranslate"><span class="pre">distance</span></code> voada (em milhas) e <code class="docutils literal notranslate"><span class="pre">time</span></code> de partida (hora do dia). Usaremos o operador <code class="docutils literal notranslate"><span class="pre">repeat</span></code> para criar os histogramas e adicionaremos uma seleção de <code class="docutils literal notranslate"><span class="pre">intervalo</span></code> para o eixo <code class="docutils literal notranslate"><span class="pre">x</span></code> com pincéis resolvidos por meio de interseção.</p>
+<p>Em particular, cada histograma consistirá em duas camadas: uma camada de fundo cinza e uma camada de primeiro plano azul, com a camada de primeiro plano filtrada por nossa interseção de seleções de pincéis. O resultado é uma interação de <em>filtragem cruzada</em> nos três gráficos!</p>
+<p><em>Arraste os intervalos de pincel nos gráficos abaixo. Conforme você seleciona voos com atrasos de chegada mais longos ou mais curtos, como as distribuições de distância e tempo respondem?</em></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">brush</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">selection_interval</span><span class="p">(</span>
+    <span class="n">encodings</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;x&#39;</span><span class="p">],</span>
+    <span class="n">resolve</span><span class="o">=</span><span class="s1">&#39;intersect&#39;</span>
+<span class="p">);</span>
+
+<span class="n">hist</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">()</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span><span class="s1">&#39;row&#39;</span><span class="p">),</span> <span class="nb">type</span><span class="o">=</span><span class="s1">&#39;quantitative&#39;</span><span class="p">,</span>
+        <span class="nb">bin</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Bin</span><span class="p">(</span><span class="n">maxbins</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">minstep</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="c1"># até 100 bins</span>
+        <span class="n">axis</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Axis</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="n">titleAnchor</span><span class="o">=</span><span class="s1">&#39;start&#39;</span><span class="p">)</span> <span class="c1"># formato inteiro, título alinhado à esquerda</span>
+    <span class="p">),</span>
+    <span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;count():Q&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span> <span class="c1"># sem título no eixo y</span>
+<span class="p">)</span>
+  
+<span class="n">alt</span><span class="o">.</span><span class="n">layer</span><span class="p">(</span>
+    <span class="n">hist</span><span class="o">.</span><span class="n">add_selection</span><span class="p">(</span><span class="n">brush</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">value</span><span class="p">(</span><span class="s1">&#39;lightgrey&#39;</span><span class="p">)),</span>
+    <span class="n">hist</span><span class="o">.</span><span class="n">transform_filter</span><span class="p">(</span><span class="n">brush</span><span class="p">)</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+    <span class="n">width</span><span class="o">=</span><span class="mi">900</span><span class="p">,</span>
+    <span class="n">height</span><span class="o">=</span><span class="mi">100</span>
+<span class="p">)</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span>
+    <span class="n">row</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;delay&#39;</span><span class="p">,</span> <span class="s1">&#39;distance&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">],</span>
+    <span class="n">data</span><span class="o">=</span><span class="n">flights</span>
+<span class="p">)</span><span class="o">.</span><span class="n">transform_calculate</span><span class="p">(</span>
+    <span class="n">delay</span><span class="o">=</span><span class="s1">&#39;datum.delay &lt; 180 ? datum.delay : 180&#39;</span><span class="p">,</span> <span class="c1"># limita atrasos a no máximo 3 horas</span>
+    <span class="n">time</span><span class="o">=</span><span class="s1">&#39;hours(datum.date) + minutes(datum.date) / 60&#39;</span> <span class="c1"># horas fracionárias</span>
+<span class="p">)</span><span class="o">.</span><span class="n">configure_view</span><span class="p">(</span>
+    <span class="n">stroke</span><span class="o">=</span><span class="s1">&#39;transparent&#39;</span> <span class="c1"># sem contorno</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><em>Ao aplicar filtragem cruzada (<em>cross filtering</em>), você pode observar que voos atrasados ​​têm mais probabilidade de partir em horários mais tardios. Esse fenômeno é familiar para passageiros frequentes: um atraso pode se propagar ao longo do dia, afetando viagens subsequentes daquele avião. Para as melhores chances de uma chegada pontual, reserve um voo antecipado!</em></p>
+<p>A combinação de múltiplas visualizações e seleções interativas pode permitir formas valiosas de raciocínio multidimensional, transformando até mesmo histogramas básicos em poderosos dispositivos de entrada para fazer perguntas sobre um conjunto de dados!</p>
+</section>
 </section>
 <section id="resumo">
 <h2>6.8 Resumo<a class="headerlink" href="#resumo" title="Link to this heading">#</a></h2>
@@ -1867,6 +1944,12 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <li><p>Para um sumário compreensivo de técnicas de interação para visualizações, veja <a class="reference external" href="https://queue.acm.org/detail.cfm?id=2146416">Interactive Dynamics for Visual Analysis</a> por Heer &amp; Shneiderman.</p></li>
 <li><p>Finalmente, para um tratado sobre o que torna uma interalçao efetiva leia o clássico <a class="reference external" href="https://scholar.google.com/scholar?cluster=15702972136892195211">Direct Manipulation Interfaces</a> de Hutchins, Hollan, &amp; Norman.</p></li>
 </ul>
+<section id="apendice-sobre-a-representacao-do-tempo">
+<h3>6.8.1 Apêndice: Sobre a Representação do Tempo<a class="headerlink" href="#apendice-sobre-a-representacao-do-tempo" title="Link to this heading">#</a></h3>
+<p>Anteriormente, observamos um pequeno aumento no número de filmes em 1969 e 1970. De onde vem esse aumento? E por que 1969 <em>ou</em> 1970? A resposta decorre de uma combinação de dados ausentes e de como seu computador representa o tempo.</p>
+<p>Internamente, datas e horas são representadas em relação à <a class="reference external" href="https://en.wikipedia.org/wiki/Unix_time">época UNIX</a>, na qual o tempo “zero” corresponde à meia-noite de 1º de janeiro de 1970 no <a class="reference external" href="https://en.wikipedia.org/wiki/Coordinated_Universal_Time">horário UTC</a>, que corre ao longo do <a class="reference external" href="https://en.wikipedia.org/wiki/Prime_meridian">meridiano principal</a>. Acontece que há alguns filmes com datas de lançamento ausentes (<code class="docutils literal notranslate"><span class="pre">nulas</span></code>). Esses valores <code class="docutils literal notranslate"><span class="pre">nulos</span></code> são interpretados como tempo <code class="docutils literal notranslate"><span class="pre">0</span></code> e, portanto, mapeados para 1º de janeiro de 1970 no horário UTC. Se você mora nas Américas – e, portanto, em fusos horários “anteriores” – esse ponto preciso no tempo corresponde a uma hora anterior em 31 de dezembro de 1969 no seu fuso horário local. Por outro lado, se você mora perto ou a leste do meridiano principal, a data no seu fuso horário local será 1º de janeiro de 1970.</p>
+<p>A conclusão? Seja sempre cético em relação aos seus dados e esteja ciente de que a forma como os dados são representados (seja como datas e horas, números de ponto flutuante, latitudes e longitudes, <em>etc.</em>) pode às vezes levar a artefatos que impactam a análise!</p>
+</section>
 </section>
 </section>
 
@@ -1906,7 +1989,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">5. Composição de Múltiplas Visualizações</p>
+        <p class="prev-next-title">5. Composição de múltiplas visualizações</p>
       </div>
     </a>
     <a class="right-next"
@@ -1914,7 +1997,7 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">7. Visualização Cartográfica</p>
+        <p class="prev-next-title">7. Visualização cartográfica</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -1938,15 +2021,21 @@ Deprecated since `altair=5.0.0`. Use add_params instead.
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#datasets">6.1 Datasets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduzindo-selecoes">6.2 Introduzindo seleções</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#consultas-dinamicas">6.3 Consultas dinâmicas</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplas-entradas">6.3.1 Vinculando seleções a múltiplas entradas</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#vinculando-selecoes-a-multiplos-inputs-entradas">6.3.1 Vinculando seleções a múltiplos <code class="docutils literal notranslate"><span class="pre">inputs</span></code> (entradas)</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#usando-visualizacoes-como-consultas-dinamicas">6.3.2 Usando visualizações como consultas dinâmicas</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">6.4 Movimentando e Ampliando</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">6.5 Navegação: Visão geral + Detalhes</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda">6.6 Detalhes sob Demanda</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking">6.7 Revisitando o “Brushing &amp; Linking”</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">6.8 Resumo</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#movimentando-e-ampliando">6.4 Movimentando e ampliando</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#navegacao-visao-geral-detalhes">6.5 Navegação: visão geral + detalhes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detalhes-sob-demanda">6.6 Detalhes sob demanda</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#revisitando-o-brushing-linking">6.7 Revisitando o “Brushing &amp; Linking”</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#cross-filtering">6.7.1 Cross-Filtering</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resumo">6.8 Resumo</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#apendice-sobre-a-representacao-do-tempo">6.8.1 Apêndice: Sobre a Representação do Tempo</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
